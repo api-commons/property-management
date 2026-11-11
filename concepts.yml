@@ -104,6 +104,7 @@ findings:
     cannot reconcile them. Worth a RESO-specific pass, as Open Banking and CDR got."
   - "Units, tenants and work orders are thin (5-9 providers): most property-management systems
     keep their APIs to partners."
+  - "Measured against the RESO Data Dictionary 2.0, the standard covers the listing and property core and defines about 600 more fields that no provider in the cohort publishes as OpenAPI -- the clearest measure in the commons of how much richer a standard is than what reaches an API description."
 decisions:
   - "Real Estate is in the cohort, so listings are a concept here alongside the management
     resources."
@@ -113,3 +114,7 @@ decisions:
     units; tenancies and rental agreements are leases."
   - "Work orders cover maintenance and service requests: one resource, named for the job."
   - "Duplicates merged: Alto into Zoopla, Realtor.ca into CREA."
+
+standards:
+  - standard: reso-dd-2.0
+    concepts: {listing: [Property], property: [Property]}

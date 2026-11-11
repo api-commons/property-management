@@ -1,7 +1,7 @@
 provider: rentcheck
 apis_io: https://apis.io/providers/rentcheck/
 context: property-management
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   property:
     path_segment:

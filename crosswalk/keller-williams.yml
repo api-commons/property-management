@@ -1,7 +1,7 @@
 provider: keller-williams
 apis_io: https://apis.io/providers/keller-williams/
 context: property-management
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   listing:
     path_segment:
