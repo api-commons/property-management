@@ -8,8 +8,8 @@ concepts:
     - properties
     - property
     properties:
-      id: id
       address: address
+      id: id
       name: name
       status:
       - state

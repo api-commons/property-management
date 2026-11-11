@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - buildings
     properties:
-      id: uuid
       address: address
+      id: uuid
       name: name
     core_coverage: 1.0
     evidence:

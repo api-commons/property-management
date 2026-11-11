@@ -9,8 +9,8 @@ concepts:
     - communities
     - properties
     properties:
-      id: id
       address: address
+      id: id
       name: name
       type: property_type
       status: state

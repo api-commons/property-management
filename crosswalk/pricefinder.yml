@@ -8,11 +8,11 @@ concepts:
     - properties
     - property
     properties:
-      id: id
       address:
       - location
       - address
       - street
+      id: id
       type: type
       updated_at: lastModified
       property_id: propertyId

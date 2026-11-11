@@ -8,13 +8,13 @@ concepts:
     - properties
     - property
     properties:
-      id:
-      - listingId
-      - id
       address:
       - address
       - street
       - fullAddress
+      id:
+      - listingId
+      - id
       type: propertyType
       status:
       - state

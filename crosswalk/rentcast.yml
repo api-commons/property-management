@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - properties
     properties:
-      id: id
       address: addressLine1
+      id: id
       type: propertyType
       status: state
       city: city

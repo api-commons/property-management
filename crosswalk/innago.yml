@@ -32,6 +32,7 @@ concepts:
       rent: rentAmount
       tenant_ids: tenants
       deposit: depositAmount
+      name: propertyName
     core_coverage: 0.571
     evidence:
     - openapi/_original/openapi.yml#GET /v1/leases

@@ -10,6 +10,16 @@ generated. Every number below is a count of providers.
 ## What the market already agrees on
 
 <!-- commons:summary -->
+| Concept | Expose it | Readable schema | Core properties (share) | Collection named |
+| --- | ---: | ---: | --- | --- |
+| property | 53 | 49 | address 67%, id 67% | properties 27, property 21, buildings 12, communities 2 |
+| unit | 9 | 8 | id 62%, number 62%, property_id 62% | units 7, spaces 1, apartments 1 |
+| lease | 9 | 9 | id 89%, start_date 78%, end_date 67%, property_id 67%, status 67%, rent 56%, tenant_ids 56% | leases 6, tenancies 3, lease 1 |
+| tenant | 8 | 8 | id 88%, phone 50% | tenants 8, residents 1 |
+| work_order | 5 | 5 | id 100%, status 80%, description 60%, property_id 60% | work-orders 1, workorders 1, work_orders 1, maintenance-requests 1 |
+| listing | 19 | 17 | id 71% | listings 16, listing 6 |
+
+Cohort: 143 providers with harvested OpenAPI, 62 crosswalks. Of the providers exposing a property: 40% create, 81% list, 72% fetch, 21% update, 17% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

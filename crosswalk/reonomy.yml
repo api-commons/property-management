@@ -7,10 +7,10 @@ concepts:
     path_segment:
     - property
     properties:
-      id: id
       address:
       - location
       - address
+      id: id
       city: city
       postal_code: postal_code
       property_id: property_id

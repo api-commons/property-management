@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - buildings
     properties:
-      id: id
       address: address
+      id: id
       name: name
       status: state
       city: city

@@ -6,7 +6,8 @@ concepts:
   property:
     path_segment:
     - property
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      address: Address
+    core_coverage: 0.5
     evidence:
     - openapi/_original/hometrack-prh-core-external-client-api-v2-openapi.yml#GET /organisation/{orgId}/property

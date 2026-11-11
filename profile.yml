@@ -74,6 +74,20 @@ concepts:
       share: 0.019
       tier: long-tail
     properties:
+    - name: address
+      tier: core
+      providers: 33
+      share: 0.673
+      type: object
+      spellings:
+      - address
+      - location
+      - UnparsedAddress
+      - Address
+      - street
+      - street_address
+      - streetAddress
+      - fullAddress
     - name: id
       tier: core
       providers: 33
@@ -87,20 +101,6 @@ concepts:
       - uuid
       - Id
       - listingId
-    - name: address
-      tier: core
-      providers: 32
-      share: 0.653
-      type: object
-      spellings:
-      - address
-      - location
-      - UnparsedAddress
-      - street
-      - street_address
-      - streetAddress
-      - Address
-      - fullAddress
     - name: name
       tier: extended
       providers: 22
@@ -211,7 +211,7 @@ concepts:
       - building_id
       - property_id
       - community_id
-    long_tail_count: 724
+    long_tail_count: 729
     long_tail_sample:
     - latitude
     - longitude
@@ -231,11 +231,9 @@ concepts:
     - epc
     - features
     - images
-    - limit
     - list_agent_key
     - list_office_key
     - media
-    - offset
     - originating_system_name
     - parcel_number
     - price
@@ -253,6 +251,8 @@ concepts:
     - code
     - council_tax_band
     - country_code
+    - created_by
+    - currency
   unit:
     segments_seen:
       units: 7
@@ -342,7 +342,7 @@ concepts:
       spellings:
       - status
       - state
-    long_tail_count: 80
+    long_tail_count: 83
     long_tail_sample:
     - active
     - amenities
@@ -367,7 +367,8 @@ concepts:
     - created_at
     - created_date_time
     - creation_source
-    - entity_type
+    - email
+    - first_name
     - floor_area_sq_ft
     - floor_plan
     - full_bathrooms
@@ -376,14 +377,13 @@ concepts:
     - last_completed_inspection
     - last_modified_by
     - last_modified_date_time
+    - last_name
     - latchel_property_id
     - lease_id
     - listing
     - maintenance_notice
     - maintenance_spending_limit_time
     - management
-    - marketing
-    - model
   lease:
     segments_seen:
       leases: 6
@@ -496,6 +496,14 @@ concepts:
       spellings:
       - attributes
       - customFields
+    - name: name
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - name
+      - propertyName
     - name: type
       tier: extended
       providers: 3
@@ -512,12 +520,11 @@ concepts:
       - modifiedDate
       - updatedAt
       - modified
-    long_tail_count: 205
+    long_tail_count: 203
     long_tail_sample:
     - address
     - created_at
     - description
-    - name
     - relationships
     - term
     - access_by
@@ -554,6 +561,7 @@ concepts:
     - council_tax_band
     - created_by
     - created_date_time
+    - currency
   tenant:
     segments_seen:
       tenants: 8
@@ -883,7 +891,7 @@ concepts:
       - media
       - images
       - photos
-    long_tail_count: 307
+    long_tail_count: 308
     long_tail_sample:
     - bathrooms
     - bedrooms
@@ -899,6 +907,7 @@ concepts:
     - features
     - limit
     - living_area
+    - path
     - rental
     - suburb
     - version
@@ -924,4 +933,3 @@ concepts:
     - auction_result
     - auction_time
     - auction_venue
-    - authority_executed_date

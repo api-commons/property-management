@@ -7,10 +7,10 @@ concepts:
     path_segment:
     - property
     properties:
+      address: UnparsedAddress
       id:
       - ListingKey
       - ListingId
-      address: UnparsedAddress
       type: PropertySubType
       status: StandardStatus
       updated_at: ModificationTimestamp

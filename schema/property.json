@@ -5,6 +5,22 @@
   "description": "The common property in Property Management, distilled from 49 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
+    "address": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.673,
+      "x-commons-providers": 33,
+      "x-commons-spellings": [
+        "address",
+        "location",
+        "UnparsedAddress",
+        "Address",
+        "street",
+        "street_address",
+        "streetAddress",
+        "fullAddress"
+      ]
+    },
     "id": {
       "type": "string",
       "x-commons-tier": "core",
@@ -18,22 +34,6 @@
         "uuid",
         "Id",
         "listingId"
-      ]
-    },
-    "address": {
-      "type": "object",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.653,
-      "x-commons-providers": 32,
-      "x-commons-spellings": [
-        "address",
-        "location",
-        "UnparsedAddress",
-        "street",
-        "street_address",
-        "streetAddress",
-        "Address",
-        "fullAddress"
       ]
     },
     "name": {

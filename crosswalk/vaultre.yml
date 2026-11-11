@@ -9,8 +9,8 @@ concepts:
     - properties
     - property
     properties:
-      id: id
       address: address
+      id: id
       name: name
       type: type
       updated_at: modified
@@ -35,6 +35,7 @@ concepts:
       - property
       status: status
       tenant_ids: tenants
+      name: name
       type: type
       updated_at: modified
     core_coverage: 0.714

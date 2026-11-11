@@ -779,11 +779,11 @@
      "GET collection"
     ],
     "properties": {
-     "TotalCount": "integer",
-     "PageCount": "integer",
-     "Page": "integer",
-     "PageSize": "integer",
-     "Results": "array"
+     "RepositoryId": "string",
+     "Uprn": "string",
+     "InternalReference": "string",
+     "ExternalReference": "string",
+     "Address": "string"
     },
     "evidence": [
      "openapi/_original/hometrack-prh-core-external-client-api-v2-openapi.yml#GET /organisation/{orgId}/property"
@@ -823,8 +823,6 @@
      "GET item"
     ],
     "properties": {
-     "properties": "array",
-     "pagingModel": "object",
      "propertyUid": "string",
      "name": "string",
      "description": "string",
@@ -1401,8 +1399,6 @@
      "accountManager": "object",
      "negotiationExpert": "object",
      "salesProgressor": "object",
-     "total": "integer",
-     "properties": "array",
      "street": "string",
      "fullAddress": "string",
      "tenancyChecksViewModel": "object",
@@ -1922,10 +1918,6 @@
      "GET item"
     ],
     "properties": {
-     "communities": "array",
-     "total": "integer",
-     "limit": "integer",
-     "offset": "integer",
      "community_id": "string",
      "name": "string",
      "city": "string",
@@ -2296,9 +2288,13 @@
      "address": "string",
      "working_hours": "object",
      "timezone": "string",
+     "space_ref_id": "string",
+     "space_type": "string",
      "capacity": "integer",
-     "minimum_social_distance": "integer",
-     "floors": "array"
+     "max_capacity": "integer",
+     "sensors": "array",
+     "geometry": "object",
+     "space_groups": "array"
     },
     "evidence": [
      "openapi/_original/vergesense-api-openapi.json#GET /buildings",
@@ -2513,9 +2509,11 @@
     ],
     "properties": {
      "units": "array",
-     "unit": "object",
-     "tenants": "array",
-     "entityType": "string"
+     "tenantUid": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phone": "string"
     },
     "evidence": [
      "openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}/units",
@@ -2847,8 +2845,6 @@
      "GET item"
     ],
     "properties": {
-     "list": "array",
-     "paging": "object",
      "leaseUid": "string",
      "startDate": "string",
      "endDate": "string",
@@ -3158,6 +3154,7 @@
      "appraisal": "string",
      "appraisalPriceLower": "number",
      "appraisalPriceUpper": "number",
+     "url": "string",
      "zoning": "string",
      "carSpaces": "integer",
      "mezzanineArea": "object",
@@ -3166,6 +3163,8 @@
      "officeArea": "object",
      "otherArea": "object",
      "commercialListingType": "string",
+     "name": "string",
+     "photo": "object",
      "lifeId": "number",
      "windowCardDescription": "string",
      "councilTaxBand": "string",
@@ -3349,8 +3348,11 @@
      "GET collection"
     ],
     "properties": {
-     "nextPageToken": "string",
-     "residents": "array"
+     "email": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "phone": "string",
+     "userUuid": "string"
     },
     "evidence": [
      "openapi/_original/door-partner-openapi.json#GET /v1/buildings/{buildingUuid}/residents"
@@ -4201,8 +4203,11 @@
      "dateSold": "string",
      "dateWithdrawn": "string",
      "dateDrafted": "string",
-     "operations": "array",
-     "contractResolver": "object",
+     "operationType": "string",
+     "path": "string",
+     "op": "string",
+     "from": "string",
+     "value": null,
      "unitNumber": "string",
      "streetNumber": "string",
      "streetName": "string",
@@ -4695,8 +4700,7 @@
      "agencies": [
       "array",
       "null"
-     ],
-     "listings": "array"
+     ]
     },
     "evidence": [
      "openapi/_original/rea-group-listings-openapi.yml#GET /api/v2/listings/{listingId}",

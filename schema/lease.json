@@ -106,6 +106,16 @@
         "customFields"
       ]
     },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name",
+        "propertyName"
+      ]
+    },
     "type": {
       "type": "string",
       "x-commons-tier": "extended",
