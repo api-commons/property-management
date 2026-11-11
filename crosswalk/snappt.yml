@@ -1,0 +1,26 @@
+provider: snappt
+apis_io: https://apis.io/providers/snappt/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    - property
+    properties:
+      id: id
+      address: address
+      name: name
+      status:
+      - state
+      - status
+      updated_at: updatedAt
+      city: city
+      postal_code: zip
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /properties
+    - openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /properties/{propertyId}
+    - openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /session/property
+    - openapi/_original/snappt-enterprise-api-openapi-original.yml#POST /properties
+    - openapi/_original/snappt-enterprise-api-openapi-original.yml#PUT /properties/{propertyId}

@@ -1,0 +1,27 @@
+provider: zillapi
+apis_io: https://apis.io/providers/zillapi/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      address: address
+      bathrooms: bathrooms
+      year_built: yearBuilt
+      bedrooms: bedrooms
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/zillapi-openapi-original.json#GET /v1/properties/{zpid}
+    - openapi/_original/zillapi-openapi-original.json#POST /v1/properties/batch
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: id
+      address: address
+      price: price
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/zillapi-openapi-original.json#GET /v1/listings

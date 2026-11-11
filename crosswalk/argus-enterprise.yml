@@ -1,0 +1,54 @@
+provider: argus-enterprise
+apis_io: https://apis.io/providers/argus-enterprise/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      address: address
+      name: name
+      type: propertyType
+      status: status
+      updated_at: updatedAt
+      year_built: yearBuilt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/argus-enterprise-core-openapi.yml#DELETE /properties/{propertyId}
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /portfolios/{portfolioId}/properties
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /properties
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}
+    - openapi/_original/argus-enterprise-core-openapi.yml#POST /properties
+  lease:
+    path_segment:
+    - leases
+    properties:
+      id: id
+      start_date: startDate
+      end_date: endDate
+      property_id: propertyId
+      status: status
+      rent: baseRent
+      tenant_ids: tenantId
+      deposit: securityDeposit
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/argus-enterprise-core-openapi.yml#DELETE /properties/{propertyId}/leases/{leaseId}
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}/leases
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}/leases/{leaseId}
+    - openapi/_original/argus-enterprise-core-openapi.yml#POST /properties/{propertyId}/leases
+    - openapi/_original/argus-enterprise-core-openapi.yml#PUT /properties/{propertyId}/leases/{leaseId}
+  tenant:
+    path_segment:
+    - tenants
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /tenants
+    - openapi/_original/argus-enterprise-core-openapi.yml#GET /tenants/{tenantId}
+    - openapi/_original/argus-enterprise-core-openapi.yml#POST /tenants
+    - openapi/_original/argus-enterprise-core-openapi.yml#PUT /tenants/{tenantId}

@@ -1,0 +1,17 @@
+provider: keller-williams
+apis_io: https://apis.io/providers/keller-williams/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listings
+    properties:
+      address: location
+      photos: photos
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/keller-williams-listings-search-openapi.json#DELETE /listings/{list_uuid}
+    - openapi/_original/keller-williams-listings-search-openapi.json#GET /listings
+    - openapi/_original/keller-williams-listings-search-openapi.json#PATCH /listings/{list_uuid}
+    - openapi/_original/keller-williams-listings-search-openapi.json#POST /listings

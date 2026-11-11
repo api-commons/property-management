@@ -1,0 +1,17 @@
+provider: airdna
+apis_io: https://apis.io/providers/airdna/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listings
+    - listing
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/airdna-openapi.yml#GET /listing/{listingId}
+    - openapi/_original/airdna-openapi.yml#POST /country/{countryCode}/listings
+    - openapi/_original/airdna-openapi.yml#POST /market/{marketId}/listings
+    - openapi/_original/airdna-openapi.yml#POST /submarket/{submarketId}/listings

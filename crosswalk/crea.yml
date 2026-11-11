@@ -1,0 +1,29 @@
+provider: crea
+apis_io: https://apis.io/providers/crea/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      id:
+      - ListingKey
+      - ListingId
+      address: UnparsedAddress
+      type: PropertySubType
+      status: StandardStatus
+      updated_at: ModificationTimestamp
+      city: City
+      description: PublicRemarks
+      bathrooms: BathroomsTotalInteger
+      postal_code: PostalCode
+      year_built: YearBuilt
+      bedrooms: BedroomsTotal
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/crea-realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property
+    - openapi/_original/crea-realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property/{PropertyKey}
+    - openapi/_original/crea-realtor-ca-ddf-web-api-swagger-endpoint-openapi.json#GET /odata/v1/Property
+    - openapi/_original/crea-realtor-ca-ddf-web-api-swagger-endpoint-openapi.json#GET /odata/v1/Property/{PropertyKey}
+    - openapi/_original/realtor-ca-ddf-web-api-docs-openapi.json#GET /odata/v1/Property

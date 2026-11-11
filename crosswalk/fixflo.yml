@@ -1,0 +1,22 @@
+provider: fixflo
+apis_io: https://apis.io/providers/fixflo/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    - properties
+    properties:
+      id:
+      - id
+      - Id
+      address: Address
+      property_id: PropertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fixflo-api-v2-openapi.yml#DELETE /Tenant/{Id}/Property/{PropertyId}
+    - openapi/_original/fixflo-api-v2-openapi.yml#GET /Property
+    - openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenant/{Id}/Properties
+    - openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenant/{Id}/Property/{PropertyId}
+    - openapi/_original/fixflo-api-v2-openapi.yml#POST /Property

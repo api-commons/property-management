@@ -1,0 +1,13 @@
+provider: avito
+apis_io: https://apis.io/providers/avito/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/avito-delivery-sandbox-openapi.json#POST /delivery-sandbox/order/properties

@@ -1,0 +1,85 @@
+provider: vaultre
+apis_io: https://apis.io/providers/vaultre/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    - properties
+    - property
+    properties:
+      id: id
+      address: address
+      name: name
+      type: type
+      updated_at: modified
+      description: description
+      year_built: yearBuilt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#DELETE /buildings/{id}
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#DELETE /properties/{id}
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /buildings
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /buildings/{id}
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /categories/property
+  lease:
+    path_segment:
+    - lease
+    - tenancies
+    properties:
+      id: id
+      start_date: leaseStart
+      property_id:
+      - building
+      - property
+      status: status
+      tenant_ids: tenants
+      type: type
+      updated_at: modified
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/holidayRental/lease
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/holidayRental/lease/{id}
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/residential/lease
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/residential/lease/{id}
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#POST /properties/holidayRental/lease
+  tenant:
+    path_segment:
+    - tenants
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#POST /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants
+    - openapi/_original/vaultre-api-v1-1-openapi.yml#PUT /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/tenancy/{tenancyid}/tenants/{id}
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants
+  work_order:
+    path_segment:
+    - maintenance
+    properties:
+      id: id
+      status: status
+      description: description
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#GET /maintenance
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#POST /properties/{propertyid}/lease/{lifeid}/maintenance
+  listing:
+    path_segment:
+    - listing
+    properties:
+      id: listingId
+      address: address
+      price: listingPrice
+      property_id: propertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vaultre-aggregator-api-v1-0-openapi.yml#POST /listing
+    - openapi/_original/vaultre-api-v1-2-openapi.yml#PUT /properties/{id}/sale/statusChange/listing
+    - openapi/_original/vaultre-api-v1-3-openapi.yml#PUT /properties/{id}/sale/statusChange/listing

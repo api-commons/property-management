@@ -1,0 +1,27 @@
+provider: hospitable
+apis_io: https://apis.io/providers/hospitable/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      address: address
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hospitable-openapi.yml#GET /properties
+    - openapi/_original/hospitable-openapi.yml#GET /properties/{uuid}
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: id
+      status: status
+      property_id: property_id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hospitable-openapi.yml#GET /listings

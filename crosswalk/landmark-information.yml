@@ -1,0 +1,13 @@
+provider: landmark-information
+apis_io: https://apis.io/providers/landmark-information/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      address: address
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/landmark-information-document-vault-api-openapi.yml#PATCH /{documentVaultId}/property

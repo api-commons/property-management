@@ -1,0 +1,14 @@
+provider: land-insight
+apis_io: https://apis.io/providers/land-insight/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      address: address
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/land-insight-api-openapi.yml#GET /properties/{uprn}
+    - openapi/_original/land-insight-api-openapi.yml#POST /properties

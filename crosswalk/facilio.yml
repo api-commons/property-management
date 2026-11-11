@@ -1,0 +1,20 @@
+provider: facilio
+apis_io: https://apis.io/providers/facilio/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - building
+    properties:
+      id: id
+      address: location
+      name: name
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/facilio-openapi.yml#DELETE /building/{id}
+    - openapi/_original/facilio-openapi.yml#GET /building
+    - openapi/_original/facilio-openapi.yml#GET /building/{id}
+    - openapi/_original/facilio-openapi.yml#PATCH /building/{id}
+    - openapi/_original/facilio-openapi.yml#POST /building

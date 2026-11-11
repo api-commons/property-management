@@ -1,0 +1,79 @@
+provider: propertyware
+apis_io: https://apis.io/providers/propertyware/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties:
+      id: id
+      address: address
+      name: name
+      type:
+      - category
+      - propertyType
+      - type
+      status: status
+      description: description
+      year_built: yearBuilt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/propertyware-openapi.json#DELETE /buildings/{buildingID}
+    - openapi/_original/propertyware-openapi.json#GET /buildings
+    - openapi/_original/propertyware-openapi.json#GET /buildings/{buildingID}
+    - openapi/_original/propertyware-openapi.json#POST /buildings
+    - openapi/_original/propertyware-openapi.json#POST /buildings/bulk
+  unit:
+    path_segment:
+    - units
+    properties:
+      id: id
+      number: name
+      property_id: buildingID
+      address: address
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/propertyware-openapi.json#DELETE /units/{unitID}
+    - openapi/_original/propertyware-openapi.json#GET /units
+    - openapi/_original/propertyware-openapi.json#GET /units/{unitID}
+    - openapi/_original/propertyware-openapi.json#POST /units
+    - openapi/_original/propertyware-openapi.json#POST /units/bulk
+  lease:
+    path_segment:
+    - leases
+    properties:
+      id: id
+      start_date:
+      - moveInDate
+      - startDate
+      end_date:
+      - endDate
+      - moveOutDate
+      property_id: buildingID
+      status: status
+      rent: baseRent
+      metadata: customFields
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/propertyware-openapi.json#DELETE /leases/{leaseID}
+    - openapi/_original/propertyware-openapi.json#GET /leases
+    - openapi/_original/propertyware-openapi.json#GET /leases/{leaseId}
+    - openapi/_original/propertyware-openapi.json#POST /leases
+    - openapi/_original/propertyware-openapi.json#PUT /leases/{leaseId}
+  work_order:
+    path_segment:
+    - workorders
+    properties:
+      id: id
+      status: status
+      description: description
+      property_id: buildingID
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/propertyware-openapi.json#DELETE /workorders/{workOrderID}
+    - openapi/_original/propertyware-openapi.json#GET /leases/{leaseId}/workorders
+    - openapi/_original/propertyware-openapi.json#GET /workorders
+    - openapi/_original/propertyware-openapi.json#GET /workorders/{workOrderId}
+    - openapi/_original/propertyware-openapi.json#POST /workorders

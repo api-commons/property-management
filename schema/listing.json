@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/property-management/main/schema/listing.json",
+  "title": "Listing",
+  "description": "The common listing in Property Management, distilled from 17 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.706,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "listingId",
+        "listing_id"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "address",
+        "location",
+        "street"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "status",
+        "listingStatus",
+        "state",
+        "ListingStatus"
+      ]
+    },
+    "price": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "price",
+        "listingPrice",
+        "asking_price"
+      ]
+    },
+    "property_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "propertyId",
+        "property_id",
+        "property"
+      ]
+    },
+    "property_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "type",
+        "propertyType",
+        "property_type",
+        "listingType"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "description",
+        "note"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "attributes",
+        "metadata"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "title",
+        "name"
+      ]
+    },
+    "photos": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "media",
+        "images",
+        "photos"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "property-management",
+    "concept": "listing",
+    "providers": 17,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

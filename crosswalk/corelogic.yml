@@ -1,0 +1,25 @@
+provider: corelogic
+apis_io: https://apis.io/providers/corelogic/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      id:
+      - ListingKey
+      - ListingId
+      type:
+      - PropertyType
+      - PropertySubType
+      status: StandardStatus
+      updated_at: ModificationTimestamp
+      city: City
+      bathrooms: BathroomsTotalInteger
+      postal_code: PostalCode
+      year_built: YearBuilt
+      bedrooms: BedroomsTotal
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/corelogic-trestle-reso-web-api-openapi.yml#GET /Property

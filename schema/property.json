@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/property-management/main/schema/property.json",
+  "title": "Property",
+  "description": "The common property in Property Management, distilled from 49 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.673,
+      "x-commons-providers": 33,
+      "x-commons-spellings": [
+        "id",
+        "ListingKey",
+        "ListingId",
+        "guid",
+        "uuid",
+        "Id",
+        "listingId"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.653,
+      "x-commons-providers": 32,
+      "x-commons-spellings": [
+        "address",
+        "location",
+        "UnparsedAddress",
+        "street",
+        "street_address",
+        "streetAddress",
+        "Address",
+        "fullAddress"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.449,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.449,
+      "x-commons-providers": 22,
+      "x-commons-spellings": [
+        "type",
+        "propertyType",
+        "PropertyType",
+        "PropertySubType",
+        "category",
+        "property_type"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.388,
+      "x-commons-providers": 19,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "StandardStatus"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.327,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "updatedAt",
+        "ModificationTimestamp",
+        "modified",
+        "updated_at",
+        "modifiedDate",
+        "updated",
+        "lastModified",
+        "updatedDate"
+      ],
+      "format": "date-time"
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.245,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "city",
+        "City"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.245,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "description",
+        "PublicRemarks"
+      ]
+    },
+    "bathrooms": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.224,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "bathrooms",
+        "BathroomsTotalInteger",
+        "num_bathrooms"
+      ]
+    },
+    "postal_code": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.224,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "zip",
+        "PostalCode",
+        "postcode",
+        "postal_code",
+        "zipCode",
+        "zip_code",
+        "postalCode"
+      ]
+    },
+    "year_built": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.224,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "yearBuilt",
+        "YearBuilt",
+        "year_built"
+      ]
+    },
+    "bedrooms": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.204,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "bedrooms",
+        "BedroomsTotal",
+        "beds"
+      ]
+    },
+    "property_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.204,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "propertyId",
+        "PropertyId",
+        "building_id",
+        "property_id",
+        "community_id"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "property-management",
+    "concept": "property",
+    "providers": 49,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

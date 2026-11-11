@@ -1,0 +1,13 @@
+provider: estated
+apis_io: https://apis.io/providers/estated/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      address: address
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/estated-property-data-api-openapi.yml#GET /v4/property

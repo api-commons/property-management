@@ -1,0 +1,21 @@
+provider: mashvisor
+apis_io: https://apis.io/providers/mashvisor/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mashvisor-openapi.yml#GET /client/property
+  listing:
+    path_segment:
+    - listings
+    - listing
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mashvisor-openapi.yml#GET /client/city/listings
+    - openapi/_original/mashvisor-openapi.yml#GET /client/neighborhood/{id}/traditional/listing

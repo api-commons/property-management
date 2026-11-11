@@ -1,0 +1,551 @@
+openapi: 3.1.0
+info:
+  title: Property Management (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Property Management interface, distilled from the harvested OpenAPI of 143 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /properties:
+    get:
+      operationId: listProperties
+      summary: List properties
+      tags:
+      - Properties
+      x-commons-tier: core
+      x-commons-share: 0.811
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Property'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createProperty
+      summary: Create a property
+      tags:
+      - Properties
+      x-commons-tier: extended
+      x-commons-share: 0.396
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /properties/{property_id}:
+    parameters:
+    - $ref: '#/components/parameters/property_id'
+    get:
+      operationId: getProperty
+      summary: Get a property
+      tags:
+      - Properties
+      x-commons-tier: core
+      x-commons-share: 0.717
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateProperty
+      summary: Update a property
+      tags:
+      - Properties
+      x-commons-tier: extended
+      x-commons-share: 0.208
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /units:
+    get:
+      operationId: listUnits
+      summary: List units
+      tags:
+      - Units
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Unit'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createUnit
+      summary: Create an unit
+      tags:
+      - Units
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /units/{unit_id}:
+    parameters:
+    - $ref: '#/components/parameters/unit_id'
+    get:
+      operationId: getUnit
+      summary: Get an unit
+      tags:
+      - Units
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateUnit
+      summary: Update an unit
+      tags:
+      - Units
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    delete:
+      operationId: deleteUnit
+      summary: Delete an unit
+      tags:
+      - Units
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /leases:
+    get:
+      operationId: listLeases
+      summary: List leases
+      tags:
+      - Leases
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Lease'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createLease
+      summary: Create a lease
+      tags:
+      - Leases
+      x-commons-tier: core
+      x-commons-share: 0.556
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /leases/{lease_id}:
+    parameters:
+    - $ref: '#/components/parameters/lease_id'
+    get:
+      operationId: getLease
+      summary: Get a lease
+      tags:
+      - Leases
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateLease
+      summary: Update a lease
+      tags:
+      - Leases
+      x-commons-tier: core
+      x-commons-share: 0.556
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    delete:
+      operationId: deleteLease
+      summary: Delete a lease
+      tags:
+      - Leases
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /tenants:
+    get:
+      operationId: listTenants
+      summary: List tenants
+      tags:
+      - Tenants
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Tenant'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTenant
+      summary: Create a tenant
+      tags:
+      - Tenants
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /tenants/{tenant_id}:
+    parameters:
+    - $ref: '#/components/parameters/tenant_id'
+    get:
+      operationId: getTenant
+      summary: Get a tenant
+      tags:
+      - Tenants
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deleteTenant
+      summary: Delete a tenant
+      tags:
+      - Tenants
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateTenant
+      summary: Update a tenant
+      tags:
+      - Tenants
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /work-orders:
+    get:
+      operationId: listWorkOrders
+      summary: List work orders
+      tags:
+      - Work Orders
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id005
+                  $ref: '#/components/schemas/WorkOrder'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createWorkOrder
+      summary: Create a work order
+      tags:
+      - Work Orders
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /work-orders/{work_order_id}:
+    parameters:
+    - $ref: '#/components/parameters/work_order_id'
+    get:
+      operationId: getWorkOrder
+      summary: Get a work order
+      tags:
+      - Work Orders
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+  /listings:
+    get:
+      operationId: listListings
+      summary: List listings
+      tags:
+      - Listings
+      x-commons-tier: core
+      x-commons-share: 0.684
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id006
+                  $ref: '#/components/schemas/Listing'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createListing
+      summary: Create a listing
+      tags:
+      - Listings
+      x-commons-tier: extended
+      x-commons-share: 0.421
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+  /listings/{listing_id}:
+    parameters:
+    - $ref: '#/components/parameters/listing_id'
+    get:
+      operationId: getListing
+      summary: Get a listing
+      tags:
+      - Listings
+      x-commons-tier: core
+      x-commons-share: 0.579
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+    patch:
+      operationId: updateListing
+      summary: Update a listing
+      tags:
+      - Listings
+      x-commons-tier: extended
+      x-commons-share: 0.211
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+components:
+  schemas:
+    Property:
+      $ref: ./schema/property.json
+    Unit:
+      $ref: ./schema/unit.json
+    Lease:
+      $ref: ./schema/lease.json
+    Tenant:
+      $ref: ./schema/tenant.json
+    WorkOrder:
+      $ref: ./schema/work_order.json
+    Listing:
+      $ref: ./schema/listing.json
+  parameters:
+    property_id:
+      name: property_id
+      in: path
+      required: true
+      schema:
+        type: string
+    unit_id:
+      name: unit_id
+      in: path
+      required: true
+      schema:
+        type: string
+    lease_id:
+      name: lease_id
+      in: path
+      required: true
+      schema:
+        type: string
+    tenant_id:
+      name: tenant_id
+      in: path
+      required: true
+      schema:
+        type: string
+    work_order_id:
+      name: work_order_id
+      in: path
+      required: true
+      schema:
+        type: string
+    listing_id:
+      name: listing_id
+      in: path
+      required: true
+      schema:
+        type: string

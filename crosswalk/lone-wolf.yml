@@ -1,0 +1,14 @@
+provider: lone-wolf
+apis_io: https://apis.io/providers/lone-wolf/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      name: name
+      type: type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lone-wolf-transactiondesk-api-openapi.yml#GET /v2/transactions/statuses/meta/properties

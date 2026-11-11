@@ -1,0 +1,26 @@
+provider: butterflymx
+apis_io: https://apis.io/providers/butterflymx/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/buildings
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/buildings/{id}
+    - openapi/_original/butterflymx-api-openapi.yml#GET /v4/buildings
+    - openapi/_original/butterflymx-api-openapi.yml#GET /v4/buildings/{id}
+  unit:
+    path_segment:
+    - units
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/butterflymx-api-openapi.json#DELETE /v4/buildings/{building_id}/units/{id}
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/units
+    - openapi/_original/butterflymx-api-openapi.json#GET /v4/units/{id}
+    - openapi/_original/butterflymx-api-openapi.json#POST /v4/access_groups/{id}/units
+    - openapi/_original/butterflymx-api-openapi.json#POST /v4/buildings/{building_id}/units

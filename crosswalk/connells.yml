@@ -1,0 +1,12 @@
+provider: connells
+apis_io: https://apis.io/providers/connells/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/connells-website-openapi.yml#GET /properties

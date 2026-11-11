@@ -1,0 +1,55 @@
+provider: domain-group
+apis_io: https://apis.io/providers/domain-group/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      address:
+      - address
+      - streetAddress
+      type: propertyType
+      status:
+      - status
+      - state
+      updated_at: updated
+      bathrooms: bathrooms
+      postal_code: postcode
+      year_built: yearBuilt
+      bedrooms: bedrooms
+      property_id: PropertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/properties/{id}
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties/{PropertyId}
+    - openapi/_original/domain-group-openapi-v1.json#GET /v1/properties/{id}
+    - openapi/_original/domain-group-openapi-v1.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: id
+      address: address
+      status:
+      - status
+      - listingStatus
+      - state
+      price: price
+      property_id: propertyId
+      property_type: propertyType
+      description: description
+      metadata: metadata
+      photos:
+      - media
+      - images
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/agencies/{id}/listings
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/agents/{id}/listings
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/listings/{id}
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/projects/{id}/listings
+    - openapi/_original/domain-group-openapi-latest.json#GET /v1/salesResults/{city}/listings

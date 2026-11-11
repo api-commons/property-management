@@ -1,0 +1,18 @@
+provider: coworkingview-api
+apis_io: https://apis.io/providers/coworkingview-api/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      address: address
+      name: title
+      updated_at: updatedAt
+      city: city
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/coworkingview-api-openapi.json#GET /v1/properties
+    - openapi/_original/coworkingview-api-openapi.json#GET /v1/properties/{slug}

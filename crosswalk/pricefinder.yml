@@ -1,0 +1,49 @@
+provider: pricefinder
+apis_io: https://apis.io/providers/pricefinder/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    - property
+    properties:
+      id: id
+      address:
+      - location
+      - address
+      - street
+      type: type
+      updated_at: lastModified
+      property_id: propertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pricefinder-api-swagger.json#DELETE /eventsubscriptions/property/{propertyId}
+    - openapi/_original/pricefinder-api-swagger.json#GET /eventsubscriptions/property/{propertyId}
+    - openapi/_original/pricefinder-api-swagger.json#GET /names/properties
+    - openapi/_original/pricefinder-api-swagger.json#GET /postcodes/{postcode}/properties
+    - openapi/_original/pricefinder-api-swagger.json#GET /properties/{propertyId}
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: id
+      address:
+      - street
+      - location
+      - address
+      status:
+      - status
+      - ListingStatus
+      price: price
+      property_id: property
+      property_type:
+      - propertyType
+      - type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pricefinder-api-swagger.json#GET /listings/{listingId}
+    - openapi/_original/pricefinder-api-swagger.json#GET /postcodes/{postcode}/listings
+    - openapi/_original/pricefinder-api-swagger.json#GET /properties/{propertyId}/radial/listings
+    - openapi/_original/pricefinder-api-swagger.json#GET /spatial/listings
+    - openapi/_original/pricefinder-api-swagger.json#GET /streets/{streetId}/listings

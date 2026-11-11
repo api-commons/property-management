@@ -1,0 +1,16 @@
+provider: beyond-pricing
+apis_io: https://apis.io/providers/beyond-pricing/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: id
+      property_type: type
+      metadata: attributes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/beyond-pricing-openapi.yml#GET /api/v1/listings/
+    - openapi/_original/beyond-pricing-openapi.yml#GET /api/v1/listings/{listing_id}/

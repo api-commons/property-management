@@ -1,0 +1,53 @@
+provider: zoopla
+apis_io: https://apis.io/providers/zoopla/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      type: propertyType
+      updated_at: modifiedDate
+      bathrooms: bathrooms
+      year_built: yearBuilt
+      bedrooms: bedrooms
+      property_id: propertyId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/alto-api-openapi.json#GET /listing/property/{propertyId}
+  lease:
+    path_segment:
+    - tenancies
+    properties:
+      id: id
+      start_date: startDate
+      end_date: endDate
+      property_id: propertyId
+      status: status
+      rent: rent
+      tenant_ids: tenants
+      updated_at: modifiedDate
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/alto-api-openapi.json#GET /inventory/{inventoryId}/tenancies
+    - openapi/_original/alto-api-openapi.json#GET /tenancies
+    - openapi/_original/alto-api-openapi.json#GET /tenancies/{tenancyId}
+    - openapi/_original/alto-api-openapi.json#PATCH /tenancies/{tenancyId}
+    - openapi/_original/alto-api-openapi.json#POST /inventory/{inventoryId}/tenancies
+  work_order:
+    path_segment:
+    - work-orders
+    properties:
+      id: id
+      status: status
+      description:
+      - description
+      - notes
+      property_id: propertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/alto-api-openapi.json#GET /inventory/{inventoryId}/work-orders
+    - openapi/_original/alto-api-openapi.json#GET /work-orders/{id}
+    - openapi/_original/alto-api-openapi.json#PATCH /work-orders/{id}
+    - openapi/_original/alto-api-openapi.json#POST /work-orders

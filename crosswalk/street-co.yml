@@ -1,0 +1,52 @@
+provider: street-co
+apis_io: https://apis.io/providers/street-co/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/street-co-open-api-openapi.json#GET /properties
+    - openapi/_original/street-co-open-api-openapi.json#GET /properties/{property_id}
+    - openapi/_original/street-co-open-api-openapi.json#PATCH /properties/{property_id}
+    - openapi/_original/street-co-open-api-openapi.yml#GET /properties
+    - openapi/_original/street-co-open-api-openapi.yml#GET /properties/{property_id}
+  lease:
+    path_segment:
+    - tenancies
+    properties:
+      id: id
+      metadata: attributes
+      type: type
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/street-co-open-api-openapi.json#GET /tenancies
+    - openapi/_original/street-co-open-api-openapi.json#GET /tenancies/{tenancy_id}
+    - openapi/_original/street-co-open-api-openapi.yml#GET /tenancies
+    - openapi/_original/street-co-open-api-openapi.yml#GET /tenancies/{tenancy_id}
+  tenant:
+    path_segment:
+    - tenants
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/street-co-open-api-openapi.json#GET /tenants
+    - openapi/_original/street-co-open-api-openapi.json#GET /tenants/{tenant_id}
+    - openapi/_original/street-co-open-api-openapi.yml#GET /tenants
+    - openapi/_original/street-co-open-api-openapi.yml#GET /tenants/{tenant_id}
+  work_order:
+    path_segment:
+    - maintenance-requests
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/street-co-open-api-openapi.json#POST /maintenance-requests
+    - openapi/_original/street-co-open-api-openapi.yml#POST /maintenance-requests

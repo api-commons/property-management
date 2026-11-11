@@ -1,0 +1,1140 @@
+[
+ {
+  "slug": "1000satellitescoworking",
+  "specs": [
+   "openapi/_original/1000satellitescoworking-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "91squarefeet",
+  "specs": [
+   "openapi/_original/91squarefeet-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "accruent",
+  "specs": [
+   "openapi/_original/accruent-maintenance-connection-openapi.yml",
+   "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "aedifion",
+  "specs": [
+   "openapi/_original/aedifion-openapi.json",
+   "openapi/_original/aedifion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "agora-real-estate",
+  "specs": [
+   "openapi/_original/agora-real-estate-wp-json-route-index.json"
+  ]
+ },
+ {
+  "slug": "airdna",
+  "specs": [
+   "openapi/_original/airdna-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alasco",
+  "specs": [
+   "openapi/_original/alasco-capex-openapi.json",
+   "openapi/_original/alasco-esg-openapi.json",
+   "openapi/_original/alasco-fincon-openapi.json"
+  ]
+ },
+ {
+  "slug": "alterestate",
+  "specs": [
+   "openapi/_original/alterestate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alto-vebra",
+  "specs": [
+   "openapi/_original/alto-api-openapi.json",
+   "openapi/_original/zoopla-leads-api-openapi.json",
+   "openapi/_original/zoopla-premium-listing-activations-openapi.json",
+   "openapi/_original/zoopla-weekly-featured-property-openapi.json"
+  ]
+ },
+ {
+  "slug": "apaleo",
+  "specs": [
+   "openapi/_original/apaleo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aptly",
+  "specs": [
+   "openapi/_original/aptly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "argus-enterprise",
+  "specs": [
+   "openapi/_original/argus-enterprise-core-openapi.yml",
+   "openapi/_original/argus-enterprise-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "attomdata",
+  "specs": [
+   "openapi/_original/attom-area-api-openapi.yml",
+   "openapi/_original/attom-community-api-openapi.yml",
+   "openapi/_original/attom-parcel-tiles-api-openapi.yml",
+   "openapi/_original/attom-poi-api-openapi.yml",
+   "openapi/_original/attom-property-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "avito",
+  "specs": [
+   "openapi/_original/avito-accounts-hierarchy-openapi.json",
+   "openapi/_original/avito-ads-openapi.json",
+   "openapi/_original/avito-auction-openapi.json",
+   "openapi/_original/avito-auth-openapi.json",
+   "openapi/_original/avito-autoload-openapi.json",
+   "openapi/_original/avito-autostrategy-openapi.json",
+   "openapi/_original/avito-autoteka-openapi.json",
+   "openapi/_original/avito-avito-promo-openapi.json",
+   "openapi/_original/avito-calltracking-openapi.json",
+   "openapi/_original/avito-cpa-openapi.json",
+   "openapi/_original/avito-cpxpromo-openapi.json",
+   "openapi/_original/avito-delivery-sandbox-openapi.json",
+   "openapi/_original/avito-item-openapi.json",
+   "openapi/_original/avito-job-openapi.json",
+   "openapi/_original/avito-messenger-openapi.json",
+   "openapi/_original/avito-order-management-openapi.json",
+   "openapi/_original/avito-promotion-openapi.json",
+   "openapi/_original/avito-ratings-openapi.json",
+   "openapi/_original/avito-realty-reports-openapi.json",
+   "openapi/_original/avito-sbc-gateway-openapi.json",
+   "openapi/_original/avito-stock-management-openapi.json",
+   "openapi/_original/avito-str-openapi.json",
+   "openapi/_original/avito-tariff-openapi.json",
+   "openapi/_original/avito-trxpromo-openapi.json",
+   "openapi/_original/avito-user-openapi.json"
+  ]
+ },
+ {
+  "slug": "beyond-pricing",
+  "specs": [
+   "openapi/_original/beyond-pricing-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bilt",
+  "specs": [
+   "openapi/_original/checkout-sdk.yml"
+  ]
+ },
+ {
+  "slug": "boston-properties",
+  "specs": [
+   "openapi/_original/boston-properties-wordpress-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bounti",
+  "specs": [
+   "openapi/_original/bounti-content-api-openapi.json",
+   "openapi/_original/bounti-openapi.json"
+  ]
+ },
+ {
+  "slug": "bridge-interactive",
+  "specs": [
+   "openapi/_original/bridge-interactive-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bright-mls",
+  "specs": [
+   "openapi/_original/bright-mls-data-hub-ingestion-service-openapi.yml",
+   "openapi/_original/bright-mls-datalake-distribution-service-openapi.json",
+   "openapi/_original/bright-mls-manifest-services-openapi.json"
+  ]
+ },
+ {
+  "slug": "bungalow",
+  "specs": [
+   "openapi/_original/bungalow-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "butterflymx",
+  "specs": [
+   "openapi/_original/butterflymx-api-openapi.json",
+   "openapi/_original/butterflymx-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cbre",
+  "specs": [
+   "openapi/_original/cbre-cbre-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "certifid",
+  "specs": [
+   "openapi/_original/certifid-v2-apis-openapi.json"
+  ]
+ },
+ {
+  "slug": "cherre",
+  "specs": [
+   "openapi/_original/cherre-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clear-capital",
+  "specs": [
+   "openapi/_original/clear-capital-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudbeds",
+  "specs": [
+   "openapi/_original/cloudbeds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudkitchens",
+  "specs": [
+   "openapi/_original/cloudkitchens-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cobot",
+  "specs": [
+   "openapi/_original/cobot-api2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "connells",
+  "specs": [
+   "openapi/_original/connells-website-openapi.yml"
+  ]
+ },
+ {
+  "slug": "corelogic",
+  "specs": [
+   "openapi/_original/corelogic-direct-webapi-crm-openapi.yml",
+   "openapi/_original/corelogic-trestle-reso-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coworkingview-api",
+  "specs": [
+   "openapi/_original/coworkingview-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "crea",
+  "specs": [
+   "openapi/_original/crea-realtor-ca-board-api-openapi.json",
+   "openapi/_original/crea-realtor-ca-ddf-web-api-openapi.json",
+   "openapi/_original/crea-realtor-ca-ddf-web-api-swagger-endpoint-openapi.json"
+  ]
+ },
+ {
+  "slug": "delos",
+  "specs": [
+   "openapi/_original/delos-wellcube-cloud-be-openapi-original.json",
+   "openapi/_original/delos-wellcube-cloud-be-openapi.yml"
+  ]
+ },
+ {
+  "slug": "domain-group",
+  "specs": [
+   "openapi/_original/domain-group-openapi-latest.json",
+   "openapi/_original/domain-group-openapi-v1.json",
+   "openapi/_original/domain-group-openapi-v2.json"
+  ]
+ },
+ {
+  "slug": "door",
+  "specs": [
+   "openapi/_original/door-authentication-openapi.json",
+   "openapi/_original/door-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "doorloop",
+  "specs": [
+   "openapi/_original/doorloop-api-reference-openapi.yml",
+   "openapi/_original/doorloop-api-reference-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "dotloop",
+  "specs": [
+   "openapi/_original/dotloop-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eagleview",
+  "specs": [
+   "openapi/_original/measurement-orders-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "estated",
+  "specs": [
+   "openapi/_original/estated-property-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "facilio",
+  "specs": [
+   "openapi/_original/facilio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "findigs",
+  "specs": [
+   "openapi/_original/findigs-client-api-openapi.json",
+   "openapi/_original/findigs-client-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "first-american-financial",
+  "specs": [
+   "openapi/_original/first-american-financial-4506c-openapi.json",
+   "openapi/_original/first-american-financial-4506c-openapi.yml",
+   "openapi/_original/first-american-financial-bankruptcy-openapi.json",
+   "openapi/_original/first-american-financial-bankruptcy-openapi.yml",
+   "openapi/_original/first-american-financial-clearsearch-openapi.json",
+   "openapi/_original/first-american-financial-clearsearch-openapi.yml",
+   "openapi/_original/first-american-financial-identity-openapi.json",
+   "openapi/_original/first-american-financial-identity-openapi.yml",
+   "openapi/_original/first-american-financial-income-estimate-openapi.json",
+   "openapi/_original/first-american-financial-income-estimate-openapi.yml",
+   "openapi/_original/first-american-financial-liens-judgments-fcra-openapi.json",
+   "openapi/_original/first-american-financial-liens-judgments-fcra-openapi.yml",
+   "openapi/_original/first-american-financial-liens-judgments-non-fcra-openapi.json",
+   "openapi/_original/first-american-financial-liens-judgments-non-fcra-openapi.yml",
+   "openapi/_original/first-american-financial-nmls-openapi.json",
+   "openapi/_original/first-american-financial-nmls-openapi.yml",
+   "openapi/_original/first-american-financial-occupancy-openapi.json",
+   "openapi/_original/first-american-financial-occupancy-openapi.yml",
+   "openapi/_original/first-american-financial-ownership-openapi.json",
+   "openapi/_original/first-american-financial-ownership-openapi.yml",
+   "openapi/_original/first-american-financial-property-openapi.json",
+   "openapi/_original/first-american-financial-property-openapi.yml",
+   "openapi/_original/first-american-financial-reverse-address-openapi.json",
+   "openapi/_original/first-american-financial-reverse-address-openapi.yml",
+   "openapi/_original/first-american-financial-reverse-phone-openapi.json",
+   "openapi/_original/first-american-financial-reverse-phone-openapi.yml",
+   "openapi/_original/first-american-financial-scra-openapi.json",
+   "openapi/_original/first-american-financial-scra-openapi.yml",
+   "openapi/_original/first-american-financial-title-settlement-openapi.json",
+   "openapi/_original/first-american-financial-title-settlement-openapi.yml",
+   "openapi/_original/first-american-financial-watchlist-openapi.json",
+   "openapi/_original/first-american-financial-watchlist-openapi.yml"
+  ]
+ },
+ {
+  "slug": "first-street",
+  "specs": [
+   "openapi/_original/first-street-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fixflo",
+  "specs": [
+   "openapi/_original/fixflo-api-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flatin-pt",
+  "specs": [
+   "openapi/_original/flatin-pt-openapi.json"
+  ]
+ },
+ {
+  "slug": "flueid",
+  "specs": [
+   "openapi/_original/flueid-pro-openapi-original.json",
+   "openapi/_original/flueid-pro-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fund-that-flip",
+  "specs": [
+   "openapi/_original/fund-that-flip-flipperforce-public-api.json",
+   "openapi/_original/fund-that-flip-flipperforce-public-api.yml"
+  ]
+ },
+ {
+  "slug": "fundrise",
+  "specs": [
+   "openapi/_original/fundrise-connect-openapi.json",
+   "openapi/_original/fundrise-connect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goodlord",
+  "specs": [
+   "openapi/_original/goodlord-insurance-app-api-openapi.json",
+   "openapi/_original/goodlord-referencing-api-openapi.json",
+   "openapi/_original/goodlord-referencing-api-sandbox-openapi.json"
+  ]
+ },
+ {
+  "slug": "guestready",
+  "specs": [
+   "openapi/_original/guestready-rentalready-openapi.yml",
+   "openapi/_original/guestready-rentalready-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "hm-land-registry",
+  "specs": [
+   "openapi/_original/hm-land-registry-estimate-completion-date-openapi.yml",
+   "openapi/_original/hm-land-registry-land-register-api-openapi.yml",
+   "openapi/_original/hm-land-registry-official-copy-document-availability-v1-customer-test-openapi.json",
+   "openapi/_original/hm-land-registry-official-copy-document-availability-v1-openapi.json",
+   "openapi/_original/hm-land-registry-official-copy-document-availability-v2-customer-test-openapi.json",
+   "openapi/_original/hm-land-registry-official-copy-document-availability-v2-openapi.json",
+   "openapi/_original/hm-land-registry-official-search-of-whole-with-data-openapi.yml",
+   "openapi/_original/hm-land-registry-registered-proprietor-names-openapi.json",
+   "openapi/_original/hm-land-registry-submit-application-to-change-the-register-v0.3-openapi.json",
+   "openapi/_original/hm-land-registry-submit-application-to-change-the-register-v1.0-openapi.json",
+   "openapi/_original/hm-land-registry-use-land-property-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "holidu",
+  "specs": [
+   "openapi/_original/holidu-affiliate-api.json",
+   "openapi/_original/holidu-connectivity-api.json",
+   "openapi/_original/holidu-hapi-with-oauth20.json",
+   "openapi/_original/holidu-security-service-with-client-credentials.json",
+   "openapi/_original/holidu-security-service-with-tokens.json"
+  ]
+ },
+ {
+  "slug": "homads",
+  "specs": [
+   "openapi/_original/homads-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hometrack",
+  "specs": [
+   "openapi/_original/hometrack-api-public-openapi.yml",
+   "openapi/_original/hometrack-broker-avm-api-openapi.yml",
+   "openapi/_original/hometrack-climate-api-v2-openapi.yml",
+   "openapi/_original/hometrack-climate-graphql-api-openapi.yml",
+   "openapi/_original/hometrack-prh-core-external-client-api-v2-openapi.yml",
+   "openapi/_original/hometrack-valuation-api-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hospitable",
+  "specs": [
+   "openapi/_original/hospitable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hostfully",
+  "specs": [
+   "openapi/_original/hostfully-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "housesigma",
+  "specs": [
+   "openapi/_original/housesigma-blog-content-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ingest0r-com",
+  "specs": [
+   "openapi/_original/ingest0r-com-openapi.json",
+   "openapi/_original/ingest0r-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "innago",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "interhyp",
+  "specs": [
+   "openapi/_original/interhyp-submission-documents-openapi.yml",
+   "openapi/_original/interhyp-submission-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jones-lang-lasalle",
+  "specs": [
+   "openapi/_original/jones-lang-lasalle-corrigo-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "keller-williams",
+  "specs": [
+   "openapi/_original/keller-williams-listings-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "land-insight",
+  "specs": [
+   "openapi/_original/land-insight-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "landcor",
+  "specs": [
+   "openapi/_original/landcor-property-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "landing",
+  "specs": [
+   "openapi/_original/landing-public-openapi.json"
+  ]
+ },
+ {
+  "slug": "landmark-information",
+  "specs": [
+   "openapi/_original/landmark-information-conveyancing-experience-api-openapi.yml",
+   "openapi/_original/landmark-information-document-vault-api-openapi.yml",
+   "openapi/_original/landmark-information-intelliworks-api-openapi.yml",
+   "openapi/_original/landmark-information-milestone-notification-service-api-openapi.yml",
+   "openapi/_original/landmark-information-order-experience-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leaseaccelerator",
+  "specs": [
+   "openapi/_original/leaseaccelerator-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lev",
+  "specs": [
+   "openapi/_original/lev-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lightbox",
+  "specs": [
+   "openapi/_original/lightbox-zoning-api-zoning-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lightbox-zoning-api",
+  "specs": [
+   "openapi/_original/lightbox-zoning-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lodgify",
+  "specs": [
+   "openapi/_original/lodgify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lokki",
+  "specs": [
+   "openapi/_original/lokki-dashboard-api-openapi.json",
+   "openapi/_original/lokki-external-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "lone-wolf",
+  "specs": [
+   "openapi/_original/lone-wolf-back-office-online-api-openapi.yml",
+   "openapi/_original/lone-wolf-deals-api-openapi.yml",
+   "openapi/_original/lone-wolf-transact-api-openapi.yml",
+   "openapi/_original/lone-wolf-transactiondesk-api-openapi.yml",
+   "openapi/_original/lone-wolf-wolfconnect-api-openapi.yml",
+   "openapi/_original/lone-wolf-zipform-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "luxury-presence",
+  "specs": [
+   "openapi/_original/luxury-presence-cms-openapi.json"
+  ]
+ },
+ {
+  "slug": "mashvisor",
+  "specs": [
+   "openapi/_original/mashvisor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "measurabl",
+  "specs": [
+   "openapi/_original/measurabl-core-openapi.json",
+   "openapi/_original/measurabl-core-openapi.yml",
+   "openapi/_original/measurabl-esgx-buildings-openapi.json",
+   "openapi/_original/measurabl-esgx-buildings-openapi.yml",
+   "openapi/_original/measurabl-esgx-securities-compliance-files-openapi.json",
+   "openapi/_original/measurabl-esgx-securities-compliance-files-openapi.yml",
+   "openapi/_original/measurabl-esgx-securities-openapi.json",
+   "openapi/_original/measurabl-esgx-securities-openapi.yml",
+   "openapi/_original/measurabl-partners-openapi.json",
+   "openapi/_original/measurabl-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mews-com",
+  "specs": [
+   "openapi/_original/mews-booking-engine-api-openapi.yml",
+   "openapi/_original/mews-connector-api-openapi.yml",
+   "openapi/_original/mews-distributor-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microburbs",
+  "specs": [
+   "openapi/_original/microburbs-openapi.json"
+  ]
+ },
+ {
+  "slug": "mlsgrid",
+  "specs": [
+   "openapi/_original/mlsgrid-reso-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "movehome-org",
+  "specs": [
+   "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "mri-software",
+  "specs": [
+   "openapi/_original/mri-software-onlocation-openapi.json",
+   "openapi/_original/mri-software-onlocation-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nar",
+  "specs": [
+   "openapi/_original/nar-m1-gateway-external-openapi.json"
+  ]
+ },
+ {
+  "slug": "navigate",
+  "specs": [
+   "openapi/_original/navigate-openapi.json"
+  ]
+ },
+ {
+  "slug": "neuehouse",
+  "specs": [
+   "openapi/_original/neuehouse-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "notarize",
+  "specs": [
+   "openapi/_original/notarize-logs-api-specification-openapi.yml",
+   "openapi/_original/notarize-logs-api-specification-readme-slices.json",
+   "openapi/_original/notarize-oauth-2-0-api-specification-openapi.yml",
+   "openapi/_original/notarize-oauth-2-0-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-business-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-business-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-real-estate-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-real-estate-api-specification-readme-slices.json",
+   "openapi/_original/notarize-proof-verifiable-credentials-api-specification-openapi.yml",
+   "openapi/_original/notarize-proof-verifiable-credentials-api-specification-readme-slices.json",
+   "openapi/_original/notarize-scim-api-specification-openapi.yml",
+   "openapi/_original/notarize-scim-api-specification-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "offendersearch-api",
+  "specs": [
+   "openapi/_original/offendersearch-api-openapi.json",
+   "openapi/_original/offendersearch-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "offerpad",
+  "specs": [
+   "openapi/_original/offerpad-wordpress-wp-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "one-concern",
+  "specs": [
+   "openapi/_original/one-concern-domino-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "oper-credits",
+  "specs": [
+   "openapi/_original/oper-credits-api-openapi.json",
+   "openapi/_original/oper-credits-loan-request-webhook-openapi.json",
+   "openapi/_original/oper-credits-metrics-openapi.json",
+   "openapi/_original/oper-credits-resources-openapi.json"
+  ]
+ },
+ {
+  "slug": "oracle-hospitality",
+  "specs": [
+   "openapi/_original/oracle-hospitality-distribution-outbound-aripublication.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-lookup.json",
+   "openapi/_original/oracle-hospitality-distribution-outbound-notification.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-book.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-content.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-controls.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-distribution.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-hdpbaoauth2.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-onboard.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-resnotif.json",
+   "openapi/_original/oracle-hospitality-distribution-v1-shop.json",
+   "openapi/_original/oracle-hospitality-nor1-v1-upselloffers.json",
+   "openapi/_original/oracle-hospitality-property-outbound-crmoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-cshoutbound.json",
+   "openapi/_original/oracle-hospitality-property-outbound-fofoutbound.json",
+   "openapi/_original/oracle-hospitality-property-v1-act.json",
+   "openapi/_original/oracle-hospitality-property-v1-actcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-ars.json",
+   "openapi/_original/oracle-hospitality-property-v1-blk.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-blkcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-bof.json",
+   "openapi/_original/oracle-hospitality-property-v1-chl.json",
+   "openapi/_original/oracle-hospitality-property-v1-cms.json",
+   "openapi/_original/oracle-hospitality-property-v1-crm.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-crmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-csh.json",
+   "openapi/_original/oracle-hospitality-property-v1-cshasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-dvm.json",
+   "openapi/_original/oracle-hospitality-property-v1-ecommtokenization.json",
+   "openapi/_original/oracle-hospitality-property-v1-entcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-evm.json",
+   "openapi/_original/oracle-hospitality-property-v1-evmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-expcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-fof.json",
+   "openapi/_original/oracle-hospitality-property-v1-fofcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-hsk.json",
+   "openapi/_original/oracle-hospitality-property-v1-int.json",
+   "openapi/_original/oracle-hospitality-property-v1-intcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-inv.json",
+   "openapi/_original/oracle-hospitality-property-v1-invasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-lms.json",
+   "openapi/_original/oracle-hospitality-property-v1-lov.json",
+   "openapi/_original/oracle-hospitality-property-v1-medcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-oauth.json",
+   "openapi/_original/oracle-hospitality-property-v1-ops.json",
+   "openapi/_original/oracle-hospitality-property-v1-par.json",
+   "openapi/_original/oracle-hospitality-property-v1-parasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-repcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmr.json",
+   "openapi/_original/oracle-hospitality-property-v1-rmrcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsv.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-rsvcfg.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtp.json",
+   "openapi/_original/oracle-hospitality-property-v1-rtpasync.json",
+   "openapi/_original/oracle-hospitality-property-v1-tokenexchange.json"
+  ]
+ },
+ {
+  "slug": "ordnance-survey",
+  "specs": [
+   "openapi/_original/ordnance-survey-downloads-openapi.yaml",
+   "openapi/_original/ordnance-survey-features-wfs-openapi.json",
+   "openapi/_original/ordnance-survey-linked-identifiers-openapi.json",
+   "openapi/_original/ordnance-survey-maps-openapi.json",
+   "openapi/_original/ordnance-survey-names-openapi.json",
+   "openapi/_original/ordnance-survey-ngd-features-openapi.json",
+   "openapi/_original/ordnance-survey-ngd-tiles-openapi.json",
+   "openapi/_original/ordnance-survey-osnet-openapi.yaml",
+   "openapi/_original/ordnance-survey-places-openapi.json",
+   "openapi/_original/ordnance-survey-vector-tile-openapi.json"
+  ]
+ },
+ {
+  "slug": "outdoorsy",
+  "specs": [
+   "openapi/_original/outdoorsy-openapi-original.json",
+   "openapi/_original/outdoorsy-search-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ownerrez",
+  "specs": [
+   "openapi/_original/ownerrez-openapi.yml"
+  ]
+ },
+ {
+  "slug": "perchwell",
+  "specs": [
+   "openapi/_original/perchwell-json-api-openapi.yml",
+   "openapi/_original/perchwell-reso-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pexa",
+  "specs": [
+   "openapi/_original/pexa-exchange-api-legacy-swagger.json",
+   "openapi/_original/pexa-exchange-api-swagger.json",
+   "openapi/_original/pexa-notification-service-openapi.yaml",
+   "openapi/_original/pexa-plus-marketplace-b2b-api-oas300-openapi.yaml",
+   "openapi/_original/pexa-plus-marketplace-b2b-api-openapi.yaml",
+   "openapi/_original/pexa-projects-api-v4-openapi.yaml",
+   "openapi/_original/pexa-standalone-discharge-experience-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "placer",
+  "specs": [
+   "openapi/_original/placer-papi-openapi.json"
+  ]
+ },
+ {
+  "slug": "planradar",
+  "specs": [
+   "openapi/_original/planradar-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pricefinder",
+  "specs": [
+   "openapi/_original/pricefinder-api-swagger.json",
+   "openapi/_original/pricefinder-api-swagger.yml"
+  ]
+ },
+ {
+  "slug": "propertyme",
+  "specs": [
+   "openapi/_original/propertyme-openapi.json"
+  ]
+ },
+ {
+  "slug": "propertyware",
+  "specs": [
+   "openapi/_original/propertyware-openapi.json"
+  ]
+ },
+ {
+  "slug": "purplebricks",
+  "specs": [
+   "openapi/_original/purplebricks-account-v1-openapi.yml",
+   "openapi/_original/purplebricks-account-v1-swagger.json",
+   "openapi/_original/purplebricks-agent-v1-openapi.yml",
+   "openapi/_original/purplebricks-agent-v1-swagger.json",
+   "openapi/_original/purplebricks-branch-v1-openapi.yml",
+   "openapi/_original/purplebricks-branch-v1-swagger.json",
+   "openapi/_original/purplebricks-communications-v1-openapi.yml",
+   "openapi/_original/purplebricks-communications-v1-swagger.json",
+   "openapi/_original/purplebricks-conveyancing-v1-openapi.yml",
+   "openapi/_original/purplebricks-conveyancing-v1-swagger.json",
+   "openapi/_original/purplebricks-feedback-v1-openapi.yml",
+   "openapi/_original/purplebricks-feedback-v1-swagger.json",
+   "openapi/_original/purplebricks-lettings-v1-openapi.yml",
+   "openapi/_original/purplebricks-lettings-v1-swagger.json",
+   "openapi/_original/purplebricks-messaging-v1-openapi.yml",
+   "openapi/_original/purplebricks-messaging-v1-swagger.json",
+   "openapi/_original/purplebricks-messaging-v2-openapi.yml",
+   "openapi/_original/purplebricks-messaging-v2-swagger.json",
+   "openapi/_original/purplebricks-outlook-v1-openapi.yml",
+   "openapi/_original/purplebricks-outlook-v1-swagger.json",
+   "openapi/_original/purplebricks-property-v1-openapi.yml",
+   "openapi/_original/purplebricks-property-v1-swagger.json",
+   "openapi/_original/purplebricks-property-v2-openapi.yml",
+   "openapi/_original/purplebricks-property-v2-swagger.json",
+   "openapi/_original/purplebricks-valuations-v1-openapi.yml",
+   "openapi/_original/purplebricks-valuations-v1-swagger.json",
+   "openapi/_original/purplebricks-valuations-v2-openapi.yml",
+   "openapi/_original/purplebricks-valuations-v2-swagger.json",
+   "openapi/_original/purplebricks-viewings-v1-openapi.yml",
+   "openapi/_original/purplebricks-viewings-v1-swagger.json",
+   "openapi/_original/purplebricks-workflow-v1-openapi.yml",
+   "openapi/_original/purplebricks-workflow-v1-swagger.json"
+  ]
+ },
+ {
+  "slug": "rea-group",
+  "specs": [
+   "openapi/_original/rea-group-address-openapi.yml",
+   "openapi/_original/rea-group-coming-soon-openapi.yml",
+   "openapi/_original/rea-group-disclaimers-openapi.yml",
+   "openapi/_original/rea-group-listings-openapi.yml",
+   "openapi/_original/rea-group-market-openapi.yml",
+   "openapi/_original/rea-group-oauth-openapi.yml",
+   "openapi/_original/rea-group-properties-openapi.yml",
+   "openapi/_original/rea-group-reports-openapi.yml",
+   "openapi/_original/rea-group-transactions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "realestateapi",
+  "specs": [
+   "openapi/_original/realestateapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "realtor",
+  "specs": [
+   "openapi/_original/realtor-property-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "realtor-ca",
+  "specs": [
+   "openapi/_original/realtor-ca-ddf-web-api-docs-openapi.json",
+   "openapi/_original/realtor-ca-ddf-web-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "redfin",
+  "specs": [
+   "openapi/_original/redfin-data-center-openapi.yml",
+   "openapi/_original/redfin-gis-csv-api-openapi.yml",
+   "openapi/_original/redfin-stingray-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "regrid",
+  "specs": [
+   "openapi/_original/regrid-parcel-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rentberry",
+  "specs": [
+   "openapi/_original/rentberry-openapi.json",
+   "openapi/_original/rentberry-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rentcast",
+  "specs": [
+   "openapi/_original/rentcast-openapi.json"
+  ]
+ },
+ {
+  "slug": "rentcheck",
+  "specs": [
+   "openapi/_original/rentcheck-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "rentle",
+  "specs": [
+   "openapi/_original/rentle-admin-openapi.json"
+  ]
+ },
+ {
+  "slug": "reonomy",
+  "specs": [
+   "openapi/_original/reonomy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rhino",
+  "specs": [
+   "openapi/_original/rhino-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "rics",
+  "specs": [
+   "openapi/_original/rics-digitalcommunity-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "rightmove",
+  "specs": [
+   "openapi/_original/rightmove-commercial-listings-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sex-offenders-api",
+  "specs": [
+   "openapi/_original/sex-offenders-api-openapi.yml",
+   "openapi/_original/sex-offenders-api-v5-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shovels",
+  "specs": [
+   "openapi/_original/shovels-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signsealship",
+  "specs": [
+   "openapi/_original/signsealship-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "silvercar",
+  "specs": [
+   "openapi/_original/silvercar-mob-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "skyslope",
+  "specs": [
+   "openapi/_original/skyslope-forms-partnership-openapi.yml",
+   "openapi/_original/skyslope-offers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "snappt",
+  "specs": [
+   "openapi/_original/snappt-enterprise-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sprift",
+  "specs": [
+   "openapi/_original/sprift-openapi.json"
+  ]
+ },
+ {
+  "slug": "steadily",
+  "specs": [
+   "openapi/_original/steadily-estimate-api-openapi-original.json",
+   "openapi/_original/steadily-partner-openapi-original.json",
+   "openapi/_original/steadily-rater-quotes-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "street-co",
+  "specs": [
+   "openapi/_original/street-co-open-api-openapi.json",
+   "openapi/_original/street-co-open-api-openapi.yml",
+   "openapi/_original/street-co-property-feed-api-openapi.json",
+   "openapi/_original/street-co-property-feed-api-openapi.yml",
+   "openapi/_original/street-co-spectre-api-openapi.json",
+   "openapi/_original/street-co-spectre-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "taylor-morrison-home",
+  "specs": [
+   "openapi/_original/taylor-morrison-home-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "topi",
+  "specs": [
+   "openapi/_original/topi-seller-api-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "trellistech",
+  "specs": [
+   "openapi/_original/trellistech-public-api.json"
+  ]
+ },
+ {
+  "slug": "twentyci",
+  "specs": [
+   "openapi/_original/twentyci-twentyapi-oauth-openapi.json",
+   "openapi/_original/twentyci-twentyapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "unlock",
+  "specs": [
+   "openapi/_original/unlock-editorial-api-openapi.yml",
+   "openapi/_original/unlock-site-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vantaca",
+  "specs": [
+   "openapi/_original/vantaca-openapi.json"
+  ]
+ },
+ {
+  "slug": "vaultre",
+  "specs": [
+   "openapi/_original/vaultre-aggregator-api-v1-0-openapi.yml",
+   "openapi/_original/vaultre-api-v1-1-openapi.yml",
+   "openapi/_original/vaultre-api-v1-2-openapi.yml",
+   "openapi/_original/vaultre-api-v1-3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vergesense",
+  "specs": [
+   "openapi/_original/vergesense-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "vts",
+  "specs": [
+   "openapi/_original/vts-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wahi",
+  "specs": [
+   "openapi/_original/wahi-listing-search-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "walk-score",
+  "specs": [
+   "openapi/_original/walk-score-openapi.yml",
+   "openapi/_original/walk-score-transit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wegowise",
+  "specs": [
+   "openapi/_original/wegowise-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yardi",
+  "specs": [
+   "openapi/_original/yardi-voyager-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yardi-canada",
+  "specs": [
+   "openapi/_original/yardi-canada-status-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yatmo",
+  "specs": [
+   "openapi/_original/yatmo-openapi.json"
+  ]
+ },
+ {
+  "slug": "zillapi",
+  "specs": [
+   "openapi/_original/zillapi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "zoopla",
+  "specs": [
+   "openapi/_original/zoopla-leads-api-openapi.json",
+   "openapi/_original/zoopla-premium-listing-activations-openapi.json",
+   "openapi/_original/zoopla-weekly-featured-property-activations-openapi.json"
+  ]
+ }
+]

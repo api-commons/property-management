@@ -1,0 +1,20 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listing
+    - listings
+    properties:
+      id:
+      - id
+      - listing_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /autoscout24/v1/listing
+    - openapi/_original/reefapi-openapi.json#POST /etsy/v1/reviews/listing
+    - openapi/_original/reefapi-openapi.json#POST /etsy/v1/shops/listings
+    - openapi/_original/reefapi-openapi.json#POST /kleinanzeigen/v1/listing
+    - openapi/_original/reefapi-openapi.json#POST /magiceden/v1/listings

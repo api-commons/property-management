@@ -1,0 +1,115 @@
+context: property-management
+name: Property Management
+intro: >-
+  The common property vocabulary -- properties and the units in them, the leases that let
+  them, the tenants who live there, the work orders that maintain them and the listings
+  that market them -- distilled from the APIs that already exist.
+tags: [Property Management, PropTech, Rentals, Real Estate, Commercial Real Estate, Multifamily]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, "@odata.context", "@odata.nextLink"]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, remote_id, listing_key, listing_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, listing_contract_date]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, modification_timestamp]
+  metadata: [meta_data, custom_fields, custom, attributes, properties]
+  status: [state, standard_status, lease_status, unit_status, listing_status, mls_status]
+  name: [title, display_name, label, property_name, building_name]
+  description: [notes, note, details, public_remarks, remarks]
+  address: [street_address, address1, address_line1, unparsed_address, full_address, location, street]
+  property_id: [property, building_id, building, community_id, site_id]
+  unit_id: [unit, apartment_id, space_id]
+  rent: [rent_amount, monthly_rent, market_rent, base_rent, rent_price]
+  bedrooms: [beds, bedrooms_total, bedroom_count, num_bedrooms]
+  bathrooms: [baths, bathrooms_total_integer, bathroom_count, num_bathrooms, bathrooms_full]
+
+concepts:
+  property:
+    segments: [properties, property, buildings, building, communities, sites@property|portfolio, assets@real_estate|portfolio]
+    aliases:
+      type: [property_type, property_sub_type, kind, category]
+      year_built: [built_year, construction_year]
+      unit_count: [units_count, number_of_units, total_units]
+      square_feet: [sqft, square_footage, living_area, area, size]
+      owner_id: [owner, owners, landlord_id, landlord]
+      city: [locality]
+      postal_code: [zip, zip_code, zipcode, postcode]
+  unit:
+    requires: [property]
+    segments: [units, unit, apartments, spaces@properties|buildings]
+    aliases:
+      number: [unit_number, name, apartment_number, unit_name]
+      square_feet: [sqft, square_footage, area, size]
+      floor: [floor_number, level]
+      occupied: [is_occupied, occupancy_status, vacant, available]
+  lease:
+    requires: [property]
+    segments: [leases, lease, tenancies, tenancy, rental_agreements, rental-agreements, rentals@properties|units]
+    aliases:
+      tenant_ids: [tenants, tenant_id, tenant, residents, occupants, renters]
+      start_date: [start, lease_start, lease_start_date, move_in_date, starts_at, from_date]
+      end_date: [end, lease_end, lease_end_date, move_out_date, ends_at, to_date]
+      deposit: [security_deposit, deposit_amount]
+      term: [lease_term, term_months]
+  tenant:
+    requires: [lease]
+    segments: [tenants, tenant, residents, resident, renters, occupants]
+    aliases:
+      first_name: [firstname, given_name]
+      last_name: [lastname, surname, family_name]
+      email: [email_address, emails, primary_email]
+      phone: [phone_number, phones, mobile, phone_numbers]
+      lease_id: [lease, leases, tenancy_id]
+      balance: [outstanding_balance, balance_due, current_balance]
+  work_order:
+    requires: [property]
+    segments: [work_orders, work-orders, workorders, maintenance_requests, maintenance-requests, service_requests, service-requests, maintenance, tasks@maintenance]
+    aliases:
+      priority: [urgency, severity]
+      category: [type, issue_type, work_order_type, trade]
+      assigned_to: [assignee, vendor_id, vendor, technician_id, assigned_vendor]
+      requested_at: [reported_at, submitted_at, request_date]
+      completed_at: [closed_at, resolved_at, completion_date]
+  listing:
+    segments: [listings, listing, rental_listings, mls_listings, property_listings]
+    aliases:
+      price: [list_price, asking_price, rent, listing_price, current_price]
+      listed_at: [list_date, listing_date, on_market_date, listing_contract_date, published_at]
+      agent_id: [list_agent_key, listing_agent, agent, list_agent_mls_id]
+      photos: [media, images, photo_urls, pictures]
+      property_type: [type, property_sub_type, listing_type]
+
+exclude:
+  property:
+    reefapi: /reddit/v1/communities are online communities
+    regrid: /schemas/building is a schema definition
+  tenant:
+    shovels: /addresses/{id}/residents is a people-search lookup
+  lease:
+    pricefinder: /radial/rentals are rental comparables
+duplicates:
+  zoopla: [alto-vebra]
+  crea: [realtor-ca]
+
+findings:
+  - "A lease agrees completely: start and end dates, status, rent, the property and the tenants
+    are all core across the providers that expose one."
+  - "A property agrees only on id and address. Type, size, year built and unit count are each
+    modelled by too few providers to share -- residential management, commercial portfolios
+    and MLS listings describe a building differently."
+  - "Listings agree on nothing but an id, although the industry has a listing standard (RESO):
+    the listing APIs published here name their fields differently enough that the aliases
+    cannot reconcile them. Worth a RESO-specific pass, as Open Banking and CDR got."
+  - "Units, tenants and work orders are thin (5-9 providers): most property-management systems
+    keep their APIs to partners."
+decisions:
+  - "Real Estate is in the cohort, so listings are a concept here alongside the management
+    resources."
+  - "A tenant counts only at a provider that also exposes leases (`requires: [lease]`):
+    tenants are an organization in the identity context."
+  - "Buildings and communities are properties; apartments and spaces beneath a building are
+    units; tenancies and rental agreements are leases."
+  - "Work orders cover maintenance and service requests: one resource, named for the job."
+  - "Duplicates merged: Alto into Zoopla, Realtor.ca into CREA."

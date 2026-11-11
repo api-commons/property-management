@@ -1,0 +1,60 @@
+aid: common-property-management
+name: Property Management
+type: Common
+description: 'The common Property Management vocabulary, distilled from the harvested OpenAPI of 143 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Property Management
+- PropTech
+- Rentals
+- Real Estate
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/property-management/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-property-management:property-management
+  name: Common Property Management Interface
+  description: The Property Management interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/property-management
+  tags:
+  - Property Management
+  - PropTech
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: property
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/property.json
+  - type: JSONSchema
+    name: unit
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/unit.json
+  - type: JSONSchema
+    name: lease
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/lease.json
+  - type: JSONSchema
+    name: tenant
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/tenant.json
+  - type: JSONSchema
+    name: work_order
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/work_order.json
+  - type: JSONSchema
+    name: listing
+    url: https://raw.githubusercontent.com/api-commons/property-management/main/schema/listing.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/property-management/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,21 @@
+provider: bridge-interactive
+apis_io: https://apis.io/providers/bridge-interactive/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bridge-interactive-openapi.yml#GET /OData/{dataset_id}/Property
+  listing:
+    path_segment:
+    - listings
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bridge-interactive-openapi.yml#GET /{dataset_id}/listings
+    - openapi/_original/bridge-interactive-openapi.yml#GET /{dataset_id}/listings/{id}

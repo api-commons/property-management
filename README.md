@@ -1,0 +1,57 @@
+# Property Management
+
+The common property vocabulary -- properties and the units in them, the leases that let them, the tenants who live there, the work orders that maintain them and the listings that market them -- distilled from the APIs that already exist. Part of [Schema Commons](https://github.com/api-commons/schema-commons),
+published by the [API Commons](https://apicommons.org).
+
+Built from the providers tagged Property Management, PropTech, Rentals, Real Estate, Commercial Real Estate, Multifamily in [APIs.io](https://apis.io) that
+publish their own OpenAPI. Only harvested contracts count -- nothing API Evangelist
+generated. Every number below is a count of providers.
+
+## What the market already agrees on
+
+<!-- commons:summary -->
+<!-- /commons:summary -->
+
+Shares are of the providers with a readable resource schema for that concept. The
+extended tier and the long tail of every concept are in [profile.yml](profile.yml).
+
+## What the measurement shows
+
+- A lease agrees completely: start and end dates, status, rent, the property and the tenants are all core across the providers that expose one.
+- A property agrees only on id and address. Type, size, year built and unit count are each modelled by too few providers to share -- residential management, commercial portfolios and MLS listings describe a building differently.
+- Listings agree on nothing but an id, although the industry has a listing standard (RESO): the listing APIs published here name their fields differently enough that the aliases cannot reconcile them. Worth a RESO-specific pass, as Open Banking and CDR got.
+- Units, tenants and work orders are thin (5-9 providers): most property-management systems keep their APIs to partners.
+
+## Artifacts
+
+- [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
+  is the shape to map to. Lints clean against the
+  [naming ruleset](https://github.com/api-commons/schema-commons/blob/main/ruleset/schema-commons-naming.yaml).
+- [schema/](schema) -- JSON Schema 2020-12 per concept; each property carries
+  `x-commons-tier`, `x-commons-share`, `x-commons-providers` and the spellings seen.
+- [crosswalk/](crosswalk) -- one per provider, common name -> their name, with the harvested
+  spec and operations each mapping was read from.
+- [adopters.yml](adopters.yml) -- who exposes which concept, linked to their APIs.io page.
+- [concepts.yml](concepts.yml) -- the only hand-written input: concepts, path segments and
+  their qualifiers, aliases, reviewed exclusions, merged duplicates, and the decisions below.
+- [census/](census) -- the cohort and the raw census the profile is built from.
+
+## Decisions
+
+These are calls, not measurements, recorded so they can be revisited as the method matures.
+
+- Real Estate is in the cohort, so listings are a concept here alongside the management resources.
+- A tenant counts only at a provider that also exposes leases (`requires: [lease]`): tenants are an organization in the identity context.
+- Buildings and communities are properties; apartments and spaces beneath a building are units; tenancies and rental agreements are leases.
+- Work orders cover maintenance and service requests: one resource, named for the job.
+- Duplicates merged: Alto into Zoopla, Realtor.ca into CREA.
+
+## Rebuild
+
+```bash
+../schema-commons/scripts/run.sh .
+```
+
+## License
+
+Artifacts CC BY-NC-SA 4.0 ([LICENSE](LICENSE)); code Apache 2.0 ([LICENSE-CODE](LICENSE-CODE)).

@@ -1,0 +1,22 @@
+provider: rentcast
+apis_io: https://apis.io/providers/rentcast/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      address: addressLine1
+      type: propertyType
+      status: state
+      city: city
+      bathrooms: bathrooms
+      postal_code: zipCode
+      year_built: yearBuilt
+      bedrooms: bedrooms
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rentcast-openapi.json#GET /properties
+    - openapi/_original/rentcast-openapi.json#GET /properties/{id}

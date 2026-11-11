@@ -1,0 +1,18 @@
+provider: oracle-hospitality
+apis_io: https://apis.io/providers/oracle-hospitality/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    - property
+    properties:
+      description: description
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/oracle-hospitality-property-v1-crm.json#GET /suspendedProfiles/errorsSummary/property
+    - openapi/_original/oracle-hospitality-property-v1-crm.json#GET /suspendedProfiles/matchStats/property
+    - openapi/_original/oracle-hospitality-property-v1-crm.json#POST /suspendedProfiles/errorsSummary/property
+    - openapi/_original/oracle-hospitality-property-v1-rmcfg.json#DELETE /buildings
+    - openapi/_original/oracle-hospitality-property-v1-rmcfg.json#GET /buildings

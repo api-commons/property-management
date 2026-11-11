@@ -1,0 +1,47 @@
+provider: innago
+apis_io: https://apis.io/providers/innago/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      address: address
+      name: name
+      type: propertyType
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1/properties
+    - openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}
+  unit:
+    path_segment:
+    - units
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}/units
+    - openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}/units/{unitUid}
+  lease:
+    path_segment:
+    - leases
+    properties:
+      start_date: startDate
+      end_date: endDate
+      rent: rentAmount
+      tenant_ids: tenants
+      deposit: depositAmount
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1/leases
+    - openapi/_original/openapi.yml#GET /v1/leases/{leaseUid}
+  tenant:
+    path_segment:
+    - tenants
+    properties:
+      phone: phoneNumber
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1/tenants
+    - openapi/_original/openapi.yml#GET /v1/tenants/{tenantUid}

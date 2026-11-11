@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/property-management/main/schema/unit.json",
+  "title": "Unit",
+  "description": "The common unit in Property Management, distilled from 8 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id"
+      ]
+    },
+    "number": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name",
+        "unit_number"
+      ]
+    },
+    "property_id": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.625,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "building_id",
+        "building",
+        "property",
+        "buildingID"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "address"
+      ]
+    },
+    "bedrooms": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "bedrooms",
+        "beds"
+      ]
+    },
+    "square_feet": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "area",
+        "size"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "property-management",
+    "concept": "unit",
+    "providers": 8,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

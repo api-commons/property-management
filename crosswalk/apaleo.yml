@@ -1,0 +1,28 @@
+provider: apaleo
+apis_io: https://apis.io/providers/apaleo/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    properties:
+      id: id
+      address: location
+      name: name
+      status: status
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/apaleo-openapi.yml#GET /inventory/v1/properties
+    - openapi/_original/apaleo-openapi.yml#GET /inventory/v1/properties/{id}
+    - openapi/_original/apaleo-openapi.yml#POST /inventory/v1/properties
+  unit:
+    path_segment:
+    - units
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/apaleo-openapi.yml#GET /availability/v1/units
+    - openapi/_original/apaleo-openapi.yml#GET /inventory/v1/units
+    - openapi/_original/apaleo-openapi.yml#POST /inventory/v1/units

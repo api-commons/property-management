@@ -1,0 +1,354 @@
+context: property-management
+generated: '2026-11-10'
+adopters:
+- provider: 91squarefeet
+  apis_io: https://apis.io/providers/91squarefeet/
+  crosswalk: crosswalk/91squarefeet.yml
+  concepts:
+  - property
+- provider: airdna
+  apis_io: https://apis.io/providers/airdna/
+  crosswalk: crosswalk/airdna.yml
+  concepts:
+  - listing
+- provider: alasco
+  apis_io: https://apis.io/providers/alasco/
+  crosswalk: crosswalk/alasco.yml
+  concepts:
+  - property
+- provider: alterestate
+  apis_io: https://apis.io/providers/alterestate/
+  crosswalk: crosswalk/alterestate.yml
+  concepts:
+  - property
+  - unit
+- provider: apaleo
+  apis_io: https://apis.io/providers/apaleo/
+  crosswalk: crosswalk/apaleo.yml
+  concepts:
+  - property
+  - unit
+- provider: argus-enterprise
+  apis_io: https://apis.io/providers/argus-enterprise/
+  crosswalk: crosswalk/argus-enterprise.yml
+  concepts:
+  - lease
+  - property
+  - tenant
+- provider: avito
+  apis_io: https://apis.io/providers/avito/
+  crosswalk: crosswalk/avito.yml
+  concepts:
+  - property
+- provider: beyond-pricing
+  apis_io: https://apis.io/providers/beyond-pricing/
+  crosswalk: crosswalk/beyond-pricing.yml
+  concepts:
+  - listing
+- provider: bridge-interactive
+  apis_io: https://apis.io/providers/bridge-interactive/
+  crosswalk: crosswalk/bridge-interactive.yml
+  concepts:
+  - listing
+  - property
+- provider: bungalow
+  apis_io: https://apis.io/providers/bungalow/
+  crosswalk: crosswalk/bungalow.yml
+  concepts:
+  - property
+- provider: butterflymx
+  apis_io: https://apis.io/providers/butterflymx/
+  crosswalk: crosswalk/butterflymx.yml
+  concepts:
+  - property
+  - unit
+- provider: connells
+  apis_io: https://apis.io/providers/connells/
+  crosswalk: crosswalk/connells.yml
+  concepts:
+  - property
+- provider: corelogic
+  apis_io: https://apis.io/providers/corelogic/
+  crosswalk: crosswalk/corelogic.yml
+  concepts:
+  - property
+- provider: coworkingview-api
+  apis_io: https://apis.io/providers/coworkingview-api/
+  crosswalk: crosswalk/coworkingview-api.yml
+  concepts:
+  - property
+- provider: crea
+  apis_io: https://apis.io/providers/crea/
+  crosswalk: crosswalk/crea.yml
+  concepts:
+  - property
+- provider: domain-group
+  apis_io: https://apis.io/providers/domain-group/
+  crosswalk: crosswalk/domain-group.yml
+  concepts:
+  - listing
+  - property
+- provider: door
+  apis_io: https://apis.io/providers/door/
+  crosswalk: crosswalk/door.yml
+  concepts:
+  - property
+- provider: doorloop
+  apis_io: https://apis.io/providers/doorloop/
+  crosswalk: crosswalk/doorloop.yml
+  concepts:
+  - lease
+  - property
+  - tenant
+  - unit
+- provider: estated
+  apis_io: https://apis.io/providers/estated/
+  crosswalk: crosswalk/estated.yml
+  concepts:
+  - property
+- provider: facilio
+  apis_io: https://apis.io/providers/facilio/
+  crosswalk: crosswalk/facilio.yml
+  concepts:
+  - property
+- provider: findigs
+  apis_io: https://apis.io/providers/findigs/
+  crosswalk: crosswalk/findigs.yml
+  concepts:
+  - listing
+- provider: fixflo
+  apis_io: https://apis.io/providers/fixflo/
+  crosswalk: crosswalk/fixflo.yml
+  concepts:
+  - property
+- provider: guestready
+  apis_io: https://apis.io/providers/guestready/
+  crosswalk: crosswalk/guestready.yml
+  concepts:
+  - listing
+- provider: hometrack
+  apis_io: https://apis.io/providers/hometrack/
+  crosswalk: crosswalk/hometrack.yml
+  concepts:
+  - property
+- provider: hospitable
+  apis_io: https://apis.io/providers/hospitable/
+  crosswalk: crosswalk/hospitable.yml
+  concepts:
+  - listing
+  - property
+- provider: innago
+  apis_io: https://apis.io/providers/innago/
+  crosswalk: crosswalk/innago.yml
+  concepts:
+  - lease
+  - property
+  - tenant
+  - unit
+- provider: keller-williams
+  apis_io: https://apis.io/providers/keller-williams/
+  crosswalk: crosswalk/keller-williams.yml
+  concepts:
+  - listing
+- provider: land-insight
+  apis_io: https://apis.io/providers/land-insight/
+  crosswalk: crosswalk/land-insight.yml
+  concepts:
+  - property
+- provider: landcor
+  apis_io: https://apis.io/providers/landcor/
+  crosswalk: crosswalk/landcor.yml
+  concepts:
+  - property
+- provider: landmark-information
+  apis_io: https://apis.io/providers/landmark-information/
+  crosswalk: crosswalk/landmark-information.yml
+  concepts:
+  - property
+- provider: lev
+  apis_io: https://apis.io/providers/lev/
+  crosswalk: crosswalk/lev.yml
+  concepts:
+  - property
+- provider: lodgify
+  apis_io: https://apis.io/providers/lodgify/
+  crosswalk: crosswalk/lodgify.yml
+  concepts:
+  - property
+- provider: lone-wolf
+  apis_io: https://apis.io/providers/lone-wolf/
+  crosswalk: crosswalk/lone-wolf.yml
+  concepts:
+  - property
+- provider: mashvisor
+  apis_io: https://apis.io/providers/mashvisor/
+  crosswalk: crosswalk/mashvisor.yml
+  concepts:
+  - listing
+  - property
+- provider: measurabl
+  apis_io: https://apis.io/providers/measurabl/
+  crosswalk: crosswalk/measurabl.yml
+  concepts:
+  - property
+  - unit
+- provider: mlsgrid
+  apis_io: https://apis.io/providers/mlsgrid/
+  crosswalk: crosswalk/mlsgrid.yml
+  concepts:
+  - property
+- provider: movehome-org
+  apis_io: https://apis.io/providers/movehome-org/
+  crosswalk: crosswalk/movehome-org.yml
+  concepts:
+  - listing
+- provider: oracle-hospitality
+  apis_io: https://apis.io/providers/oracle-hospitality/
+  crosswalk: crosswalk/oracle-hospitality.yml
+  concepts:
+  - property
+- provider: ownerrez
+  apis_io: https://apis.io/providers/ownerrez/
+  crosswalk: crosswalk/ownerrez.yml
+  concepts:
+  - listing
+  - property
+- provider: perchwell
+  apis_io: https://apis.io/providers/perchwell/
+  crosswalk: crosswalk/perchwell.yml
+  concepts:
+  - property
+- provider: pricefinder
+  apis_io: https://apis.io/providers/pricefinder/
+  crosswalk: crosswalk/pricefinder.yml
+  concepts:
+  - listing
+  - property
+- provider: propertyme
+  apis_io: https://apis.io/providers/propertyme/
+  crosswalk: crosswalk/propertyme.yml
+  concepts:
+  - tenant
+- provider: propertyware
+  apis_io: https://apis.io/providers/propertyware/
+  crosswalk: crosswalk/propertyware.yml
+  concepts:
+  - lease
+  - property
+  - unit
+  - work_order
+- provider: purplebricks
+  apis_io: https://apis.io/providers/purplebricks/
+  crosswalk: crosswalk/purplebricks.yml
+  concepts:
+  - listing
+  - property
+- provider: rea-group
+  apis_io: https://apis.io/providers/rea-group/
+  crosswalk: crosswalk/rea-group.yml
+  concepts:
+  - listing
+  - property
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - listing
+- provider: rentberry
+  apis_io: https://apis.io/providers/rentberry/
+  crosswalk: crosswalk/rentberry.yml
+  concepts:
+  - listing
+- provider: rentcast
+  apis_io: https://apis.io/providers/rentcast/
+  crosswalk: crosswalk/rentcast.yml
+  concepts:
+  - property
+- provider: rentcheck
+  apis_io: https://apis.io/providers/rentcheck/
+  crosswalk: crosswalk/rentcheck.yml
+  concepts:
+  - lease
+  - property
+  - tenant
+  - unit
+  - work_order
+- provider: reonomy
+  apis_io: https://apis.io/providers/reonomy/
+  crosswalk: crosswalk/reonomy.yml
+  concepts:
+  - property
+- provider: snappt
+  apis_io: https://apis.io/providers/snappt/
+  crosswalk: crosswalk/snappt.yml
+  concepts:
+  - property
+- provider: sprift
+  apis_io: https://apis.io/providers/sprift/
+  crosswalk: crosswalk/sprift.yml
+  concepts:
+  - property
+- provider: street-co
+  apis_io: https://apis.io/providers/street-co/
+  crosswalk: crosswalk/street-co.yml
+  concepts:
+  - lease
+  - property
+  - tenant
+  - work_order
+- provider: taylor-morrison-home
+  apis_io: https://apis.io/providers/taylor-morrison-home/
+  crosswalk: crosswalk/taylor-morrison-home.yml
+  concepts:
+  - property
+- provider: trellistech
+  apis_io: https://apis.io/providers/trellistech/
+  crosswalk: crosswalk/trellistech.yml
+  concepts:
+  - property
+- provider: twentyci
+  apis_io: https://apis.io/providers/twentyci/
+  crosswalk: crosswalk/twentyci.yml
+  concepts:
+  - property
+- provider: vaultre
+  apis_io: https://apis.io/providers/vaultre/
+  crosswalk: crosswalk/vaultre.yml
+  concepts:
+  - lease
+  - listing
+  - property
+  - tenant
+  - work_order
+- provider: vergesense
+  apis_io: https://apis.io/providers/vergesense/
+  crosswalk: crosswalk/vergesense.yml
+  concepts:
+  - property
+- provider: vts
+  apis_io: https://apis.io/providers/vts/
+  crosswalk: crosswalk/vts.yml
+  concepts:
+  - lease
+  - listing
+  - property
+  - tenant
+- provider: wegowise
+  apis_io: https://apis.io/providers/wegowise/
+  crosswalk: crosswalk/wegowise.yml
+  concepts:
+  - property
+  - unit
+- provider: zillapi
+  apis_io: https://apis.io/providers/zillapi/
+  crosswalk: crosswalk/zillapi.yml
+  concepts:
+  - listing
+  - property
+- provider: zoopla
+  apis_io: https://apis.io/providers/zoopla/
+  crosswalk: crosswalk/zoopla.yml
+  concepts:
+  - lease
+  - property
+  - work_order

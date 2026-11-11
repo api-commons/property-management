@@ -1,0 +1,31 @@
+provider: measurabl
+apis_io: https://apis.io/providers/measurabl/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}
+    - openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}
+    - openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings
+  unit:
+    path_segment:
+    - spaces
+    properties:
+      id: id
+      number: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/spaces
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces
+    - openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}
+    - openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}

@@ -1,0 +1,25 @@
+provider: alterestate
+apis_io: https://apis.io/providers/alterestate/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties:
+      id: id
+      name: name
+      updated_at: updated_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/alterestate-openapi.yml#GET /projects/buildings/{project_slug}/
+  unit:
+    path_segment:
+    - units
+    properties:
+      property_id: building
+      square_feet: area
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/alterestate-openapi.yml#GET /properties/public/units/{project_slug}/

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/property-management/main/schema/work_order.json",
+  "title": "Work Order",
+  "description": "The common work_order in Property Management, distilled from 5 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.8,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "status"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "description",
+        "notes"
+      ]
+    },
+    "property_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "propertyId",
+        "buildingID",
+        "property"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "property-management",
+    "concept": "work_order",
+    "providers": 5,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

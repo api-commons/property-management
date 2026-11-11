@@ -1,0 +1,39 @@
+provider: wegowise
+apis_io: https://apis.io/providers/wegowise/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties:
+      id: id
+      address: address
+      name: name
+      status: state
+      city: city
+      postal_code: zip
+      year_built: year_built
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/wegowise-openapi.yml#DELETE /api/v1/wego_pro/buildings/{id}
+    - openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings
+    - openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings/{id}
+    - openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/developments/{id}/buildings
+    - openapi/_original/wegowise-openapi.yml#POST /api/v1/wego_pro/developments/{id}/buildings
+  unit:
+    path_segment:
+    - apartments
+    properties:
+      id: id
+      number: unit_number
+      property_id: building_id
+      bedrooms: bedrooms
+      square_feet: area
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/wegowise-openapi.yml#DELETE /api/v1/wego_pro/apartments/{id}
+    - openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/apartments/{id}
+    - openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings/{id}/apartments
+    - openapi/_original/wegowise-openapi.yml#POST /api/v1/wego_pro/buildings/{id}/apartments
+    - openapi/_original/wegowise-openapi.yml#PUT /api/v1/wego_pro/apartments/{id}

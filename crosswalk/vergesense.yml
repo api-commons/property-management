@@ -1,0 +1,19 @@
+provider: vergesense
+apis_io: https://apis.io/providers/vergesense/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - buildings
+    properties:
+      id: id
+      address: address
+      name: name
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vergesense-api-openapi.json#GET /buildings
+    - openapi/_original/vergesense-api-openapi.json#GET /buildings/{building_ref_id}
+    - openapi/_original/vergesense-api-openapi.json#GET /metrics/aggregate/buildings/{building_id}
+    - openapi/_original/vergesense-api-openapi.json#GET /metrics/hourly/buildings

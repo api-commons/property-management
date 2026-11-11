@@ -1,0 +1,15 @@
+provider: rentberry
+apis_io: https://apis.io/providers/rentberry/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listing
+    properties:
+      description: description
+      name: title
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rentberry-openapi.json#POST /v{version}/translation/listing/{id}
+    - openapi/_original/rentberry-openapi.yml#POST /v{version}/translation/listing/{id}

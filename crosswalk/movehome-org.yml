@@ -1,0 +1,23 @@
+provider: movehome-org
+apis_io: https://apis.io/providers/movehome-org/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  listing:
+    path_segment:
+    - listings
+    properties:
+      address: address
+      status: status
+      price: asking_price
+      property_type: property_type
+      description:
+      - description
+      - note
+      photos: media
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#DELETE /listings/{reference}
+    - openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#GET /branches/{branch_id}/listings
+    - openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#GET /listings/{reference}
+    - openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#PUT /listings/{reference}

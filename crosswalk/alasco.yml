@@ -1,0 +1,19 @@
+provider: alasco
+apis_io: https://apis.io/providers/alasco/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    - buildings
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/alasco-esg-openapi.json#GET /buildings/
+    - openapi/_original/alasco-fincon-openapi.json#GET /properties/
+    - openapi/_original/alasco-fincon-openapi.json#GET /properties/{id}/
+    - openapi/_original/alasco-fincon-openapi.json#PATCH /properties/{id}/
+    - openapi/_original/alasco-fincon-openapi.json#POST /properties/

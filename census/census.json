@@ -1,0 +1,6102 @@
+{
+ "cohort_size": 143,
+ "unreadable": [],
+ "concepts": {
+  "property": {
+   "91squarefeet": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "date": "string",
+     "date_gmt": "string",
+     "guid": "object",
+     "modified": "string",
+     "modified_gmt": "string",
+     "slug": "string",
+     "status": "string",
+     "type": "string",
+     "link": "string",
+     "title": "object",
+     "template": "string",
+     "_links": "object",
+     "property_location": "array"
+    },
+    "evidence": [
+     "openapi/_original/91squarefeet-content-api-openapi.yml#GET /wp/v2/property",
+     "openapi/_original/91squarefeet-content-api-openapi.yml#GET /wp/v2/property/{id}"
+    ]
+   },
+   "alasco": {
+    "segments": [
+     "properties",
+     "buildings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "attributes": "object",
+     "id": "string",
+     "relationships": null,
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/alasco-esg-openapi.json#GET /buildings/",
+     "openapi/_original/alasco-fincon-openapi.json#GET /properties/",
+     "openapi/_original/alasco-fincon-openapi.json#GET /properties/{id}/",
+     "openapi/_original/alasco-fincon-openapi.json#PATCH /properties/{id}/",
+     "openapi/_original/alasco-fincon-openapi.json#POST /properties/"
+    ]
+   },
+   "alterestate": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "uid": "string",
+     "name": "string",
+     "order": "integer",
+     "visible": "boolean",
+     "company": "integer",
+     "project": "integer",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/alterestate-openapi.yml#GET /projects/buildings/{project_slug}/"
+    ]
+   },
+   "alto-vebra": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "propertyId": "integer",
+     "market": "string",
+     "displayAddress": "string",
+     "priceQualifier": "string",
+     "currency": "string",
+     "price": "number",
+     "bedrooms": "integer",
+     "bathrooms": "integer",
+     "receptions": "integer",
+     "floorAreaInSquareFeet": "number",
+     "landAreaInAcres": "number",
+     "propertyType": "string",
+     "taxBand": "string",
+     "taxBandExemptReason": "string",
+     "summary": "string",
+     "includeLeadInOutText": "boolean",
+     "leadInText": "string",
+     "leadOutText": "string",
+     "publicViewingNotes": "string",
+     "epcCurrent": "integer",
+     "epcPotential": "integer",
+     "epc": null,
+     "rental": null,
+     "sale": null,
+     "isLeasehold": "boolean",
+     "lease": null,
+     "auction": null,
+     "bullets": "array",
+     "rooms": "array",
+     "age": "string",
+     "yearBuilt": "integer",
+     "newBuild": "boolean",
+     "parkingTotal": "integer",
+     "uprn": "string",
+     "mapping": null,
+     "createdDate": "string",
+     "modifiedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/alto-api-openapi.json#GET /listing/property/{propertyId}"
+    ]
+   },
+   "apaleo": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "code": "string",
+     "name": "string",
+     "description": "string",
+     "timeZone": "string",
+     "currencyCode": "string",
+     "status": "string",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/apaleo-openapi.yml#GET /inventory/v1/properties",
+     "openapi/_original/apaleo-openapi.yml#GET /inventory/v1/properties/{id}",
+     "openapi/_original/apaleo-openapi.yml#POST /inventory/v1/properties"
+    ]
+   },
+   "argus-enterprise": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "propertyType": "string",
+     "status": "string",
+     "address": "object",
+     "grossArea": "number",
+     "netLeasableArea": "number",
+     "yearBuilt": "integer",
+     "numberOfUnits": "integer",
+     "purchasePrice": "number",
+     "purchaseDate": "string",
+     "currentMarketValue": "number",
+     "occupancyRate": "number",
+     "portfolioId": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/argus-enterprise-core-openapi.yml#DELETE /properties/{propertyId}",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /portfolios/{portfolioId}/properties",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /properties",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}",
+     "openapi/_original/argus-enterprise-core-openapi.yml#POST /properties",
+     "openapi/_original/argus-enterprise-core-openapi.yml#PUT /properties/{propertyId}"
+    ]
+   },
+   "avito": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": null,
+     "orderId": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/avito-delivery-sandbox-openapi.json#POST /delivery-sandbox/order/properties"
+    ]
+   },
+   "bridge-interactive": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "@odata.context": "string",
+     "@odata.nextLink": "string",
+     "value": "array"
+    },
+    "evidence": [
+     "openapi/_original/bridge-interactive-openapi.yml#GET /OData/{dataset_id}/Property"
+    ]
+   },
+   "bungalow": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "slug": "string",
+     "headline": "string",
+     "is_coming_soon": "boolean",
+     "coming_soon_date": "string",
+     "num_bathrooms": "number",
+     "sqft": "integer",
+     "address": "object",
+     "street_address": "string",
+     "market": "object",
+     "neighborhood_area": "object",
+     "amenities": "object",
+     "images": "array",
+     "roommate_shared_interests": "array",
+     "house_profile": "object",
+     "total_room_count": "integer",
+     "retail_property": "boolean",
+     "available_room_count": "integer",
+     "earliest_available_date": "string",
+     "room_prices": "object",
+     "full_property_price": "integer",
+     "property_marketing_type": "string",
+     "demand_leases_end_date": "string",
+     "is_instant_lease": "boolean",
+     "next_open_house": "string",
+     "promotions": "object",
+     "prev_prices": "object",
+     "room_amenities": "object",
+     "showing_today": "boolean",
+     "parking_spots_available": "integer",
+     "automated_tour_compatible": "boolean",
+     "showdigs_showing_enabled": "boolean",
+     "is_featured": "boolean",
+     "description_html": "string",
+     "matterport_url": "string",
+     "is_premarketing": "string",
+     "transfer_eligible": "string",
+     "walkthrough_video_url": "string",
+     "attributes": "array",
+     "roommates": "array",
+     "roommate_living_preferences": "array",
+     "rooms": "string",
+     "room_images": "object",
+     "showing_times_today": "string",
+     "showings_available": "string",
+     "is_meet_and_greet_available": "boolean",
+     "calendly_url": "string",
+     "calendly_url_active": "string",
+     "sfid": "string"
+    },
+    "evidence": [
+     "openapi/_original/bungalow-openapi-original.yml#GET /listings/properties/",
+     "openapi/_original/bungalow-openapi-original.yml#GET /listings/properties/{id_or_slug}"
+    ]
+   },
+   "butterflymx": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/buildings",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/buildings/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/buildings",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/buildings/{id}"
+    ]
+   },
+   "connells": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/connells-website-openapi.yml#GET /properties"
+    ]
+   },
+   "corelogic": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ListingKey": "string",
+     "ListingId": "string",
+     "StandardStatus": "string",
+     "PropertyType": "string",
+     "PropertySubType": "string",
+     "ListPrice": "number",
+     "ClosePrice": "number",
+     "BedroomsTotal": "integer",
+     "BathroomsTotalInteger": "integer",
+     "LivingArea": "number",
+     "LotSizeArea": "number",
+     "YearBuilt": "integer",
+     "StreetNumber": "string",
+     "StreetName": "string",
+     "StreetSuffix": "string",
+     "City": "string",
+     "StateOrProvince": "string",
+     "PostalCode": "string",
+     "Country": "string",
+     "Latitude": "number",
+     "Longitude": "number",
+     "ListAgentKey": "string",
+     "ListOfficeKey": "string",
+     "ModificationTimestamp": "string",
+     "OriginatingSystemName": "string",
+     "UniversalParcelId": "string",
+     "CLIP": "string"
+    },
+    "evidence": [
+     "openapi/_original/corelogic-trestle-reso-web-api-openapi.yml#GET /Property"
+    ]
+   },
+   "coworkingview-api": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "slug": "string",
+     "title": "string",
+     "countryCode": "string",
+     "city": "object",
+     "zone": "object",
+     "operator": "object",
+     "coordinates": "object",
+     "fromPrice": "object",
+     "fromBillingPeriod": "string",
+     "rating": "object",
+     "featured": "boolean",
+     "updatedAt": "string",
+     "excerpt": "string",
+     "images": "array",
+     "amenities": "array",
+     "capacity": "integer",
+     "marketPosition": "object",
+     "distanceMeters": "number",
+     "description": "string",
+     "address": "string",
+     "pricingOptions": "array",
+     "webUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/coworkingview-api-openapi.json#GET /v1/properties",
+     "openapi/_original/coworkingview-api-openapi.json#GET /v1/properties/{slug}"
+    ]
+   },
+   "crea": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "ListingKey": "string",
+     "PropertySubType": "String",
+     "DocumentsAvailable": "Array of Strings",
+     "LeaseAmount": "number",
+     "LeaseAmountFrequency": "String",
+     "BusinessType": "Array of Strings",
+     "LeasePerUnit": "String",
+     "PricePerUnit": "String",
+     "WaterBodyName": "string",
+     "View": "Array of Strings",
+     "NumberOfBuildings": "integer",
+     "NumberOfUnitsTotal": "integer",
+     "LotFeatures": "Array of Strings",
+     "LotSizeArea": "number",
+     "LotSizeDimensions": "string",
+     "LotSizeUnits": "String",
+     "PoolFeatures": "Array of Strings",
+     "RoadSurfaceType": "Array of Strings",
+     "CurrentUse": "Array of Strings",
+     "PossibleUse": "Array of Strings",
+     "AnchorsCoTenants": "string",
+     "WaterfrontFeatures": "Array of Strings",
+     "CommunityFeatures": "Array of Strings",
+     "FrontageLengthNumeric": "number",
+     "FrontageLengthNumericUnits": "String",
+     "Fencing": "Array of Strings",
+     "Appliances": "Array of Strings",
+     "OtherEquipment": "Array of Strings",
+     "SecurityFeatures": "Array of Strings",
+     "TotalActualRent": "number",
+     "ExistingLeaseType": "Array of Strings",
+     "AssociationFee": "number",
+     "AssociationFeeFrequency": "String",
+     "AssociationName": "string",
+     "AssociationFeeIncludes": "Array of Strings",
+     "OriginalEntryTimestamp": "String",
+     "ModificationTimestamp": "String",
+     "AvailabilityDate": "string",
+     "ListingId": "string",
+     "ListAgentNationalAssociationId": "string",
+     "CoListAgentNationalAssociationId": "string",
+     "CoListAgentNationalAssociationId2": "string",
+     "CoListAgentNationalAssociationId3": "string",
+     "InternetEntireListingDisplayYN": "boolean",
+     "StandardStatus": "String",
+     "StatusChangeTimestamp": "String",
+     "PublicRemarks": "string",
+     "ListPrice": "number",
+     "Inclusions": "string",
+     "ListOfficeKey": "string",
+     "CoListOfficeKey": "string",
+     "CoListOfficeKey2": "string",
+     "CoListOfficeKey3": "string",
+     "ListOfficeNationalAssociationId": "string",
+     "CoListOfficeNationalAssociationId": "string",
+     "CoListOfficeNationalAssociationId2": "string",
+     "CoListOfficeNationalAssociationId3": "string",
+     "CoListAgentKey": "string",
+     "CoListAgentKey2": "string",
+     "CoListAgentKey3": "string",
+     "ListAgentKey": "string",
+     "InternetAddressDisplayYN": "boolean",
+     "ListingURL": "string",
+     "OriginatingSystemName": "string",
+     "PhotosCount": "integer",
+     "PhotosChangeTimestamp": "String",
+     "CommonInterest": "String",
+     "ListAOR": "String",
+     "ListAORKey": "string",
+     "UnparsedAddress": "string",
+     "PostalCode": "string",
+     "SubdivisionName": "string",
+     "StateOrProvince": "String",
+     "StreetDirPrefix": "String",
+     "StreetDirSuffix": "String",
+     "StreetName": "string",
+     "StreetNumber": "string",
+     "StreetSuffix": "String",
+     "UnitNumber": "string",
+     "Country": "String",
+     "City": "string",
+     "Directions": "string",
+     "Latitude": "number",
+     "Longitude": "number",
+     "CityRegion": "string",
+     "MapCoordinateVerifiedYN": "String",
+     "GeocodeManualYN": "boolean",
+     "ParkingTotal": "integer",
+     "YearBuilt": "integer",
+     "BathroomsPartial": "integer",
+     "BathroomsTotalInteger": "integer",
+     "BedroomsTotal": "integer",
+     "BuildingAreaTotal": "number",
+     "BuildingAreaUnits": "String",
+     "BuildingFeatures": "Array of Strings",
+     "AboveGradeFinishedArea": "number",
+     "AboveGradeFinishedAreaUnits": "String",
+     "AboveGradeFinishedAreaSource": "String",
+     "AboveGradeFinishedAreaMinimum": "number",
+     "AboveGradeFinishedAreaMaximum": "number",
+     "BelowGradeFinishedArea": "number",
+     "BelowGradeFinishedAreaUnits": "String",
+     "BelowGradeFinishedAreaSource": "String",
+     "BelowGradeFinishedAreaMinimum": "number",
+     "BelowGradeFinishedAreaMaximum": "number",
+     "LivingArea": "number",
+     "LivingAreaUnits": "String",
+     "LivingAreaSource": "String",
+     "LivingAreaMinimum": "number",
+     "LivingAreaMaximum": "number",
+     "FireplacesTotal": "integer",
+     "FireplaceYN": "boolean",
+     "FireplaceFeatures": "Array of Strings",
+     "ArchitecturalStyle": "Array of Strings",
+     "Heating": "Array of Strings",
+     "FoundationDetails": "Array of Strings",
+     "Basement": "Array of Strings",
+     "ExteriorFeatures": "Array of Strings",
+     "Flooring": "Array of Strings",
+     "ParkingFeatures": "Array of Strings",
+     "Cooling": "Array of Strings",
+     "PropertyCondition": "Array of Strings",
+     "Roof": "Array of Strings",
+     "ConstructionMaterials": "Array of Strings",
+     "Rooms": "array",
+     "Stories": "number",
+     "PropertyAttachedYN": "boolean",
+     "AccessibilityFeatures": "Array of Strings",
+     "BedroomsAboveGrade": "integer",
+     "BedroomsBelowGrade": "integer",
+     "Zoning": "string",
+     "ZoningDescription": "string",
+     "TaxAnnualAmount": "number",
+     "TaxBlock": "string",
+     "TaxLot": "string",
+     "TaxYear": "integer",
+     "StructureType": "Array of Strings",
+     "ParcelNumber": "string",
+     "Utilities": "Array of Strings",
+     "IrrigationSource": "Array of Strings",
+     "WaterSource": "Array of Strings",
+     "Sewer": "Array of Strings",
+     "Electric": "Array of Strings",
+     "Media": "array",
+     "@odata.context": "string"
+    },
+    "evidence": [
+     "openapi/_original/crea-realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property",
+     "openapi/_original/crea-realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property/{PropertyKey}",
+     "openapi/_original/crea-realtor-ca-ddf-web-api-swagger-endpoint-openapi.json#GET /odata/v1/Property",
+     "openapi/_original/crea-realtor-ca-ddf-web-api-swagger-endpoint-openapi.json#GET /odata/v1/Property/{PropertyKey}"
+    ]
+   },
+   "domain-group": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "onMarketTypes": "array",
+     "status": "string",
+     "address": "string",
+     "addressCoordinate": "object",
+     "addressId": "integer",
+     "adverts": "array",
+     "bathrooms": "integer",
+     "bedrooms": "integer",
+     "carSpaces": "integer",
+     "ensuites": "integer",
+     "created": "string",
+     "features": "array",
+     "flatNumber": "string",
+     "history": "object",
+     "id": "string",
+     "internalArea": "string",
+     "yearBuilt": "number",
+     "isResidential": "boolean",
+     "lotNumber": "string",
+     "photos": "array",
+     "planNumber": "string",
+     "postcode": "string",
+     "propertyCategory": "string",
+     "propertyType": "string",
+     "state": "string",
+     "storeys": "integer",
+     "streetAddress": "string",
+     "streetName": "string",
+     "streetNumber": "string",
+     "streetType": "string",
+     "streetTypeLong": "string",
+     "suburb": "string",
+     "suburbId": "integer",
+     "updated": "string",
+     "urlSlug": "string",
+     "urlSlugShort": "string",
+     "zone": "string",
+     "gnafIds": "array",
+     "areaSize": "integer",
+     "canonicalUrl": "string",
+     "Data": "object",
+     "Pagination": "object",
+     "PropertyId": "string",
+     "MarketStatus": "string",
+     "SaleRentFlag": "string",
+     "LastListedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/properties/{id}",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties/{PropertyId}",
+     "openapi/_original/domain-group-openapi-v1.json#GET /v1/properties/{id}",
+     "openapi/_original/domain-group-openapi-v1.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties",
+     "openapi/_original/domain-group-openapi-v1.json#GET /v1/propertyradar/portfolio/{PortfolioId}/properties/{PropertyId}"
+    ]
+   },
+   "door": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "address": "object",
+     "name": "string",
+     "portfolio": "object",
+     "timezone": "string",
+     "uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/door-partner-openapi.json#GET /v1/buildings"
+    ]
+   },
+   "doorloop": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "type": "string",
+     "address": "object",
+     "description": "string",
+     "class": "string",
+     "active": "boolean",
+     "numActiveUnits": "number",
+     "settings": "object",
+     "owners": "array",
+     "pictures": "array",
+     "amenities": "array"
+    },
+    "evidence": [
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /properties",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /properties/{propertyId}"
+    ]
+   },
+   "estated": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "metadata": "object",
+     "address": "object",
+     "parcel": "object",
+     "structure": "object",
+     "taxes": "array",
+     "assessments": "array",
+     "market_assessments": "array",
+     "valuation": "object",
+     "owner": "object",
+     "deeds": "array",
+     "boundary": "object"
+    },
+    "evidence": [
+     "openapi/_original/estated-property-data-api-openapi.yml#GET /v4/property"
+    ]
+   },
+   "facilio": {
+    "segments": [
+     "building"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "site": "integer",
+     "location": null,
+     "moduleState": "string",
+     "grossFloorArea": "number",
+     "noOfFloors": "integer",
+     "area": "number",
+     "managedBy": "integer",
+     "sysCreatedTime": "string",
+     "sysModifiedTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/facilio-openapi.yml#DELETE /building/{id}",
+     "openapi/_original/facilio-openapi.yml#GET /building",
+     "openapi/_original/facilio-openapi.yml#GET /building/{id}",
+     "openapi/_original/facilio-openapi.yml#PATCH /building/{id}",
+     "openapi/_original/facilio-openapi.yml#POST /building"
+    ]
+   },
+   "fixflo": {
+    "segments": [
+     "property",
+     "properties"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "number",
+     "BlockId": "number",
+     "ExternalPropertyRef": "string",
+     "PropertyAddressId": "string",
+     "Address": "object",
+     "UpdateDate": "string",
+     "KeyReference": "string",
+     "IsNotManaged": "boolean",
+     "IsDeleted": "boolean",
+     "ArchiveStatus": "string",
+     "AssignedAgent": "object",
+     "AssignedTeam": "object",
+     "PropertyManager": "object",
+     "Warranties": "array",
+     "HttpStatusCode": "integer",
+     "HttpStatusCodeDesc": "string",
+     "Errors": "array",
+     "Messages": "array",
+     "TotalItems": "integer",
+     "TotalPages": "integer",
+     "Items": "array",
+     "NextURL": "string",
+     "PreviousURL": "string",
+     "Id": "string",
+     "PropertyId": "string",
+     "PropertyExternalRef": "string",
+     "LinkType": null
+    },
+    "evidence": [
+     "openapi/_original/fixflo-api-v2-openapi.yml#DELETE /Tenant/{Id}/Property/{PropertyId}",
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Property",
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenant/{Id}/Properties",
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenant/{Id}/Property/{PropertyId}",
+     "openapi/_original/fixflo-api-v2-openapi.yml#POST /Property",
+     "openapi/_original/fixflo-api-v2-openapi.yml#POST /Tenant/{Id}/Property"
+    ]
+   },
+   "hometrack": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "TotalCount": "integer",
+     "PageCount": "integer",
+     "Page": "integer",
+     "PageSize": "integer",
+     "Results": "array"
+    },
+    "evidence": [
+     "openapi/_original/hometrack-prh-core-external-client-api-v2-openapi.yml#GET /organisation/{orgId}/property"
+    ]
+   },
+   "hospitable": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "public_name": "string",
+     "picture": "string",
+     "address": "object",
+     "timezone": "string",
+     "capacity": "object",
+     "currency": "string",
+     "listed": "boolean",
+     "amenities": "array"
+    },
+    "evidence": [
+     "openapi/_original/hospitable-openapi.yml#GET /properties",
+     "openapi/_original/hospitable-openapi.yml#GET /properties/{uuid}"
+    ]
+   },
+   "innago": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "properties": "array",
+     "pagingModel": "object",
+     "propertyUid": "string",
+     "name": "string",
+     "description": "string",
+     "numberOfUnits": "integer",
+     "availableUnits": "integer",
+     "totalTenants": "integer",
+     "numberOfOpenMainatainanceRequests": "integer",
+     "propertyType": "string",
+     "isArchived": "boolean",
+     "address": "object",
+     "entityType": "string",
+     "propertyOwnerUid": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /v1/properties",
+     "openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}"
+    ]
+   },
+   "land-insight": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "address": "object",
+     "building_height": "object",
+     "epc": "object",
+     "properties": "array"
+    },
+    "evidence": [
+     "openapi/_original/land-insight-api-openapi.yml#GET /properties/{uprn}",
+     "openapi/_original/land-insight-api-openapi.yml#POST /properties"
+    ]
+   },
+   "landcor": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "pid": "string",
+     "address": "object",
+     "assessment": "object",
+     "usage": "object",
+     "exterior": "object",
+     "interior": "object",
+     "other": "object",
+     "sale": null
+    },
+    "evidence": [
+     "openapi/_original/landcor-property-api-openapi.json#GET /property/{pid}"
+    ]
+   },
+   "landmark-information": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "address": "object",
+     "tenure": "string",
+     "registered": "boolean",
+     "sellingCapacity": "string"
+    },
+    "evidence": [
+     "openapi/_original/landmark-information-document-vault-api-openapi.yml#PATCH /{documentVaultId}/property"
+    ]
+   },
+   "lev": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "address": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "asset_type_id": "integer",
+     "units": "integer",
+     "square_footage": "number",
+     "year_built": "integer"
+    },
+    "evidence": [
+     "openapi/_original/lev-openapi-original.json#GET /api/external/v2/deals/{deal_id}/properties"
+    ]
+   },
+   "lodgify": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "address": "string",
+     "city": "string",
+     "country_code": "string",
+     "currency_code": "string",
+     "rooms": "array"
+    },
+    "evidence": [
+     "openapi/_original/lodgify-openapi.yml#GET /v2/properties",
+     "openapi/_original/lodgify-openapi.yml#GET /v2/properties/{id}"
+    ]
+   },
+   "lone-wolf": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "canFilter": "boolean",
+     "canSort": "boolean",
+     "filterType": "string"
+    },
+    "evidence": [
+     "openapi/_original/lone-wolf-transactiondesk-api-openapi.yml#GET /v2/transactions/statuses/meta/properties"
+    ]
+   },
+   "mashvisor": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mashvisor-openapi.yml#GET /client/property"
+    ]
+   },
+   "measurabl": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object",
+     "meta": "object",
+     "building": "object",
+     "clientMetadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings",
+     "openapi/_original/measurabl-core-openapi.yml#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.yml#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}",
+     "openapi/_original/measurabl-core-openapi.yml#POST /core/v0/portfolios/{portfolio_id}/buildings",
+     "openapi/_original/measurabl-esgx-buildings-openapi.json#GET /insights/v0/buildings",
+     "openapi/_original/measurabl-esgx-buildings-openapi.json#POST /insights/v0/buildings"
+    ]
+   },
+   "mlsgrid": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ListingKey": "string",
+     "OriginatingSystemName": "string",
+     "StandardStatus": "string",
+     "PropertyType": "string",
+     "ListPrice": "number",
+     "ModificationTimestamp": "string",
+     "PhotosChangeTimestamp": "string",
+     "MlgCanView": "boolean",
+     "MlgCanUse": "array",
+     "Media": "array",
+     "Rooms": "array",
+     "UnitTypes": "array"
+    },
+    "evidence": [
+     "openapi/_original/mlsgrid-reso-web-api-openapi.yml#GET /Property"
+    ]
+   },
+   "oracle-hospitality": {
+    "segments": [
+     "buildings",
+     "property"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "offset": "integer",
+     "limit": "integer",
+     "count": "integer",
+     "hasMore": "boolean",
+     "totalResults": "integer",
+     "errorSummaryInfo": "array",
+     "errorDesc": "string",
+     "matchCriteria": "string",
+     "hotelId": "string",
+     "code": "string",
+     "description": "string",
+     "targetCredits": "integer",
+     "rooms": "array",
+     "credits": "integer",
+     "sequence": "integer",
+     "buildingGroupCode": "string",
+     "managedBy": "string",
+     "warnings": "array",
+     "links": "array"
+    },
+    "evidence": [
+     "openapi/_original/oracle-hospitality-property-v1-crm.json#GET /suspendedProfiles/errorsSummary/property",
+     "openapi/_original/oracle-hospitality-property-v1-crm.json#GET /suspendedProfiles/matchStats/property",
+     "openapi/_original/oracle-hospitality-property-v1-crm.json#POST /suspendedProfiles/errorsSummary/property",
+     "openapi/_original/oracle-hospitality-property-v1-rmcfg.json#DELETE /buildings",
+     "openapi/_original/oracle-hospitality-property-v1-rmcfg.json#GET /buildings",
+     "openapi/_original/oracle-hospitality-property-v1-rmcfg.json#POST /buildings",
+     "openapi/_original/oracle-hospitality-property-v1-rmcfg.json#PUT /buildings"
+    ]
+   },
+   "ownerrez": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "count": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "nextPageUrl": "string",
+     "id": "integer",
+     "name": "string",
+     "active": "boolean",
+     "address": "object",
+     "bedrooms": "integer",
+     "bathrooms": "number",
+     "max_guests": "integer"
+    },
+    "evidence": [
+     "openapi/_original/ownerrez-openapi.yml#GET /properties",
+     "openapi/_original/ownerrez-openapi.yml#GET /properties/{id}"
+    ]
+   },
+   "perchwell": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "ListingKey": "string",
+     "StandardStatus": "string",
+     "ListPrice": "number",
+     "ClosePrice": "number",
+     "UnparsedAddress": "string",
+     "UnitNumber": "string",
+     "ListAgentKey": "string",
+     "ListOfficeKey": "string",
+     "ModificationTimestamp": "string",
+     "Media": "array"
+    },
+    "evidence": [
+     "openapi/_original/perchwell-reso-web-api-openapi.yml#GET /Property",
+     "openapi/_original/perchwell-reso-web-api-openapi.yml#POST /Property"
+    ]
+   },
+   "pricefinder": {
+    "segments": [
+     "properties",
+     "property"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "eventTypes": "array",
+     "propertyId": "integer",
+     "subscriptionDate": "string",
+     "disclaimer": "string",
+     "messages": "array",
+     "sales": "array",
+     "properties": "array",
+     "id": "integer",
+     "matchlevel": "string",
+     "location": "object",
+     "parent": "boolean",
+     "address": "object",
+     "features": "object",
+     "alternativeAddresses": "array",
+     "landDetails": "object",
+     "image": "object",
+     "map": "object",
+     "street": "object",
+     "suburb": "object",
+     "type": "string",
+     "rpd": "string",
+     "marketStatus": "object",
+     "lastModified": "string",
+     "owners": "object",
+     "ownership": "object",
+     "lastSale": "object",
+     "recentListing": "object",
+     "recentRental": "object",
+     "extra": "object",
+     "phoneNumbers": "array",
+     "_self": "string",
+     "link": "string",
+     "matches": "array"
+    },
+    "evidence": [
+     "openapi/_original/pricefinder-api-swagger.json#DELETE /eventsubscriptions/property/{propertyId}",
+     "openapi/_original/pricefinder-api-swagger.json#GET /eventsubscriptions/property/{propertyId}",
+     "openapi/_original/pricefinder-api-swagger.json#GET /names/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /postcodes/{postcode}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /properties/{propertyId}",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/act/divisions/{division}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/act/divisions/{division}/sections/{section}/lots/{lot}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/act/divisions/{division}/sections/{section}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/act/divisions/{planNumber}/lots/{lot}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/nsw/plans/{planType}/{planNumber}/lots/{lot}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/nsw/plans/{planType}/{planNumber}/properties",
+     "openapi/_original/pricefinder-api-swagger.json#GET /references/states/nsw/plans/{planType}/{planNumber}/sections/{section}/lots/{lot}/properties"
+    ]
+   },
+   "propertyware": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "abbreviation": "string",
+     "active": "boolean",
+     "address": "object",
+     "amenities": "array",
+     "applicationFeeRule": "string",
+     "areaUnits": "string",
+     "baseYear": "integer",
+     "baseYearOperatingExpenses": "string",
+     "baseYearPropertyInsurance": "string",
+     "baseYearPropertyTaxes": "string",
+     "category": "string",
+     "countUnit": "integer",
+     "county": "string",
+     "createdBy": "string",
+     "createdDateTime": "string",
+     "customFields": "array",
+     "featuredForRent": "boolean",
+     "floorNumber": "integer",
+     "ftbDeductable": "number",
+     "ftbWithholdingPercentage": "number",
+     "ftbWithholdingType": "string",
+     "id": "integer",
+     "idNumber": "integer",
+     "lastModifiedBy": "string",
+     "lastModifiedDateTime": "string",
+     "leaseID": "integer",
+     "maintenanceLaborSurchargeAmount": "number",
+     "maintenanceLaborSurchargeType": "string",
+     "maintenanceNotice": "string",
+     "maintenanceSpendingLimitAmount": "number",
+     "maintenanceSpendingLimitTime": "string",
+     "management": "object",
+     "marketing": "object",
+     "moveInDays": "integer",
+     "multiUnit": "string",
+     "name": "string",
+     "neighborhood": "string",
+     "numberFloors": "integer",
+     "numberOfBathrooms": "number",
+     "numberOfBedrooms": "integer",
+     "portfolioID": "integer",
+     "propertyManagerList": "array",
+     "propertyType": "string",
+     "ready": "boolean",
+     "reasonForPropertyLost": "string",
+     "rentable": "boolean",
+     "searchTag": "string",
+     "status": "string",
+     "syndicate": "boolean",
+     "targetDeposit": "string",
+     "targetRent": "number",
+     "targetRentUnits": "string",
+     "totalArea": "number",
+     "type": "string",
+     "website": "string",
+     "yearBuilt": "integer",
+     "allocationMethod": "string",
+     "availableDate": "string",
+     "customNaming": "string",
+     "description": "string",
+     "managementContractEndDate": "string",
+     "managementContractStartDate": "string",
+     "managementFeeType": "string",
+     "managementFeesType": "string",
+     "managementFlatFee": "number",
+     "marketingName": "string",
+     "naming": "string",
+     "numberBathrooms": "number",
+     "numberBedrooms": "integer",
+     "numbered": "string",
+     "otherTenantCharges": "string",
+     "parcelNumber": "string",
+     "petsAllowed": "boolean",
+     "postingTitle": "string",
+     "publishedForRent": "string",
+     "shortDescription": "string",
+     "unitType": "string"
+    },
+    "evidence": [
+     "openapi/_original/propertyware-openapi.json#DELETE /buildings/{buildingID}",
+     "openapi/_original/propertyware-openapi.json#GET /buildings",
+     "openapi/_original/propertyware-openapi.json#GET /buildings/{buildingID}",
+     "openapi/_original/propertyware-openapi.json#POST /buildings",
+     "openapi/_original/propertyware-openapi.json#POST /buildings/bulk",
+     "openapi/_original/propertyware-openapi.json#PUT /buildings/{buildingID}"
+    ]
+   },
+   "purplebricks": {
+    "segments": [
+     "properties",
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "propertyId": "integer",
+     "listingId": "string",
+     "price": "number",
+     "publishDate": "string",
+     "propertyDescription": "string",
+     "propertyKeyFeatures": "array",
+     "postcode": "string",
+     "line1": "string",
+     "line2": "string",
+     "unitNumber": "string",
+     "state": "string",
+     "town": "string",
+     "county": "string",
+     "country": "string",
+     "address": "string",
+     "propertyType": "integer",
+     "propertyTypeName": "string",
+     "propertyStyle": "integer",
+     "propertyStyleName": "string",
+     "bedrooms": "integer",
+     "bathrooms": "integer",
+     "toilets": "integer",
+     "receptions": "integer",
+     "tenure": "string",
+     "lease": "integer",
+     "councilTaxBand": "string",
+     "parking": "string",
+     "garage": "string",
+     "doubleGlazing": "string",
+     "garden": "string",
+     "centralHeating": "string",
+     "occupied": "boolean",
+     "toLet": "boolean",
+     "ownerUserId": "integer",
+     "ownerEmail": "string",
+     "id": "integer",
+     "ensuites": "integer",
+     "rentFrequency": "string",
+     "marketPrice": "number",
+     "valuation": "number",
+     "agentId": "integer",
+     "updatedDate": "string",
+     "isPbEmployee": "boolean",
+     "reviewAdvertStep": "integer",
+     "activeOffersCount": "integer",
+     "lastActionCompleted": "string",
+     "lastActionCompletedId": "integer",
+     "cbCreditReferenceId": "string",
+     "cbStatus": "string",
+     "cbStatusDate": "string",
+     "priceQualifier": "string",
+     "orderAmount": "number",
+     "instructionSource": "string",
+     "buildingAreaSquareMetres": "number",
+     "landAreaValue": "number",
+     "landAreaUnit": "string",
+     "ruralCategory": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "hasAccompaniedViewings": "boolean",
+     "isLive": "boolean",
+     "propertyTimeZone": "string",
+     "instructedDate": "string",
+     "newHome": "boolean",
+     "newConstruction": "boolean",
+     "waterFrontProperty": "boolean",
+     "yearbuilt": "integer",
+     "homeOwnerAssociation": "object",
+     "virtualTourURL": "string",
+     "ownerId": "integer",
+     "accompaniedViewingExpertId": "integer",
+     "addressId": "integer",
+     "expertId": "integer",
+     "accompaniedViewing": "boolean",
+     "isInstantInstruct": "boolean",
+     "primaryImageUrl": "string",
+     "comingSoon": "boolean",
+     "daysOnMarket": "integer",
+     "assistantId": "integer",
+     "regionType": "string",
+     "strikePropertyReference": "integer",
+     "lppName": "string",
+     "lppEmail": "string",
+     "accountManagerName": "string",
+     "accountManagerEmail": "string",
+     "negotiationExpertName": "string",
+     "negotiationExpertEmail": "string",
+     "salesProgressorName": "string",
+     "salesProgressorEmail": "string",
+     "ppsReferenceId": "string",
+     "status": "string",
+     "isSales": "boolean",
+     "isLettings": "boolean",
+     "lpp": "object",
+     "accountManager": "object",
+     "negotiationExpert": "object",
+     "salesProgressor": "object",
+     "total": "integer",
+     "properties": "array",
+     "street": "string",
+     "fullAddress": "string",
+     "tenancyChecksViewModel": "object",
+     "email": "string",
+     "loggedIn": "boolean",
+     "existingCustomer": "boolean",
+     "propertyToSell": "boolean",
+     "saleProgression": "string",
+     "portal": "string",
+     "confirmation": "object",
+     "mainImageUrl": "string",
+     "userId": "integer",
+     "closingDate": "string",
+     "hasAccompaniedViewing": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/bland/property/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/creatio/properties/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/creatio/users/{userId}/properties",
+     "openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/performancereport/internal/properties",
+     "openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/property/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-openapi.yml#POST /v1/bland/property",
+     "openapi/_original/purplebricks-property-v1-swagger.json#GET /v1/bland/property/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-swagger.json#GET /v1/creatio/properties/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-swagger.json#GET /v1/creatio/users/{userId}/properties",
+     "openapi/_original/purplebricks-property-v1-swagger.json#GET /v1/performancereport/internal/properties",
+     "openapi/_original/purplebricks-property-v1-swagger.json#GET /v1/property/{propertyId}",
+     "openapi/_original/purplebricks-property-v1-swagger.json#POST /v1/bland/property"
+    ]
+   },
+   "rea-group": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "reportUrl": "string",
+     "propertyId": "integer",
+     "configId": "string",
+     "expiresAt": "string",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/rea-group-reports-openapi.yml#POST /api/v1/reports/property"
+    ]
+   },
+   "realtor-ca": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "ListingKey": "string",
+     "PropertySubType": "String",
+     "DocumentsAvailable": "Array of Strings",
+     "LeaseAmount": "number",
+     "LeaseAmountFrequency": "String",
+     "BusinessType": "Array of Strings",
+     "LeasePerUnit": "String",
+     "PricePerUnit": "String",
+     "WaterBodyName": "string",
+     "View": "Array of Strings",
+     "NumberOfBuildings": "integer",
+     "NumberOfUnitsTotal": "integer",
+     "LotFeatures": "Array of Strings",
+     "LotSizeArea": "number",
+     "LotSizeDimensions": "string",
+     "LotSizeUnits": "String",
+     "PoolFeatures": "Array of Strings",
+     "RoadSurfaceType": "Array of Strings",
+     "CurrentUse": "Array of Strings",
+     "PossibleUse": "Array of Strings",
+     "AnchorsCoTenants": "string",
+     "WaterfrontFeatures": "Array of Strings",
+     "CommunityFeatures": "Array of Strings",
+     "FrontageLengthNumeric": "number",
+     "FrontageLengthNumericUnits": "String",
+     "Fencing": "Array of Strings",
+     "Appliances": "Array of Strings",
+     "OtherEquipment": "Array of Strings",
+     "SecurityFeatures": "Array of Strings",
+     "TotalActualRent": "number",
+     "ExistingLeaseType": "Array of Strings",
+     "AssociationFee": "number",
+     "AssociationFeeFrequency": "String",
+     "AssociationName": "string",
+     "AssociationFeeIncludes": "Array of Strings",
+     "OriginalEntryTimestamp": "String",
+     "ModificationTimestamp": "String",
+     "AvailabilityDate": "string",
+     "ListingId": "string",
+     "ListAgentNationalAssociationId": "string",
+     "CoListAgentNationalAssociationId": "string",
+     "CoListAgentNationalAssociationId2": "string",
+     "CoListAgentNationalAssociationId3": "string",
+     "InternetEntireListingDisplayYN": "boolean",
+     "StandardStatus": "String",
+     "StatusChangeTimestamp": "String",
+     "PublicRemarks": "string",
+     "ListPrice": "number",
+     "Inclusions": "string",
+     "ListOfficeKey": "string",
+     "CoListOfficeKey": "string",
+     "CoListOfficeKey2": "string",
+     "CoListOfficeKey3": "string",
+     "ListOfficeNationalAssociationId": "string",
+     "CoListOfficeNationalAssociationId": "string",
+     "CoListOfficeNationalAssociationId2": "string",
+     "CoListOfficeNationalAssociationId3": "string",
+     "CoListAgentKey": "string",
+     "CoListAgentKey2": "string",
+     "CoListAgentKey3": "string",
+     "ListAgentKey": "string",
+     "InternetAddressDisplayYN": "boolean",
+     "ListingURL": "string",
+     "OriginatingSystemName": "string",
+     "PhotosCount": "integer",
+     "PhotosChangeTimestamp": "String",
+     "CommonInterest": "String",
+     "ListAOR": "String",
+     "ListAORKey": "string",
+     "UnparsedAddress": "string",
+     "PostalCode": "string",
+     "SubdivisionName": "string",
+     "StateOrProvince": "String",
+     "StreetDirPrefix": "String",
+     "StreetDirSuffix": "String",
+     "StreetName": "string",
+     "StreetNumber": "string",
+     "StreetSuffix": "String",
+     "UnitNumber": "string",
+     "Country": "String",
+     "City": "string",
+     "Directions": "string",
+     "Latitude": "number",
+     "Longitude": "number",
+     "CityRegion": "string",
+     "MapCoordinateVerifiedYN": "String",
+     "GeocodeManualYN": "boolean",
+     "ParkingTotal": "integer",
+     "YearBuilt": "integer",
+     "BathroomsPartial": "integer",
+     "BathroomsTotalInteger": "integer",
+     "BedroomsTotal": "integer",
+     "BuildingAreaTotal": "number",
+     "BuildingAreaUnits": "String",
+     "BuildingFeatures": "Array of Strings",
+     "AboveGradeFinishedArea": "number",
+     "AboveGradeFinishedAreaUnits": "String",
+     "AboveGradeFinishedAreaSource": "String",
+     "AboveGradeFinishedAreaMinimum": "number",
+     "AboveGradeFinishedAreaMaximum": "number",
+     "BelowGradeFinishedArea": "number",
+     "BelowGradeFinishedAreaUnits": "String",
+     "BelowGradeFinishedAreaSource": "String",
+     "BelowGradeFinishedAreaMinimum": "number",
+     "BelowGradeFinishedAreaMaximum": "number",
+     "LivingArea": "number",
+     "LivingAreaUnits": "String",
+     "LivingAreaSource": "String",
+     "LivingAreaMinimum": "number",
+     "LivingAreaMaximum": "number",
+     "FireplacesTotal": "integer",
+     "FireplaceYN": "boolean",
+     "FireplaceFeatures": "Array of Strings",
+     "ArchitecturalStyle": "Array of Strings",
+     "Heating": "Array of Strings",
+     "FoundationDetails": "Array of Strings",
+     "Basement": "Array of Strings",
+     "ExteriorFeatures": "Array of Strings",
+     "Flooring": "Array of Strings",
+     "ParkingFeatures": "Array of Strings",
+     "Cooling": "Array of Strings",
+     "PropertyCondition": "Array of Strings",
+     "Roof": "Array of Strings",
+     "ConstructionMaterials": "Array of Strings",
+     "Rooms": "array",
+     "Stories": "number",
+     "PropertyAttachedYN": "boolean",
+     "AccessibilityFeatures": "Array of Strings",
+     "BedroomsAboveGrade": "integer",
+     "BedroomsBelowGrade": "integer",
+     "Zoning": "string",
+     "ZoningDescription": "string",
+     "TaxAnnualAmount": "number",
+     "TaxBlock": "string",
+     "TaxLot": "string",
+     "TaxYear": "integer",
+     "StructureType": "Array of Strings",
+     "ParcelNumber": "string",
+     "Utilities": "Array of Strings",
+     "IrrigationSource": "Array of Strings",
+     "WaterSource": "Array of Strings",
+     "Sewer": "Array of Strings",
+     "Electric": "Array of Strings",
+     "Media": "array",
+     "@odata.context": "string"
+    },
+    "evidence": [
+     "openapi/_original/realtor-ca-ddf-web-api-docs-openapi.json#GET /odata/v1/Property",
+     "openapi/_original/realtor-ca-ddf-web-api-docs-openapi.json#GET /odata/v1/Property/{PropertyKey}",
+     "openapi/_original/realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property",
+     "openapi/_original/realtor-ca-ddf-web-api-openapi.json#GET /odata/v1/Property/{PropertyKey}"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "communities"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "q": "string",
+     "limit": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /reddit/v1/communities"
+    ]
+   },
+   "regrid": {
+    "segments": [
+     "building"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "description": "string",
+     "indexed": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/regrid-parcel-openapi.yml#GET /schemas/building"
+    ]
+   },
+   "rentcast": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "formattedAddress": "string",
+     "addressLine1": "string",
+     "addressLine2": null,
+     "city": "string",
+     "state": "string",
+     "zipCode": "string",
+     "county": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "propertyType": "string",
+     "bedrooms": "integer",
+     "bathrooms": "integer",
+     "squareFootage": "integer",
+     "lotSize": "integer",
+     "yearBuilt": "integer",
+     "assessorID": "string",
+     "legalDescription": "string",
+     "subdivision": "string",
+     "zoning": "string",
+     "lastSaleDate": "string",
+     "lastSalePrice": "integer",
+     "hoa": "object",
+     "features": "object",
+     "taxAssessments": "object",
+     "propertyTaxes": "object",
+     "history": "object",
+     "owner": "object",
+     "ownerOccupied": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/rentcast-openapi.json#GET /properties",
+     "openapi/_original/rentcast-openapi.json#GET /properties/{id}"
+    ]
+   },
+   "rentcheck": {
+    "segments": [
+     "buildings",
+     "communities",
+     "properties"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "x_id": "string",
+     "team": "object",
+     "property_type": "string",
+     "name": "string",
+     "address": "string",
+     "address_2": "string",
+     "city": "string",
+     "region": "string",
+     "zip_code": "string",
+     "floors": "number",
+     "additional_team_ids": "array",
+     "unit_ids": "array",
+     "creation_source": "string",
+     "created_by": "object",
+     "created_date": "string",
+     "updated_date": "string",
+     "rooms": "array",
+     "room_names": "array",
+     "rooms_info": "array",
+     "last_completed_inspection": "object",
+     "permissions": "object",
+     "sync_data": "object",
+     "team_id": "string",
+     "state": "string",
+     "rentvine_sync": "object",
+     "totalRemoved": "integer",
+     "building_ids": "array",
+     "bedrooms": "integer",
+     "full_bathrooms": "number",
+     "half_bathrooms": "integer",
+     "building_id": "string",
+     "latchel_property_id": "integer",
+     "postal_code": "string",
+     "bathrooms": "number"
+    },
+    "evidence": [
+     "openapi/_original/rentcheck-openapi-original.yml#DELETE /v1/buildings",
+     "openapi/_original/rentcheck-openapi-original.yml#DELETE /v1/communities",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/buildings/{buildingId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/communities/{communityId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/latchel/{orgId}/properties",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/latchel/{orgId}/properties/{id}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/properties/buildings",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/properties/communities",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/properties/{propertyId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v3/properties/buildings",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v3/properties/communities",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v1/buildings"
+    ]
+   },
+   "reonomy": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "location": "object",
+     "address": "string",
+     "city": "string",
+     "state_code": "string",
+     "postal_code": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "place_name": "string",
+     "property_id": "string",
+     "parcel_number": "string",
+     "block_id": "string",
+     "borough_id": "string",
+     "mortgages": "array",
+     "ownership": "object",
+     "sales": "array",
+     "taxes": "object",
+     "tenants": "array",
+     "foreclosure": "object",
+     "property_ids": "array",
+     "detail_type": "array"
+    },
+    "evidence": [
+     "openapi/_original/reonomy-openapi.yml#GET /property/{property_id}",
+     "openapi/_original/reonomy-openapi.yml#POST /property/bulk",
+     "openapi/_original/reonomy-openapi.yml#POST /resolve/property"
+    ]
+   },
+   "snappt": {
+    "segments": [
+     "properties",
+     "property"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "shortId": "string",
+     "name": "string",
+     "entityName": "string",
+     "logo": "string",
+     "phone": "string",
+     "phoneIsRequired": "boolean",
+     "website": "string",
+     "unit": "string",
+     "unitIsRequired": "boolean",
+     "address": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "status": "string",
+     "supportedDoctypes": "object",
+     "bankStatement": "number",
+     "paystub": "number",
+     "email": "string",
+     "companyId": "string",
+     "companyShortId": "string",
+     "pmcName": "string",
+     "applicantLink": "string",
+     "leasingTeamLink": "string",
+     "isLinkedToYardi": "boolean",
+     "identityVerificationEnabled": "boolean",
+     "incomeVerificationEnabled": "boolean",
+     "assetVerificationEnabled": "boolean",
+     "payrollLinkingEnabled": "boolean",
+     "bankLinkingEnabled": "boolean",
+     "insertedAt": "string",
+     "updatedAt": "string",
+     "propertyFeature": "object",
+     "identityVerificationReportImageTypes": "array",
+     "referenceCompletedNotificationEnabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /properties",
+     "openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /properties/{propertyId}",
+     "openapi/_original/snappt-enterprise-api-openapi-original.yml#GET /session/property",
+     "openapi/_original/snappt-enterprise-api-openapi-original.yml#POST /properties",
+     "openapi/_original/snappt-enterprise-api-openapi-original.yml#PUT /properties/{propertyId}"
+    ]
+   },
+   "sprift": {
+    "segments": [
+     "property"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "status": "boolean",
+     "propertyDetails": "object",
+     "floodRisk": "object",
+     "coastal_erosion": "string",
+     "estimatedPrice": "string",
+     "rentalEstimate": "string",
+     "yield": "string",
+     "landRegistry": "object",
+     "propertyValue": "string",
+     "poundPerSquareFoot": "string",
+     "poundPerSquareFootCurrent": "string",
+     "isInteriorUpdated": "boolean",
+     "interior": "object",
+     "councilTax": "object",
+     "epc": "object",
+     "propertyDefaultImage": "string",
+     "propertyImages": "array",
+     "street_view_pov": "object",
+     "propertyPolygon": "object",
+     "nearby_schools": "array",
+     "nearby_transport": "object",
+     "broadband_speeds": "object",
+     "mobile_coverage": "object"
+    },
+    "evidence": [
+     "openapi/_original/sprift-openapi.json#GET /property/{propertyID}"
+    ]
+   },
+   "street-co": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/street-co-open-api-openapi.json#GET /properties",
+     "openapi/_original/street-co-open-api-openapi.json#GET /properties/{property_id}",
+     "openapi/_original/street-co-open-api-openapi.json#PATCH /properties/{property_id}",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /properties",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /properties/{property_id}",
+     "openapi/_original/street-co-open-api-openapi.yml#PATCH /properties/{property_id}",
+     "openapi/_original/street-co-property-feed-api-openapi.json#GET /properties/{property}",
+     "openapi/_original/street-co-property-feed-api-openapi.yml#GET /properties/{property}"
+    ]
+   },
+   "taylor-morrison-home": {
+    "segments": [
+     "communities"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "communities": "array",
+     "total": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "community_id": "string",
+     "name": "string",
+     "city": "string",
+     "state": "string",
+     "metro": "string",
+     "price_from": "integer",
+     "price_to": "integer",
+     "status": "string",
+     "home_count": "integer",
+     "description": "string",
+     "images": "array",
+     "amenities": "array",
+     "latitude": "number",
+     "longitude": "number"
+    },
+    "evidence": [
+     "openapi/_original/taylor-morrison-home-search-openapi.yml#GET /communities",
+     "openapi/_original/taylor-morrison-home-search-openapi.yml#GET /communities/{community_id}"
+    ]
+   },
+   "trellistech": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "workspaceId": "string",
+     "sourceIntegrationId": [
+      "string",
+      "null"
+     ],
+     "name": "string",
+     "internalName": [
+      "string",
+      "null"
+     ],
+     "internalCode": [
+      "string",
+      "null"
+     ],
+     "status": "string",
+     "lifecycleStage": [
+      "string",
+      "null"
+     ],
+     "address": [
+      "string",
+      "null"
+     ],
+     "city": [
+      "string",
+      "null"
+     ],
+     "postalCode": [
+      "string",
+      "null"
+     ],
+     "country": [
+      "string",
+      "null"
+     ],
+     "latitude": [
+      "number",
+      "null"
+     ],
+     "longitude": [
+      "number",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "houseRules": [
+      "string",
+      "null"
+     ],
+     "propertyType": [
+      "string",
+      "null"
+     ],
+     "timezone": [
+      "string",
+      "null"
+     ],
+     "bedrooms": [
+      "integer",
+      "null"
+     ],
+     "bathrooms": [
+      "number",
+      "null"
+     ],
+     "beds": [
+      "integer",
+      "null"
+     ],
+     "kitchens": [
+      "integer",
+      "null"
+     ],
+     "livingRooms": [
+      "integer",
+      "null"
+     ],
+     "hallways": [
+      "integer",
+      "null"
+     ],
+     "terraces": [
+      "integer",
+      "null"
+     ],
+     "balconies": [
+      "integer",
+      "null"
+     ],
+     "gardens": [
+      "integer",
+      "null"
+     ],
+     "minGuests": [
+      "integer",
+      "null"
+     ],
+     "maxGuests": [
+      "integer",
+      "null"
+     ],
+     "squareMeters": [
+      "number",
+      "null"
+     ],
+     "floor": [
+      "integer",
+      "null"
+     ],
+     "hasElevator": "boolean",
+     "hasParking": "boolean",
+     "minNights": [
+      "integer",
+      "null"
+     ],
+     "maxNights": [
+      "integer",
+      "null"
+     ],
+     "cleaningFee": [
+      "number",
+      "null"
+     ],
+     "managementFee": [
+      "number",
+      "null"
+     ],
+     "dealValue": [
+      "number",
+      "null"
+     ],
+     "checkinInstructions": [
+      "string",
+      "null"
+     ],
+     "checkoutInstructions": [
+      "string",
+      "null"
+     ],
+     "parkingInstructions": [
+      "string",
+      "null"
+     ],
+     "accessCode": [
+      "string",
+      "null"
+     ],
+     "checkinVideoUrl": [
+      "string",
+      "null"
+     ],
+     "intercomName": [
+      "string",
+      "null"
+     ],
+     "checkinTime": [
+      "string",
+      "null"
+     ],
+     "checkinTimeEnd": [
+      "string",
+      "null"
+     ],
+     "checkoutTime": [
+      "string",
+      "null"
+     ],
+     "supportPhone": [
+      "string",
+      "null"
+     ],
+     "wifiName": [
+      "string",
+      "null"
+     ],
+     "wifiPassword": [
+      "string",
+      "null"
+     ],
+     "lockProvider": [
+      "string",
+      "null"
+     ],
+     "lockDeviceId": [
+      "string",
+      "null"
+     ],
+     "hasSmartLock": "boolean",
+     "shellyDeviceId": [
+      "string",
+      "null"
+     ],
+     "manualConfig": null,
+     "cleaningInstructions": [
+      "string",
+      "null"
+     ],
+     "propertyLicenseNumber": [
+      "string",
+      "null"
+     ],
+     "defaultWarehouseId": [
+      "string",
+      "null"
+     ],
+     "customFields": "object",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "deleted": "boolean",
+     "propertyId": "string"
+    },
+    "evidence": [
+     "openapi/_original/trellistech-public-api.json#DELETE /api/v1/workspaces/{workspaceId}/properties/{propertyId}",
+     "openapi/_original/trellistech-public-api.json#GET /api/v1/workspaces/{workspaceId}/properties",
+     "openapi/_original/trellistech-public-api.json#GET /api/v1/workspaces/{workspaceId}/properties/{propertyId}",
+     "openapi/_original/trellistech-public-api.json#PATCH /api/v1/workspaces/{workspaceId}/properties/{propertyId}",
+     "openapi/_original/trellistech-public-api.json#POST /api/v1/workspaces/{workspaceId}/properties",
+     "openapi/_original/trellistech-public-api.json#PUT /api/v1/workspaces/{workspaceId}/properties/{propertyId}"
+    ]
+   },
+   "twentyci": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/twentyci-twentyapi-openapi.json#GET /properties",
+     "openapi/_original/twentyci-twentyapi-openapi.json#GET /properties/{uprn}",
+     "openapi/_original/twentyci-twentyapi-openapi.json#GET /trigger-type/{typeId}/properties"
+    ]
+   },
+   "vaultre": {
+    "segments": [
+     "buildings",
+     "properties",
+     "property"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "building": "object",
+     "class": "object",
+     "type": "object",
+     "address": "object",
+     "displayAddress": "string",
+     "referenceID": "string",
+     "keyID": "string",
+     "photos": "array",
+     "searchPrice": "number",
+     "displayPrice": "string",
+     "heading": "string",
+     "description": "string",
+     "brochureDescription": "string",
+     "landArea": "object",
+     "volumeNumber": "string",
+     "folioNumber": "string",
+     "corelogicId": "integer",
+     "yearBuilt": "integer",
+     "inserted": "string",
+     "modified": "string",
+     "saleLifeId": "integer",
+     "leaseLifeId": "integer",
+     "geolocation": "object",
+     "contactStaff": "array",
+     "accessBy": "array",
+     "leaseHistory": "array",
+     "saleHistory": "array",
+     "bed": "integer",
+     "bath": "integer",
+     "carSpaces": "integer",
+     "floorArea": "object",
+     "frontage": "number",
+     "addressVisibility": "string",
+     "lotNumber": "string",
+     "certificateOfTitle": "string",
+     "legalDescription": "string",
+     "rpdp": "string",
+     "windowCardDescription": "string",
+     "commercialListingType": "string",
+     "councilTaxBand": "string",
+     "isStrataBuilding": "boolean",
+     "isProjectBuilding": "boolean",
+     "epcRating": "string",
+     "zoning": "string",
+     "account": "object",
+     "editableBy": "array",
+     "keys": "array",
+     "saleLife": "object",
+     "leaseLife": "object"
+    },
+    "evidence": [
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#DELETE /buildings/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#DELETE /properties/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /buildings",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /buildings/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /categories/property",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /categories/property/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /corelogic/properties/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#POST /buildings",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#PUT /buildings/{id}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#DELETE /buildings/{id}"
+    ]
+   },
+   "vergesense": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "name": "string",
+     "building_ref_id": "string",
+     "address": "string",
+     "working_hours": "object",
+     "timezone": "string",
+     "capacity": "integer",
+     "minimum_social_distance": "integer",
+     "floors": "array"
+    },
+    "evidence": [
+     "openapi/_original/vergesense-api-openapi.json#GET /buildings",
+     "openapi/_original/vergesense-api-openapi.json#GET /buildings/{building_ref_id}",
+     "openapi/_original/vergesense-api-openapi.json#GET /metrics/aggregate/buildings/{building_id}",
+     "openapi/_original/vergesense-api-openapi.json#GET /metrics/hourly/buildings"
+    ]
+   },
+   "vts": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/vts-openapi.yml#GET /api/v1/buildings",
+     "openapi/_original/vts-openapi.yml#GET /api/v1/buildings/{id}"
+    ]
+   },
+   "wegowise": {
+    "segments": [
+     "buildings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "address": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "year_built": "integer",
+     "gross_area": "number",
+     "number_of_units": "integer",
+     "building_type": "string",
+     "development_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/wegowise-openapi.yml#DELETE /api/v1/wego_pro/buildings/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/developments/{id}/buildings",
+     "openapi/_original/wegowise-openapi.yml#POST /api/v1/wego_pro/developments/{id}/buildings",
+     "openapi/_original/wegowise-openapi.yml#PUT /api/v1/wego_pro/buildings/{id}"
+    ]
+   },
+   "zillapi": {
+    "segments": [
+     "properties"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "zpid": "string",
+     "address": "object",
+     "price": "number",
+     "bedrooms": "number",
+     "bathrooms": "number",
+     "livingArea": "number",
+     "lotSize": "number",
+     "yearBuilt": "integer",
+     "homeType": "string",
+     "homeStatus": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "zestimate": "number",
+     "rentZestimate": "number",
+     "priceHistory": "array",
+     "taxHistory": "array",
+     "schools": "array",
+     "nearbyHomes": "array",
+     "responsivePhotos": "array",
+     "photoCount": "integer",
+     "openHouseSchedule": "array",
+     "tourEligibility": "object",
+     "resoFacts": "object",
+     "urls": "array",
+     "addresses": "array",
+     "propertyStatus": "string",
+     "extractBuildingUnits": "string",
+     "maxItems": "integer"
+    },
+    "evidence": [
+     "openapi/_original/zillapi-openapi-original.json#GET /v1/properties/{zpid}",
+     "openapi/_original/zillapi-openapi-original.json#POST /v1/properties/batch"
+    ]
+   }
+  },
+  "unit": {
+   "alterestate": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "model": "string",
+     "floor": "integer",
+     "area": "number",
+     "rooms": "integer",
+     "bathrooms": "number",
+     "parking": "integer",
+     "status": "string",
+     "sale_price": "number",
+     "building": "integer",
+     "floor_plan": "string"
+    },
+    "evidence": [
+     "openapi/_original/alterestate-openapi.yml#GET /properties/public/units/{project_slug}/"
+    ]
+   },
+   "apaleo": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apaleo-openapi.yml#GET /availability/v1/units",
+     "openapi/_original/apaleo-openapi.yml#GET /inventory/v1/units",
+     "openapi/_original/apaleo-openapi.yml#POST /inventory/v1/units"
+    ]
+   },
+   "butterflymx": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "unit": "object",
+     "access_group": "object"
+    },
+    "evidence": [
+     "openapi/_original/butterflymx-api-openapi.json#DELETE /v4/buildings/{building_id}/units/{id}",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/units",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/units/{id}",
+     "openapi/_original/butterflymx-api-openapi.json#POST /v4/access_groups/{id}/units",
+     "openapi/_original/butterflymx-api-openapi.json#POST /v4/buildings/{building_id}/units",
+     "openapi/_original/butterflymx-api-openapi.json#PUT /v4/buildings/{building_id}/units/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#DELETE /v4/buildings/{building_id}/units/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/units",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/units/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#POST /v4/access_groups/{id}/units",
+     "openapi/_original/butterflymx-api-openapi.yml#POST /v4/buildings/{building_id}/units",
+     "openapi/_original/butterflymx-api-openapi.yml#PUT /v4/buildings/{building_id}/units/{id}"
+    ]
+   },
+   "doorloop": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "active": "boolean",
+     "address": "object",
+     "addressSameAsProperty": "boolean",
+     "name": "string",
+     "beds": "number",
+     "baths": "number",
+     "size": "number",
+     "marketRent": "number",
+     "property": "string",
+     "pictures": "array",
+     "description": "string",
+     "listing": "object",
+     "rentalApplicationListing": "object",
+     "amenities": "array"
+    },
+    "evidence": [
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /units",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /units/{unitId}",
+     "openapi/_original/doorloop-api-reference-openapi.yml#PUT /units/{unitId}"
+    ]
+   },
+   "innago": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "units": "array",
+     "unit": "object",
+     "tenants": "array",
+     "entityType": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}/units",
+     "openapi/_original/openapi.yml#GET /v1/properties/{propertyUid}/units/{unitUid}"
+    ]
+   },
+   "measurabl": {
+    "segments": [
+     "spaces"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object",
+     "meta": "object",
+     "name": "string",
+     "propertyType": "string",
+     "common": "boolean",
+     "floorAreaSqFt": "number"
+    },
+    "evidence": [
+     "openapi/_original/measurabl-core-openapi.json#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/spaces",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces",
+     "openapi/_original/measurabl-core-openapi.json#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.json#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.json#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces",
+     "openapi/_original/measurabl-core-openapi.yml#DELETE /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/meters/{meter_id}/spaces",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces",
+     "openapi/_original/measurabl-core-openapi.yml#GET /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.yml#PATCH /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces/{space_id}",
+     "openapi/_original/measurabl-core-openapi.yml#POST /core/v0/portfolios/{portfolio_id}/buildings/{building_id}/spaces"
+    ]
+   },
+   "propertyware": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "abbreviation": "string",
+     "active": "boolean",
+     "address": "object",
+     "amenities": "array",
+     "areaUnits": "string",
+     "buildingID": "integer",
+     "category": "string",
+     "county": "string",
+     "createdBy": "string",
+     "createdDateTime": "string",
+     "customFields": "array",
+     "floorNumber": "integer",
+     "id": "integer",
+     "idNumber": "integer",
+     "lastModifiedBy": "string",
+     "lastModifiedDateTime": "string",
+     "leaseID": "integer",
+     "maintenanceNotice": "string",
+     "maintenanceSpendingLimitTime": "string",
+     "management": "object",
+     "marketing": "object",
+     "name": "string",
+     "neighborhood": "string",
+     "numberFloors": "integer",
+     "numberOfBathrooms": "number",
+     "numberOfBedrooms": "integer",
+     "portfolioID": "integer",
+     "propertyManagerList": "array",
+     "ready": "boolean",
+     "rentable": "boolean",
+     "searchTag": "string",
+     "status": "string",
+     "syndicate": "boolean",
+     "targetDeposit": "string",
+     "targetRent": "number",
+     "targetRentUnits": "string",
+     "totalArea": "number",
+     "type": "string",
+     "website": "string",
+     "yearBuilt": "integer",
+     "availableDate": "string",
+     "description": "string",
+     "numberBathrooms": "number",
+     "numberBedrooms": "integer",
+     "reasonForPropertyLost": "string",
+     "residential": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/propertyware-openapi.json#DELETE /units/{unitID}",
+     "openapi/_original/propertyware-openapi.json#GET /units",
+     "openapi/_original/propertyware-openapi.json#GET /units/{unitID}",
+     "openapi/_original/propertyware-openapi.json#POST /units",
+     "openapi/_original/propertyware-openapi.json#POST /units/bulk",
+     "openapi/_original/propertyware-openapi.json#PUT /units/{unitID}"
+    ]
+   },
+   "rentcheck": {
+    "segments": [
+     "units"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "address": "string",
+     "address_2": "string",
+     "city": "string",
+     "region": "string",
+     "zip_code": "string",
+     "name": "string",
+     "property_type": "string",
+     "team": "object",
+     "last_completed_inspection": "object",
+     "rooms_info": "array",
+     "permissions": "object",
+     "sync_data": "object",
+     "x_id": "string",
+     "created_date": "string",
+     "updated_date": "string",
+     "rooms": "array",
+     "room_names": "array",
+     "creation_source": "string",
+     "created_by": "object",
+     "bedrooms": "integer",
+     "full_bathrooms": "number",
+     "half_bathrooms": "integer",
+     "building_id": "string",
+     "latchel_property_id": "integer",
+     "team_id": "string",
+     "state": "string",
+     "rentvine_sync": "object",
+     "totalRemoved": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rentcheck-openapi-original.yml#DELETE /v1/units",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/units/{unitId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/properties/units",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v3/properties/units",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v1/units",
+     "openapi/_original/rentcheck-openapi-original.yml#PUT /v1/units/{unitId}"
+    ]
+   },
+   "wegowise": {
+    "segments": [
+     "apartments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "unit_number": "string",
+     "building_id": "integer",
+     "area": "number",
+     "bedrooms": "integer",
+     "occupants": "integer"
+    },
+    "evidence": [
+     "openapi/_original/wegowise-openapi.yml#DELETE /api/v1/wego_pro/apartments/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/apartments/{id}",
+     "openapi/_original/wegowise-openapi.yml#GET /api/v1/wego_pro/buildings/{id}/apartments",
+     "openapi/_original/wegowise-openapi.yml#POST /api/v1/wego_pro/buildings/{id}/apartments",
+     "openapi/_original/wegowise-openapi.yml#PUT /api/v1/wego_pro/apartments/{id}"
+    ]
+   }
+  },
+  "lease": {
+   "alto-vebra": {
+    "segments": [
+     "tenancies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "rent": "number",
+     "currencyCode": "string",
+     "rentalFrequency": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "targetVacateDate": "string",
+     "status": "string",
+     "occupantCount": "integer",
+     "tenants": "array",
+     "rentalAmount": "number",
+     "applicantContactIds": "array",
+     "tenancyStartDate": "string",
+     "tenancyTermMonths": "integer",
+     "tenancyTermYears": "integer",
+     "sendDefaultLetters": "boolean",
+     "groupId": "integer",
+     "branchId": "integer",
+     "propertyId": "integer",
+     "termYears": "integer",
+     "termMonths": "integer",
+     "depositRequested": "number",
+     "depositSchemeType": "string",
+     "rentalAddress": "object",
+     "firstFullRentDate": "string",
+     "noticeToQuitDate": "string",
+     "renewalDate": "string",
+     "nextTermTenancyId": "integer",
+     "createdDate": "string",
+     "modifiedDate": "string",
+     "links": "array",
+     "op": "string",
+     "value": "number",
+     "path": "string"
+    },
+    "evidence": [
+     "openapi/_original/alto-api-openapi.json#GET /inventory/{inventoryId}/tenancies",
+     "openapi/_original/alto-api-openapi.json#GET /tenancies",
+     "openapi/_original/alto-api-openapi.json#GET /tenancies/{tenancyId}",
+     "openapi/_original/alto-api-openapi.json#PATCH /tenancies/{tenancyId}",
+     "openapi/_original/alto-api-openapi.json#POST /inventory/{inventoryId}/tenancies"
+    ]
+   },
+   "argus-enterprise": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "propertyId": "string",
+     "tenantId": "string",
+     "tenantName": "string",
+     "unitNumber": "string",
+     "leaseType": "string",
+     "status": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "leasedArea": "number",
+     "baseRent": "number",
+     "rentFrequency": "string",
+     "rentPerSquareFoot": "number",
+     "escalationRate": "number",
+     "escalationType": "string",
+     "securityDeposit": "number",
+     "tenantImprovementAllowance": "number",
+     "options": "array",
+     "currency": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/argus-enterprise-core-openapi.yml#DELETE /properties/{propertyId}/leases/{leaseId}",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}/leases",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /properties/{propertyId}/leases/{leaseId}",
+     "openapi/_original/argus-enterprise-core-openapi.yml#POST /properties/{propertyId}/leases",
+     "openapi/_original/argus-enterprise-core-openapi.yml#PUT /properties/{propertyId}/leases/{leaseId}"
+    ]
+   },
+   "doorloop": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "property": "string",
+     "name": "string",
+     "notes": "string",
+     "reference": "string",
+     "start": "string",
+     "end": "string",
+     "term": "string",
+     "rolloverToAtWill": "string",
+     "units": "array",
+     "status": "string",
+     "evictonPending": "boolean",
+     "proofOfInsuranceRequired": "boolean",
+     "totalBalancedue": "number",
+     "totalDepositsHeld": "number",
+     "totalRecurringRent": "number",
+     "totalRecurringPayments": "number",
+     "totalRecurringCredits": "number",
+     "TotalRecurringCharges": "number"
+    },
+    "evidence": [
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /leases",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /leases/{leaseId}"
+    ]
+   },
+   "innago": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "list": "array",
+     "paging": "object",
+     "leaseUid": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "propertyName": "string",
+     "propertyAddress": "string",
+     "propertyUnitName": "string",
+     "rentAmount": "number",
+     "depositAmount": "number",
+     "dueOn": "integer",
+     "paymentFrequency": "string",
+     "isActiveLease": "boolean",
+     "isExpiredLease": "boolean",
+     "isExpiringLease": "boolean",
+     "isFutureLease": "boolean",
+     "isListingArchived": "boolean",
+     "noOfTenants": "integer",
+     "tenants": "array",
+     "listingFrequency": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /v1/leases",
+     "openapi/_original/openapi.yml#GET /v1/leases/{leaseUid}"
+    ]
+   },
+   "pricefinder": {
+    "segments": [
+     "rentals"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "disclaimer": "string",
+     "messages": "array",
+     "listings": "array"
+    },
+    "evidence": [
+     "openapi/_original/pricefinder-api-swagger.json#GET /properties/{propertyId}/radial/rentals",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /properties/{propertyId}/radial/rentals"
+    ]
+   },
+   "propertyme": {
+    "segments": [
+     "tenancies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ContactReference": "string",
+     "LotAddress": "string",
+     "LotReference": "string",
+     "FolioNumber": "integer",
+     "ContactEmail": "string",
+     "ContactNormalisedMobilePhone": "string",
+     "ContactCellPhone": "string",
+     "ContactWorkPhone": "string",
+     "ContactHomePhone": "string",
+     "ContactPhone": "string",
+     "IsActive": "boolean",
+     "IsClosed": "boolean",
+     "ActiveOwnershipId": "string",
+     "Code": "string",
+     "IsClientAccessDisabled": "boolean",
+     "Label": "string",
+     "SearchText": "object",
+     "Name": "string",
+     "HasBeenReceipted": "boolean",
+     "Id": "string",
+     "CustomerId": "string",
+     "LotId": "string",
+     "ContactId": "string",
+     "TenancyStart": "string",
+     "AgreementStart": "string",
+     "AgreementEnd": "string",
+     "Periodic": "boolean",
+     "TenancyEnd": "string",
+     "Termination": "string",
+     "BreakLease": "string",
+     "Notes": "string",
+     "RentAmount": "number",
+     "RentPeriod": "string",
+     "BondAmount": "number",
+     "OpenBondReceived": "number",
+     "BondReference": "string",
+     "BondInTrust": "number",
+     "BankReference": "string",
+     "TaxOnRent": "boolean",
+     "GenerateRentInvoice": "boolean",
+     "RentInvoiceDaysInAdvance": "integer",
+     "ReceiptWarning": "string",
+     "NextIncreaseAmount": "number",
+     "NextIncreaseDate": "string",
+     "RentSequence": "integer",
+     "PaidTo": "string",
+     "EffectivePaidTo": "string",
+     "PartPaid": "number",
+     "ProrataTo": "string",
+     "ReviewFrequency": "integer",
+     "NextReviewDate": "string",
+     "LastReviewedOn": "string",
+     "DirectDebit": "boolean",
+     "DirectDebitFixedAmount": "number",
+     "DirectDebitFrequency": "string",
+     "NextDirectDebitDate": "string",
+     "CreatedOn": "string",
+     "UpdatedOn": "string",
+     "ExcludeArrearsAutomation": "boolean",
+     "IsWaterUsageCharged": "boolean",
+     "BondDueDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/propertyme-openapi.json#GET /v1/tenancies"
+    ]
+   },
+   "propertyware": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "active": "boolean",
+     "addendums": "array",
+     "arBalance": "number",
+     "baseRent": "number",
+     "buildingID": "integer",
+     "comments": "string",
+     "contacts": "array",
+     "createdBy": "string",
+     "createdDateTime": "string",
+     "customFields": "array",
+     "endDate": "string",
+     "id": "integer",
+     "idNumber": "integer",
+     "lastModifiedBy": "string",
+     "lastModifiedDateTime": "string",
+     "lateFeeRule": "string",
+     "leaseBalance": "number",
+     "leaseName": "string",
+     "location": "string",
+     "moveInDate": "string",
+     "moveOutDate": "string",
+     "noticeGivenDate": "string",
+     "paymentRestriction": "string",
+     "portfolioID": "integer",
+     "publicAssistanceProgram": "string",
+     "reasonForLeaving": "string",
+     "scheduleMoveOutDate": "string",
+     "searchTag": "string",
+     "signedDate": "string",
+     "startDate": "string",
+     "status": "string",
+     "tenantsOptsIntoAssetProtectionPlan": "string",
+     "terminatedDate": "string",
+     "unitID": "integer",
+     "leasingFeeAmount": "number",
+     "leasingFeeDate": "string",
+     "leasingFeeRefNo": "string",
+     "postFirstCharge": "boolean",
+     "primaryContactID": "integer",
+     "prorateMonth": "string",
+     "rentAutoCharge": "object",
+     "secDepAmount": "number",
+     "secDepChargeDate": "string",
+     "tenantIDs": "array"
+    },
+    "evidence": [
+     "openapi/_original/propertyware-openapi.json#DELETE /leases/{leaseID}",
+     "openapi/_original/propertyware-openapi.json#GET /leases",
+     "openapi/_original/propertyware-openapi.json#GET /leases/{leaseId}",
+     "openapi/_original/propertyware-openapi.json#POST /leases",
+     "openapi/_original/propertyware-openapi.json#PUT /leases/{leaseId}"
+    ]
+   },
+   "rentcheck": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "tenant_id": "string",
+     "status": "string",
+     "tags": "array",
+     "property": "object",
+     "lease_start": "string",
+     "lease_end": "string",
+     "rent": "number",
+     "security_deposit": "number",
+     "move_out_date": "string",
+     "move_in_date": "string",
+     "property_id": "string",
+     "rentvine_sync": "object"
+    },
+    "evidence": [
+     "openapi/_original/rentcheck-openapi-original.yml#DELETE /v2/residents/{residentId}/leases/{leaseId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/properties/{propertyId}/leases",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/residents/{residentId}/leases",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/residents/{residentId}/leases/{leaseId}",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v2/residents/{residentId}/leases",
+     "openapi/_original/rentcheck-openapi-original.yml#PUT /v2/residents/{residentId}/leases/{leaseId}"
+    ]
+   },
+   "street-co": {
+    "segments": [
+     "tenancies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/street-co-open-api-openapi.json#GET /tenancies",
+     "openapi/_original/street-co-open-api-openapi.json#GET /tenancies/{tenancy_id}",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /tenancies",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /tenancies/{tenancy_id}"
+    ]
+   },
+   "vaultre": {
+    "segments": [
+     "lease",
+     "tenancies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "building": "object",
+     "class": "object",
+     "type": "object",
+     "address": "object",
+     "displayAddress": "string",
+     "referenceID": "string",
+     "keyID": "string",
+     "photos": "array",
+     "searchPrice": "number",
+     "displayPrice": "string",
+     "heading": "string",
+     "description": "string",
+     "brochureDescription": "string",
+     "landArea": "object",
+     "volumeNumber": "string",
+     "folioNumber": "string",
+     "corelogicId": "integer",
+     "yearBuilt": "integer",
+     "inserted": "string",
+     "modified": "string",
+     "saleLifeId": "integer",
+     "leaseLifeId": "integer",
+     "geolocation": "object",
+     "contactStaff": "array",
+     "bed": "integer",
+     "bath": "integer",
+     "garages": "integer",
+     "carports": "integer",
+     "openSpaces": "integer",
+     "floorArea": "object",
+     "status": "string",
+     "currentTenancy": "object",
+     "available": "boolean",
+     "accessBy": "array",
+     "externalLinks": "array",
+     "addressVisibility": "string",
+     "frontage": "number",
+     "lotNumber": "string",
+     "certificateOfTitle": "string",
+     "legalDescription": "string",
+     "rpdp": "string",
+     "ensuites": "integer",
+     "toilets": "integer",
+     "receptionRooms": "integer",
+     "eTableUrl": "string",
+     "energyRating": "number",
+     "branch": "object",
+     "mobileMarketingDescription": "string",
+     "priceOnApplication": "boolean",
+     "authorityStart": "string",
+     "authorityEnd": "string",
+     "bondPrice": "number",
+     "expenditureLimit": "number",
+     "propertyManager": "object",
+     "leaseHistory": "array",
+     "highlights": "array",
+     "appraisal": "string",
+     "appraisalPriceLower": "number",
+     "appraisalPriceUpper": "number",
+     "zoning": "string",
+     "carSpaces": "integer",
+     "mezzanineArea": "object",
+     "warehouseArea": "object",
+     "retailArea": "object",
+     "officeArea": "object",
+     "otherArea": "object",
+     "commercialListingType": "string",
+     "lifeId": "number",
+     "windowCardDescription": "string",
+     "councilTaxBand": "string",
+     "isStrataBuilding": "boolean",
+     "isProjectBuilding": "boolean",
+     "epcRating": "string",
+     "account": "object",
+     "portalStatus": "string",
+     "isNewHome": "boolean",
+     "isHouseLandPackage": "boolean",
+     "commercialLeasePrice": "number",
+     "outgoingsPerAnnum": "number",
+     "outgoingsText": "string",
+     "includesOutgoings": "boolean",
+     "commercialLeasePriceIncludesGst": "boolean",
+     "internalRemarks": "string",
+     "webId": "string",
+     "rates": "object",
+     "soiUrl": "string",
+     "publishedToWeb": "string",
+     "furnished": "object",
+     "internalMarketingLiveDate": "string",
+     "editableBy": "array",
+     "keys": "array",
+     "portals": "array",
+     "tenancyHistory": "array",
+     "property": "object",
+     "tenancy": null,
+     "owners": "array",
+     "tenants": "array",
+     "unconditional": "string",
+     "settlement": "string",
+     "grossCommissionExcGST": "number",
+     "parkingBays": "number",
+     "parkingInfo": "string",
+     "externalAgency": "object",
+     "ourDeal": "boolean",
+     "leaseStart": "string",
+     "leaseExpiry": "string",
+     "leaseExpiryReminder": "string",
+     "leaseExpiryReminderUser": "object",
+     "annualRent": "number",
+     "initialTermYears": "integer",
+     "renewal1Years": "integer",
+     "renewal2Years": "integer",
+     "renewal3Years": "integer",
+     "fitoutEstimate": "number",
+     "otherIncentives": "string"
+    },
+    "evidence": [
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/holidayRental/lease",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/holidayRental/lease/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/residential/lease",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/residential/lease/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#POST /properties/holidayRental/lease",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#POST /properties/residential/lease",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#PUT /properties/holidayRental/lease/{id}",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#PUT /properties/residential/lease/{id}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/commercial/lease",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/commercial/lease/{id}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/holidayRental/lease",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/holidayRental/lease/{id}"
+    ]
+   },
+   "vts": {
+    "segments": [
+     "leases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/vts-openapi.yml#GET /api/v1/leases",
+     "openapi/_original/vts-openapi.yml#GET /api/v1/leases/{id}"
+    ]
+   }
+  },
+  "tenant": {
+   "alasco": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "attributes": "object",
+     "id": "string",
+     "relationships": null,
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/alasco-esg-openapi.json#POST /tenants/"
+    ]
+   },
+   "argus-enterprise": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "industry": "string",
+     "creditRating": "string",
+     "contactName": "string",
+     "contactEmail": "string",
+     "contactPhone": "string",
+     "address": "object",
+     "activeLeases": "integer",
+     "totalLeasedArea": "number",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /tenants",
+     "openapi/_original/argus-enterprise-core-openapi.yml#GET /tenants/{tenantId}",
+     "openapi/_original/argus-enterprise-core-openapi.yml#POST /tenants",
+     "openapi/_original/argus-enterprise-core-openapi.yml#PUT /tenants/{tenantId}"
+    ]
+   },
+   "butterflymx": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "access_group": "object",
+     "qr_key_enabled": "boolean",
+     "delivery_pass_enabled": "boolean",
+     "swipe_to_open_enabled": "boolean",
+     "active_at": "string",
+     "inactive_at": "string",
+     "virtual_fob_entry_enabled": "boolean",
+     "unit_id": "integer",
+     "user_attributes": "object",
+     "user_panel_config_attributes": "object",
+     "sync": "boolean",
+     "delivery_pass_instructions": "string",
+     "external_id": "string",
+     "notification_preference_attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/butterflymx-api-openapi.json#DELETE /v4/tenants/{id}",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/tenants",
+     "openapi/_original/butterflymx-api-openapi.json#GET /v4/tenants/{id}",
+     "openapi/_original/butterflymx-api-openapi.json#POST /v4/access_groups/{id}/tenants",
+     "openapi/_original/butterflymx-api-openapi.json#POST /v4/tenants",
+     "openapi/_original/butterflymx-api-openapi.json#PUT /v4/tenants/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#DELETE /v4/tenants/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/tenants",
+     "openapi/_original/butterflymx-api-openapi.yml#GET /v4/tenants/{id}",
+     "openapi/_original/butterflymx-api-openapi.yml#POST /v4/access_groups/{id}/tenants",
+     "openapi/_original/butterflymx-api-openapi.yml#POST /v4/tenants",
+     "openapi/_original/butterflymx-api-openapi.yml#PUT /v4/tenants/{id}"
+    ]
+   },
+   "door": {
+    "segments": [
+     "residents"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "nextPageToken": "string",
+     "residents": "array"
+    },
+    "evidence": [
+     "openapi/_original/door-partner-openapi.json#GET /v1/buildings/{buildingUuid}/residents"
+    ]
+   },
+   "doorloop": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "lease": "string",
+     "property": "string",
+     "units": "array",
+     "status": "string",
+     "moveInAt": "string",
+     "moveOutAt": "string",
+     "moveOutNoticeAt": "string",
+     "portalEnabled": "boolean",
+     "tenant": null,
+     "firstName": "string",
+     "middleName": "string",
+     "lastName": "string",
+     "gender": "string",
+     "fullName": "string",
+     "dateOfBirth": "string",
+     "timezone": "string",
+     "company": "string",
+     "companyName": "string",
+     "jobTitle": "string",
+     "notes": "string",
+     "phones": "array",
+     "emails": "array",
+     "primaryAddress": "object",
+     "pictureUrl": "string",
+     "": "string",
+     "dependants": "array",
+     "pets": "array",
+     "vehicles": "array",
+     "emergencyContacts": "array",
+     "prospectInfo": "object",
+     "portalInfo": "object",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/doorloop-api-reference-openapi.yml#DELETE /tenants/{tenantId}",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /leases/tenants",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /tenants",
+     "openapi/_original/doorloop-api-reference-openapi.yml#GET /tenants/{tenantId}",
+     "openapi/_original/doorloop-api-reference-openapi.yml#POST /tenants",
+     "openapi/_original/doorloop-api-reference-openapi.yml#PUT /tenants/{tenantId}"
+    ]
+   },
+   "facilio": {
+    "segments": [
+     "tenant"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "primaryContactName": "string",
+     "primaryContactEmail": "string",
+     "primaryContactPhone": "string",
+     "address": null,
+     "tenantType": "string",
+     "moduleState": "string",
+     "sysCreatedTime": "string",
+     "sysModifiedTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/facilio-openapi.yml#DELETE /tenant/{id}",
+     "openapi/_original/facilio-openapi.yml#GET /tenant",
+     "openapi/_original/facilio-openapi.yml#GET /tenant/{id}",
+     "openapi/_original/facilio-openapi.yml#PATCH /tenant/{id}",
+     "openapi/_original/facilio-openapi.yml#POST /tenant"
+    ]
+   },
+   "fixflo": {
+    "segments": [
+     "tenants",
+     "tenant"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "ExternalRef": "string",
+     "ExternalPropertyRef": "string",
+     "Title": "string",
+     "FirstName": "string",
+     "Surname": "string",
+     "CompanyName": "string",
+     "Address": "object",
+     "EmailAddress": "string",
+     "ContactNumber": "string",
+     "ContactNumberAlt": "string",
+     "DisplayName": "string",
+     "IsDeleted": "boolean",
+     "Brand": "object",
+     "UpdateDate": "string",
+     "HttpStatusCode": "integer",
+     "HttpStatusCodeDesc": "string",
+     "Errors": "array",
+     "Messages": "array",
+     "TotalItems": "integer",
+     "TotalPages": "integer",
+     "Items": "array",
+     "NextURL": "string",
+     "PreviousURL": "string"
+    },
+    "evidence": [
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Property/{Id}/Tenants",
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenant",
+     "openapi/_original/fixflo-api-v2-openapi.yml#GET /Tenants",
+     "openapi/_original/fixflo-api-v2-openapi.yml#POST /Tenant"
+    ]
+   },
+   "innago": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "userUid": "string",
+     "userFirstName": "string",
+     "userLastName": "string",
+     "userEmail": "string",
+     "phoneNumber": "string",
+     "userRole": "string",
+     "entityType": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /v1/tenants",
+     "openapi/_original/openapi.yml#GET /v1/tenants/{tenantUid}"
+    ]
+   },
+   "oracle-hospitality": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "warnings": "array",
+     "links": "array",
+     "channelCode": "string",
+     "orgCode": "string",
+     "defaultLoginResort": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-hospitality-property-v1-chl.json#DELETE /channels/{channelCode}/tenants/{tenantCode}",
+     "openapi/_original/oracle-hospitality-property-v1-chl.json#GET /channels/{channelCode}/tenants/{tenantCode}",
+     "openapi/_original/oracle-hospitality-property-v1-chl.json#POST /channels/{channelCode}/tenants",
+     "openapi/_original/oracle-hospitality-property-v1-chl.json#PUT /channels/{channelCode}/tenants/{tenantCode}"
+    ]
+   },
+   "propertyme": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "Id": "string",
+     "CustomerId": "string",
+     "Reference": "string",
+     "Labels": "string",
+     "PrimaryPerson": "string",
+     "HomePhone": "string",
+     "WorkPhone": "string",
+     "CellPhone": "string",
+     "ContactPersonText": "string",
+     "SupplierFolioNumber": "integer",
+     "PostalAddressText": "string",
+     "PhysicalAddressText": "string",
+     "Roles": "array",
+     "RolesString": "string",
+     "SupplierFolioCode": "string",
+     "Phone": "string"
+    },
+    "evidence": [
+     "openapi/_original/propertyme-openapi.json#GET /v1/contacts/tenants"
+    ]
+   },
+   "rentcheck": {
+    "segments": [
+     "residents",
+     "tenants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "user": "object",
+     "first_name": "string",
+     "last_name": "string",
+     "phone_numbers": "array",
+     "emails": "array",
+     "owner_id": "string",
+     "organization_id": "string",
+     "creation_source": "string",
+     "created_date": "string",
+     "updated_date": "string",
+     "deleted": "boolean",
+     "primary_occupancy": "object",
+     "sync_data": null,
+     "rentvine_sync": "object",
+     "user_id": "string",
+     "organizationID": "string",
+     "current_property_id": "string",
+     "current_property_address": "string",
+     "current_lease_start": "string",
+     "current_lease_end": "string",
+     "current_rent": "number",
+     "current_security_deposit": "number",
+     "move_out_date": "string",
+     "previous_properties": "array",
+     "address": "string",
+     "postal_code": "string",
+     "email": "string",
+     "phone_number": "string",
+     "lease_start_date": "string",
+     "lease_end_date": "string",
+     "monthly_rent": "number",
+     "security_deposit": "number"
+    },
+    "evidence": [
+     "openapi/_original/rentcheck-openapi-original.yml#DELETE /v2/residents/{id}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/latchel/{orgId}/tenants",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/residents/{residentId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/residents",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/residents/{id}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v3/residents",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v1/residents",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v1/zapier/residents",
+     "openapi/_original/rentcheck-openapi-original.yml#POST /v2/residents",
+     "openapi/_original/rentcheck-openapi-original.yml#PUT /v1/residents/{residentId}",
+     "openapi/_original/rentcheck-openapi-original.yml#PUT /v2/residents/{id}"
+    ]
+   },
+   "shovels": {
+    "segments": [
+     "residents"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "phone": "string",
+     "email": "string",
+     "address": "object"
+    },
+    "evidence": [
+     "openapi/_original/shovels-openapi.yml#GET /addresses/{geo_id}/residents"
+    ]
+   },
+   "street-co": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": null,
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/street-co-open-api-openapi.json#GET /tenants",
+     "openapi/_original/street-co-open-api-openapi.json#GET /tenants/{tenant_id}",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /tenants",
+     "openapi/_original/street-co-open-api-openapi.yml#GET /tenants/{tenant_id}"
+    ]
+   },
+   "vaultre": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "msg": "string",
+     "code": "string",
+     "id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#GET /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#POST /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-1-openapi.yml#PUT /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/tenancy/{tenancyid}/tenants/{id}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#POST /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#PUT /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/tenancy/{tenancyid}/tenants/{id}",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#GET /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#POST /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#PUT /properties/{id}/lease/{lifeid}/tenancy/{tenancyid}/tenants"
+    ]
+   },
+   "vts": {
+    "segments": [
+     "tenants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/vts-openapi.yml#GET /api/v1/tenants",
+     "openapi/_original/vts-openapi.yml#GET /api/v1/tenants/{id}"
+    ]
+   }
+  },
+  "work_order": {
+   "accruent": {
+    "segments": [
+     "workorders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Results": "array",
+     "Total": "integer",
+     "PK": "integer",
+     "ID": "string",
+     "Reason": "string",
+     "TargetDate": "string",
+     "Instructions": "string",
+     "LaborReport": "string",
+     "RouteOrder": "integer",
+     "HasWarranty": "boolean",
+     "IsShutdownRequired": "boolean",
+     "IsLockoutTagout": "boolean",
+     "IsChargeable": "boolean",
+     "IsFollowupWork": "boolean",
+     "IsFailedWorkOrder": "boolean",
+     "IsOpen": "boolean",
+     "IsApproved": "boolean",
+     "IsPartsReserved": "boolean",
+     "IsAssigned": "boolean",
+     "GroupPK": "integer",
+     "FollowupFromWorkOrderPK": "integer",
+     "TargetHours": "number",
+     "TargetDays": "number",
+     "ActualHours": "number",
+     "ResponseHours": "number",
+     "Meter1Reading": "number",
+     "Meter2Reading": "number",
+     "StatusDate": "string",
+     "RequestedDate": "string",
+     "IssuedDate": "string",
+     "OnHoldDate": "string",
+     "CompletePercent": "number",
+     "CompleteDate": "string",
+     "ClosedDate": "string",
+     "CanceledDate": "string",
+     "DeniedDate": "string",
+     "RespondedDate": "string",
+     "FinalizedDate": "string",
+     "Currency": "string",
+     "CurrencySymbol": "string",
+     "UDFChar1": "string",
+     "UDFChar2": "string",
+     "UDFChar3": "string",
+     "UDFChar4": "string",
+     "UDFChar5": "string",
+     "UDFChar6": "string",
+     "UDFChar7": "string",
+     "UDFChar8": "string",
+     "UDFChar9": "string",
+     "UDFChar10": "string",
+     "UDFDate1": "string",
+     "UDFDate2": "string",
+     "UDFDate3": "string",
+     "UDFDate4": "string",
+     "UDFDate5": "string",
+     "UDFBit1": "boolean",
+     "UDFBit2": "boolean",
+     "UDFBit3": "boolean",
+     "UDFBit4": "boolean",
+     "UDFBit5": "boolean",
+     "LastModifiedAction": "string",
+     "LastModifiedDate": "string",
+     "ResourceUri": "string",
+     "WorkOrderUUID": "string",
+     "AuthStatusDetails": "object",
+     "AuthorizationStatus": "object",
+     "TypeDetails": "object",
+     "StatusDetails": "object",
+     "SubStatusDetails": "object",
+     "PriorityDetails": "object",
+     "ReferenceDetails": "object",
+     "RepairCenterRef": "object",
+     "AssetRef": "object",
+     "AccountRef": "object",
+     "ProcedureRef": "object",
+     "RequesterRef": "object",
+     "RequesterPhone": "string",
+     "RequesterEmail": "string",
+     "RequesterName": "string",
+     "StockRoomRef": "object",
+     "ToolRoomRef": "object",
+     "SupervisorRef": "object",
+     "ProjectRef": "object",
+     "ShopRef": "object",
+     "ShiftRef": "object",
+     "DepartmentRef": "object",
+     "CustomerRef": "object",
+     "ProblemRef": "object",
+     "FailureRef": "object",
+     "SolutionRef": "object",
+     "PMRef": "object",
+     "CategoryRef": "object",
+     "TakenByRef": "object",
+     "ZoneRef": "object",
+     "ExternalInterfaceRef": "object"
+    },
+    "evidence": [
+     "openapi/_original/accruent-maintenance-connection-openapi.yml#GET /workorders",
+     "openapi/_original/accruent-maintenance-connection-openapi.yml#GET /workorders/{workOrderPK}",
+     "openapi/_original/accruent-maintenance-connection-openapi.yml#POST /workorders",
+     "openapi/_original/accruent-maintenance-connection-openapi.yml#PUT /workorders",
+     "openapi/_original/accruent-maintenance-connection-openapi.yml#PUT /workorders/{workOrderPK}",
+     "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json#GET /workorders",
+     "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json#GET /workorders/{workOrderPK}",
+     "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json#POST /workorders",
+     "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json#PUT /workorders",
+     "openapi/_original/accruent-maintenance-connection-v8-swagger-original.json#PUT /workorders/{workOrderPK}"
+    ]
+   },
+   "alto-vebra": {
+    "segments": [
+     "work-orders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "propertyId": "string",
+     "supplierContactId": "string",
+     "accessDetails": "object",
+     "reporterDetails": "object",
+     "chargeDetails": "object",
+     "reportedDate": "string",
+     "startDate": "string",
+     "quote": "number",
+     "workOrderNumber": "string",
+     "status": "string",
+     "summary": "string",
+     "description": "string",
+     "notes": "string",
+     "priority": "string",
+     "modifiedDate": "string",
+     "negotiatorId": "string"
+    },
+    "evidence": [
+     "openapi/_original/alto-api-openapi.json#GET /inventory/{inventoryId}/work-orders",
+     "openapi/_original/alto-api-openapi.json#GET /work-orders/{id}",
+     "openapi/_original/alto-api-openapi.json#PATCH /work-orders/{id}",
+     "openapi/_original/alto-api-openapi.json#POST /work-orders"
+    ]
+   },
+   "navigate": {
+    "segments": [
+     "work_orders"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "reference_key": null,
+     "location_id": "string",
+     "default_vendor": null
+    },
+    "evidence": [
+     "openapi/_original/navigate-openapi.json#GET /v1/location/{location_id}/work_orders"
+    ]
+   },
+   "propertyware": {
+    "segments": [
+     "workorders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "age": "integer",
+     "approved": "boolean",
+     "approvedDate": "string",
+     "assignedVendors": "array",
+     "authorizeEnter": "string",
+     "buildingID": "integer",
+     "category": "string",
+     "completedDate": "string",
+     "contractNumber": "string",
+     "costEstimate": "number",
+     "createdBy": "string",
+     "createdDateTime": "string",
+     "customFields": "array",
+     "dateToEnter": "string",
+     "description": "string",
+     "hourEstimate": "number",
+     "id": "integer",
+     "lastModifiedBy": "string",
+     "lastModifiedDateTime": "string",
+     "lease": "string",
+     "location": "string",
+     "maintenanceNotice": "string",
+     "managedBy": "string",
+     "number": "integer",
+     "portfolioID": "integer",
+     "priority": "string",
+     "publishToOwnerPortal": "boolean",
+     "publishToTenantPortal": "boolean",
+     "requestedBy": "string",
+     "requiredMaterials": "string",
+     "scheduledEndDate": "string",
+     "searchTag": "string",
+     "source": "string",
+     "specificLocation": "string",
+     "startDate": "string",
+     "status": "string",
+     "type": "string",
+     "unitID": "integer",
+     "unitIDs": "object",
+     "hourToEnter": "integer",
+     "minuteToEnter": "integer"
+    },
+    "evidence": [
+     "openapi/_original/propertyware-openapi.json#DELETE /workorders/{workOrderID}",
+     "openapi/_original/propertyware-openapi.json#GET /leases/{leaseId}/workorders",
+     "openapi/_original/propertyware-openapi.json#GET /workorders",
+     "openapi/_original/propertyware-openapi.json#GET /workorders/{workOrderId}",
+     "openapi/_original/propertyware-openapi.json#POST /workorders",
+     "openapi/_original/propertyware-openapi.json#POST /workorders/bulk"
+    ]
+   },
+   "rentberry": {
+    "segments": [
+     "maintenance"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "description": "string",
+     "priority": "string",
+     "apartmentApplyId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rentberry-openapi.json#POST /v{version}/apartment/maintenance/{id}",
+     "openapi/_original/rentberry-openapi.yml#POST /v{version}/apartment/maintenance/{id}"
+    ]
+   },
+   "rentcheck": {
+    "segments": [
+     "work_orders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "created_date": "string",
+     "created_by": "string",
+     "created_by_name": "string",
+     "organization_id": "string",
+     "status": "string",
+     "skill": "string",
+     "zip_report_location": "string",
+     "last_sync_date": "string",
+     "inspection": "object",
+     "property": "object",
+     "maintenance_flags": "array",
+     "latchel": "object",
+     "yardi": "object",
+     "appfolio": "object",
+     "jenark": "object",
+     "rentmanager": "object",
+     "rentvine": "object"
+    },
+    "evidence": [
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v1/work_orders/{workOrderId}",
+     "openapi/_original/rentcheck-openapi-original.yml#GET /v2/work_orders"
+    ]
+   },
+   "street-co": {
+    "segments": [
+     "maintenance-requests"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/street-co-open-api-openapi.json#POST /maintenance-requests",
+     "openapi/_original/street-co-open-api-openapi.yml#POST /maintenance-requests"
+    ]
+   },
+   "vaultre": {
+    "segments": [
+     "maintenance"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "summary": "string",
+     "description": "string",
+     "status": "string",
+     "inserted": "string",
+     "modified": "string",
+     "insertedBy": "object",
+     "requestedBy": "object",
+     "tenancy": "object",
+     "leaseLifeId": "integer",
+     "photos": "array",
+     "notifications": "array"
+    },
+    "evidence": [
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /maintenance",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#POST /properties/{propertyid}/lease/{lifeid}/maintenance",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#PUT /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#DELETE /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#GET /maintenance",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#GET /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#POST /properties/{propertyid}/lease/{lifeid}/maintenance",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#PUT /properties/{propertyid}/lease/{lifeid}/maintenance/{jobid}"
+    ]
+   }
+  },
+  "listing": {
+   "airdna": {
+    "segments": [
+     "listings",
+     "listing"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "payload": "object",
+     "status": "object",
+     "pagination": "object",
+     "filters": "array",
+     "currency": "string",
+     "sort_order": "string",
+     "only_return_cover_image": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/airdna-openapi.yml#GET /listing/{listingId}",
+     "openapi/_original/airdna-openapi.yml#POST /country/{countryCode}/listings",
+     "openapi/_original/airdna-openapi.yml#POST /market/{marketId}/listings",
+     "openapi/_original/airdna-openapi.yml#POST /submarket/{submarketId}/listings"
+    ]
+   },
+   "beyond-pricing": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type": null,
+     "id": "integer",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/beyond-pricing-openapi.yml#GET /api/v1/listings/",
+     "openapi/_original/beyond-pricing-openapi.yml#GET /api/v1/listings/{listing_id}/"
+    ]
+   },
+   "bridge-interactive": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "status": "integer",
+     "bundle": "array",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/bridge-interactive-openapi.yml#GET /{dataset_id}/listings",
+     "openapi/_original/bridge-interactive-openapi.yml#GET /{dataset_id}/listings/{id}"
+    ]
+   },
+   "domain-group": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "objective": "string",
+     "status": "string",
+     "saleMode": "string",
+     "channel": "string",
+     "id": "integer",
+     "addressParts": "object",
+     "advertiserIdentifiers": "object",
+     "apmIdentifiers": "object",
+     "bathrooms": "number",
+     "bedrooms": "number",
+     "buildingArea": "string",
+     "buildingAreaSqm": "number",
+     "carspaces": "number",
+     "dateAvailable": "string",
+     "dateCreated": "string",
+     "dateUpdated": "string",
+     "dateMinorUpdated": "string",
+     "datePurged": "string",
+     "dateListed": "string",
+     "description": "string",
+     "devProjectId": "integer",
+     "energyEfficiencyRating": "integer",
+     "features": "array",
+     "geoLocation": "object",
+     "headline": "string",
+     "inspectionDetails": "object",
+     "isNewDevelopment": "boolean",
+     "landArea": "string",
+     "landAreaSqm": "number",
+     "media": "array",
+     "priceDetails": "object",
+     "propertyId": "string",
+     "propertyTypes": "array",
+     "providerDetails": "object",
+     "rentalDetails": "object",
+     "saleDetails": "object",
+     "isWithdrawn": "boolean",
+     "seoUrl": "string",
+     "virtualTourUrl": "string",
+     "homepassEnabled": "boolean",
+     "statementOfInformation": "object",
+     "numberOfDwellings": "integer",
+     "highlights": "array",
+     "listingStatus": "string",
+     "address": "object",
+     "domainAgencyId": "integer",
+     "listingProvider": "string",
+     "providerAdId": "string",
+     "contacts": "array",
+     "summary": "string",
+     "authorityExecutedDate": "string",
+     "reservePrice": "number",
+     "estimatedSalePrice": "object",
+     "authorityType": "string",
+     "exclusivePeriodDays": "integer",
+     "exclusiveContinuingPeriodDays": "integer",
+     "exclusivePeriodStartDate": "string",
+     "images": "array",
+     "metadata": "object",
+     "comment": "string",
+     "soldDetails": "object",
+     "relatedAdId": "integer",
+     "mapCertainty": "integer",
+     "datePreMarket": "string",
+     "dateSold": "string",
+     "dateWithdrawn": "string",
+     "dateDrafted": "string",
+     "operations": "array",
+     "contractResolver": "object",
+     "unitNumber": "string",
+     "streetNumber": "string",
+     "streetName": "string",
+     "streetType": "string",
+     "suburb": "string",
+     "postcode": "string",
+     "state": "string",
+     "propertyType": "string",
+     "price": "number",
+     "result": "string",
+     "agent": "string",
+     "agencyName": "string",
+     "agencyProfilePageUrl": "string",
+     "agencyId": "number",
+     "propertyDetailsUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/agencies/{id}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/agents/{id}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/listings/{id}",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/projects/{id}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v1/salesResults/{city}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v2/agencies/{agencyId}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v2/listings",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v2/premarket/listings/{id}",
+     "openapi/_original/domain-group-openapi-latest.json#GET /v2/properties/{propertyId}/listings",
+     "openapi/_original/domain-group-openapi-latest.json#PATCH /v2/premarket/listings/{id}",
+     "openapi/_original/domain-group-openapi-latest.json#POST /v2/premarket/listings",
+     "openapi/_original/domain-group-openapi-v1.json#GET /v1/agencies/{id}/listings"
+    ]
+   },
+   "findigs": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "size": "integer",
+     "pages": "integer",
+     "rent_amount": "number",
+     "date_available": "string",
+     "status": "string",
+     "address": "object",
+     "url": "string",
+     "id": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/findigs-client-api-openapi.json#GET /listings/",
+     "openapi/_original/findigs-client-api-openapi.json#GET /listings/{listing_id}",
+     "openapi/_original/findigs-client-api-openapi.json#PATCH /listings/{listing_id}",
+     "openapi/_original/findigs-client-api-openapi.json#POST /listings/",
+     "openapi/_original/findigs-client-api-openapi.yml#GET /listings/",
+     "openapi/_original/findigs-client-api-openapi.yml#GET /listings/{listing_id}",
+     "openapi/_original/findigs-client-api-openapi.yml#PATCH /listings/{listing_id}",
+     "openapi/_original/findigs-client-api-openapi.yml#POST /listings/"
+    ]
+   },
+   "guestready": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "reservation_platform": null,
+     "rental": "string",
+     "title": "string",
+     "id_platform": "string",
+     "id_platform_2": "string",
+     "url": "string",
+     "is_active": "boolean",
+     "insurance": "integer",
+     "insurance_rate": "number"
+    },
+    "evidence": [
+     "openapi/_original/guestready-rentalready-openapi.yml#GET /api/v3/listings/",
+     "openapi/_original/guestready-rentalready-openapi.yml#GET /api/v3/listings/{id}/",
+     "openapi/_original/guestready-rentalready-openapi.yml#POST /api/v3/listings/",
+     "openapi/_original/guestready-rentalready-openapi_2.yml#GET /api/v3/listings/",
+     "openapi/_original/guestready-rentalready-openapi_2.yml#GET /api/v3/listings/{id}/",
+     "openapi/_original/guestready-rentalready-openapi_2.yml#POST /api/v3/listings/"
+    ]
+   },
+   "hospitable": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "property_id": "string",
+     "platform": "string",
+     "platform_id": "string",
+     "name": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/hospitable-openapi.yml#GET /listings"
+    ]
+   },
+   "keller-williams": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "took": "integer",
+     "timed_out": "boolean",
+     "_shards": "object",
+     "hits": "object",
+     "list_kw_uid": "integer",
+     "list_desc": "string",
+     "co_list_kw_uid": "string",
+     "list_type": "string",
+     "source_system_name": "string",
+     "version": "string",
+     "list_type_id": "integer",
+     "kwls_status": "string",
+     "current_list_price": "integer",
+     "list_status_id": "integer",
+     "list_category": "string",
+     "list_category_id": "integer",
+     "prop_type": "string",
+     "prop_type_id": "integer",
+     "prop_subtype": "string",
+     "prop_subtype_id": "integer",
+     "list_status": "string",
+     "mls_id": "string",
+     "mls_number": "string",
+     "is_kww_listing": "boolean",
+     "kww_region": "string",
+     "sell_kw_uid": "string",
+     "is_deleted": "boolean",
+     "mls_source_id": "string",
+     "market_center": "string",
+     "syndicate": "object",
+     "list_address": "object",
+     "property_address": "object",
+     "currency_code": "string",
+     "lease_price": "string",
+     "close_price": "string",
+     "original_list_price": "string",
+     "price_tax_suffix": "boolean",
+     "price_history": "string",
+     "list_dt": "string",
+     "kw_expiry_dt": "string",
+     "kw_expiry_dt_lock": "boolean",
+     "contract_expiry_dt": "string",
+     "contract_expiry_dt_lock": "boolean",
+     "close_dt": "string",
+     "list_status_lock": "boolean",
+     "original_list_category": "string",
+     "original_list_category_id": "string",
+     "luxury_home": "boolean",
+     "prop_type_lock": "boolean",
+     "prop_subtype_lock": "boolean",
+     "special_list_condition": "string",
+     "year_built": "string",
+     "living_area": "string",
+     "living_area_units": "string",
+     "lot_size_area": "string",
+     "lot_size_units": "string",
+     "lot_front_area": "string",
+     "lot_front_units": "string",
+     "lot_depth_area": "string",
+     "lot_depth_units": "string",
+     "office_size": "string",
+     "office_size_units": "string",
+     "warehouse_size": "string",
+     "warehouse_size_units": "string",
+     "retail_size": "string",
+     "retail_size_units": "string",
+     "other_area_size": "string",
+     "other_area_size_units": "string",
+     "total_bed": "string",
+     "total_bath": "integer",
+     "full_bath": "integer",
+     "half_bath": "integer",
+     "one_quarter_bath": "integer",
+     "three_quarter_bath": "integer",
+     "partial_bath": "integer",
+     "list_desc_en": "string",
+     "list_desc_lock": "boolean",
+     "brokerage": "object",
+     "list_agent_office": "object",
+     "co_list_agent_office": "object",
+     "sell_agent_office": "object",
+     "co_sell_agent_office": "object",
+     "location": "object",
+     "structure": "object",
+     "green_home": "object",
+     "expenses": "string",
+     "hoa": "string",
+     "taxes": "string",
+     "marketing_info": "object",
+     "virtual_tours": "string",
+     "virtual_tours_lock": "boolean",
+     "open_houses": "string",
+     "open_houses_lock": "boolean",
+     "photos": "array",
+     "photos_lock": "boolean",
+     "links": "string",
+     "links_lock": "boolean",
+     "mls_updated_at": "string",
+     "kw_updated_at": "string",
+     "kw_updated_by": "string",
+     "raw": "object",
+     "history": "string",
+     "kw_attribute": "object",
+     "geo": "object",
+     "system": "object",
+     "list_key": "string",
+     "list_uuid": "string",
+     "list_id": "integer",
+     "kw_created_at": "string",
+     "kw_created_by": "string",
+     "manual_entry": "boolean",
+     "kw_mc": "boolean",
+     "kw_listing": "boolean",
+     "kw_agent": "boolean",
+     "mls_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/keller-williams-listings-search-openapi.json#DELETE /listings/{list_uuid}",
+     "openapi/_original/keller-williams-listings-search-openapi.json#GET /listings",
+     "openapi/_original/keller-williams-listings-search-openapi.json#PATCH /listings/{list_uuid}",
+     "openapi/_original/keller-williams-listings-search-openapi.json#POST /listings"
+    ]
+   },
+   "mashvisor": {
+    "segments": [
+     "listings",
+     "listing"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mashvisor-openapi.yml#GET /client/city/listings",
+     "openapi/_original/mashvisor-openapi.yml#GET /client/neighborhood/{id}/traditional/listing"
+    ]
+   },
+   "movehome-org": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "reference": "string",
+     "branch_id": "string",
+     "transaction_type": "string",
+     "status": "string",
+     "kind": "string",
+     "residential": "object",
+     "commercial": "object",
+     "public_card_url": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "version": "integer",
+     "action": "string",
+     "property_type": "string",
+     "headline": "string",
+     "description": "string",
+     "bedrooms": "integer",
+     "bathrooms": "integer",
+     "reception_rooms": "integer",
+     "floor_area_sqm": "number",
+     "available_from": "string",
+     "asking_price": "number",
+     "asking_rent_pcm": "number",
+     "rent_frequency": "string",
+     "deposit": "number",
+     "currency": "string",
+     "tenure": "string",
+     "furnishing": "string",
+     "epc_rating": "string",
+     "features": "array",
+     "parking": "array",
+     "outside_space": "array",
+     "address": "object",
+     "media": "object",
+     "public_card": "object",
+     "removed_at": "string",
+     "removal_reason": "string",
+     "note": "string"
+    },
+    "evidence": [
+     "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#DELETE /listings/{reference}",
+     "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#GET /branches/{branch_id}/listings",
+     "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#GET /listings/{reference}",
+     "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml#PUT /listings/{reference}"
+    ]
+   },
+   "ownerrez": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "count": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "nextPageUrl": "string",
+     "id": "integer",
+     "property_id": "integer",
+     "title": "string",
+     "description": "string",
+     "headline": "string"
+    },
+    "evidence": [
+     "openapi/_original/ownerrez-openapi.yml#GET /listings",
+     "openapi/_original/ownerrez-openapi.yml#GET /listings/{id}"
+    ]
+   },
+   "pricefinder": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "rental": "boolean",
+     "disclaimer": "string",
+     "messages": "array",
+     "agents": "array",
+     "agencies": "array",
+     "price": "object",
+     "listingHistory": "object",
+     "startDate": "object",
+     "image": "object",
+     "property": "object",
+     "street": "object",
+     "suburb": "object",
+     "location": "object",
+     "propertyLegalDescription": "string",
+     "propertyType": "string",
+     "type": "string",
+     "status": "object",
+     "endDate": "object",
+     "lastModified": "object",
+     "propertyFeatures": "object",
+     "address": "object",
+     "originalListingAddress": "object",
+     "landDetails": "object",
+     "portalUrl": "string",
+     "ListingStatus": "string",
+     "_self": "string",
+     "listings": "array"
+    },
+    "evidence": [
+     "openapi/_original/pricefinder-api-swagger.json#GET /listings/{listingId}",
+     "openapi/_original/pricefinder-api-swagger.json#GET /postcodes/{postcode}/listings",
+     "openapi/_original/pricefinder-api-swagger.json#GET /properties/{propertyId}/radial/listings",
+     "openapi/_original/pricefinder-api-swagger.json#GET /spatial/listings",
+     "openapi/_original/pricefinder-api-swagger.json#GET /streets/{streetId}/listings",
+     "openapi/_original/pricefinder-api-swagger.json#GET /suburbs/{suburbId}/listings",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /listings/{listingId}",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /postcodes/{postcode}/listings",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /properties/{propertyId}/radial/listings",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /spatial/listings",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /streets/{streetId}/listings",
+     "openapi/_original/pricefinder-api-swagger.yml#GET /suburbs/{suburbId}/listings"
+    ]
+   },
+   "purplebricks": {
+    "segments": [
+     "listing"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/purplebricks-lettings-v1-openapi.yml#POST /v1/streetwebhooks/listing",
+     "openapi/_original/purplebricks-lettings-v1-swagger.json#POST /v1/streetwebhooks/listing"
+    ]
+   },
+   "rea-group": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "listingId": "string",
+     "propertyId": [
+      "integer",
+      "null"
+     ],
+     "address": "object",
+     "attributes": "object",
+     "auctionDateTime": [
+      "string",
+      "null"
+     ],
+     "auctionDate": [
+      "string",
+      "null"
+     ],
+     "auctionTime": [
+      "string",
+      "null"
+     ],
+     "auctionResult": "string",
+     "daysOnSite": [
+      "integer",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "firstSeenDate": [
+      "string",
+      "null"
+     ],
+     "listingType": "string",
+     "listingPrice": [
+      "integer",
+      "null"
+     ],
+     "priceDescription": [
+      "string",
+      "null"
+     ],
+     "status": "string",
+     "leaseDate": [
+      "string",
+      "null"
+     ],
+     "saleDate": [
+      "string",
+      "null"
+     ],
+     "saleValue": [
+      "integer",
+      "null"
+     ],
+     "saleValueSuppressed": "boolean",
+     "source": "string",
+     "videoUrl": [
+      "string",
+      "null"
+     ],
+     "images": "array",
+     "attachments": "array",
+     "energyEfficiencyRating": [
+      "number",
+      "null"
+     ],
+     "agents": [
+      "array",
+      "null"
+     ],
+     "agencies": [
+      "array",
+      "null"
+     ],
+     "listings": "array"
+    },
+    "evidence": [
+     "openapi/_original/rea-group-listings-openapi.yml#GET /api/v2/listings/{listingId}",
+     "openapi/_original/rea-group-properties-openapi.yml#GET /api/v2/properties/{propertyId}/listings"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "listing",
+     "listings"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "url": "string",
+     "path": "string",
+     "id": "string",
+     "country": "string",
+     "shop_url": "string",
+     "shop_slug": "string",
+     "max_pages": "string",
+     "sort": "string",
+     "listing_url": "string",
+     "listing_id": "string",
+     "slug": "string",
+     "adid": "string",
+     "symbol": "string",
+     "page": "string",
+     "limit": "string",
+     "min_price": "string",
+     "max_price": "string",
+     "item_id": "string",
+     "vip_url": "string",
+     "site": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /autoscout24/v1/listing",
+     "openapi/_original/reefapi-openapi.json#POST /etsy/v1/reviews/listing",
+     "openapi/_original/reefapi-openapi.json#POST /etsy/v1/shops/listings",
+     "openapi/_original/reefapi-openapi.json#POST /kleinanzeigen/v1/listing",
+     "openapi/_original/reefapi-openapi.json#POST /magiceden/v1/listings",
+     "openapi/_original/reefapi-openapi.json#POST /marktplaats/v1/listing"
+    ]
+   },
+   "rentberry": {
+    "segments": [
+     "listing"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "description": "string",
+     "title": "string",
+     "language": "string"
+    },
+    "evidence": [
+     "openapi/_original/rentberry-openapi.json#POST /v{version}/translation/listing/{id}",
+     "openapi/_original/rentberry-openapi.yml#POST /v{version}/translation/listing/{id}"
+    ]
+   },
+   "vaultre": {
+    "segments": [
+     "listing"
+    ],
+    "operations": [
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "transactionId": "string",
+     "transactionDate": "string",
+     "listingId": "string",
+     "appraisalId": "string",
+     "propertyId": "string",
+     "officeId": "string",
+     "staff": "array",
+     "auctionDate": "string",
+     "auctionVenue": "string",
+     "tenderDate": "string",
+     "listingAuthorityDate": "string",
+     "listingPrice": "number",
+     "address": "object",
+     "classification": "string",
+     "active": "boolean",
+     "listingAuthorityType": "string",
+     "methodOfSale": "string",
+     "success": "boolean",
+     "msg": "string",
+     "code": "string"
+    },
+    "evidence": [
+     "openapi/_original/vaultre-aggregator-api-v1-0-openapi.yml#POST /listing",
+     "openapi/_original/vaultre-api-v1-2-openapi.yml#PUT /properties/{id}/sale/statusChange/listing",
+     "openapi/_original/vaultre-api-v1-3-openapi.yml#PUT /properties/{id}/sale/statusChange/listing"
+    ]
+   },
+   "vts": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/vts-openapi.yml#GET /api/v1/listings/{id}"
+    ]
+   },
+   "zillapi": {
+    "segments": [
+     "listings"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "zpid": "string",
+     "id": "string",
+     "palsId": "string",
+     "address": "string",
+     "addressStreet": "string",
+     "addressCity": "string",
+     "addressState": "string",
+     "addressZipcode": "string",
+     "price": "string",
+     "unformattedPrice": "number",
+     "beds": "number",
+     "baths": "number",
+     "area": "number",
+     "livingArea": "number",
+     "latLong": "object",
+     "statusType": "string",
+     "statusText": "string",
+     "homeType": "string",
+     "imgSrc": "string",
+     "hasImage": "boolean",
+     "detailUrl": "string",
+     "hdpData": "object"
+    },
+    "evidence": [
+     "openapi/_original/zillapi-openapi-original.json#GET /v1/listings"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "accruent",
+    "aedifion",
+    "airdna",
+    "alasco",
+    "alterestate",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "argus-enterprise",
+    "attomdata",
+    "avito",
+    "beyond-pricing",
+    "bilt",
+    "boston-properties",
+    "bridge-interactive",
+    "bright-mls",
+    "bungalow",
+    "butterflymx",
+    "cbre",
+    "certifid",
+    "cherre",
+    "cloudbeds",
+    "cloudkitchens",
+    "cobot",
+    "connells",
+    "coworkingview-api",
+    "crea",
+    "delos",
+    "domain-group",
+    "door",
+    "doorloop",
+    "dotloop",
+    "eagleview",
+    "estated",
+    "facilio",
+    "findigs",
+    "first-american-financial",
+    "first-street",
+    "fixflo",
+    "flatin-pt",
+    "fund-that-flip",
+    "fundrise",
+    "goodlord",
+    "guestready",
+    "hm-land-registry",
+    "holidu",
+    "hometrack",
+    "hospitable",
+    "housesigma",
+    "ingest0r-com",
+    "innago",
+    "interhyp",
+    "jones-lang-lasalle",
+    "keller-williams",
+    "land-insight",
+    "landcor",
+    "landing",
+    "landmark-information",
+    "lev",
+    "lightbox",
+    "lightbox-zoning-api",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "mashvisor",
+    "measurabl",
+    "mews-com",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "nar",
+    "navigate",
+    "notarize",
+    "offendersearch-api",
+    "offerpad",
+    "one-concern",
+    "oper-credits",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "perchwell",
+    "pexa",
+    "placer",
+    "planradar",
+    "pricefinder",
+    "propertyme",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "realtor",
+    "realtor-ca",
+    "redfin",
+    "reefapi",
+    "regrid",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "rentle",
+    "reonomy",
+    "rhino",
+    "rics",
+    "rightmove",
+    "sex-offenders-api",
+    "shovels",
+    "signsealship",
+    "skyslope",
+    "snappt",
+    "sprift",
+    "steadily",
+    "street-co",
+    "taylor-morrison-home",
+    "topi",
+    "trellistech",
+    "twentyci",
+    "unlock",
+    "vantaca",
+    "vaultre",
+    "vergesense",
+    "vts",
+    "wahi",
+    "walk-score",
+    "wegowise",
+    "yardi-canada",
+    "yatmo",
+    "zillapi",
+    "zoopla"
+   ],
+   "kebab-case": [
+    "aedifion",
+    "alasco",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "avito",
+    "beyond-pricing",
+    "bilt",
+    "boston-properties",
+    "cloudkitchens",
+    "delos",
+    "domain-group",
+    "doorloop",
+    "dotloop",
+    "eagleview",
+    "facilio",
+    "first-american-financial",
+    "fund-that-flip",
+    "fundrise",
+    "guestready",
+    "hm-land-registry",
+    "holidu",
+    "hometrack",
+    "interhyp",
+    "keller-williams",
+    "land-insight",
+    "landcor",
+    "landing",
+    "landmark-information",
+    "lev",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "mashvisor",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "notarize",
+    "offendersearch-api",
+    "offerpad",
+    "one-concern",
+    "oper-credits",
+    "outdoorsy",
+    "pexa",
+    "placer",
+    "purplebricks",
+    "rea-group",
+    "realtor",
+    "redfin",
+    "reefapi",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "rentle",
+    "reonomy",
+    "sex-offenders-api",
+    "shovels",
+    "signsealship",
+    "skyslope",
+    "snappt",
+    "steadily",
+    "street-co",
+    "taylor-morrison-home",
+    "topi",
+    "trellistech",
+    "twentyci",
+    "unlock",
+    "vaultre",
+    "yardi-canada",
+    "yatmo",
+    "zillapi",
+    "zoopla"
+   ],
+   "snake_case": [
+    "91squarefeet",
+    "aedifion",
+    "airdna",
+    "alasco",
+    "avito",
+    "boston-properties",
+    "butterflymx",
+    "cloudbeds",
+    "cobot",
+    "goodlord",
+    "guestready",
+    "land-insight",
+    "measurabl",
+    "navigate",
+    "notarize",
+    "offerpad",
+    "oper-credits",
+    "outdoorsy",
+    "planradar",
+    "redfin",
+    "reefapi",
+    "regrid",
+    "rentberry",
+    "rentcheck",
+    "rhino",
+    "steadily",
+    "topi",
+    "unlock",
+    "vergesense",
+    "vts",
+    "wegowise"
+   ],
+   "other": [
+    "avito",
+    "bounti",
+    "cobot",
+    "corelogic",
+    "crea",
+    "domain-group",
+    "door",
+    "first-american-financial",
+    "first-street",
+    "flatin-pt",
+    "hm-land-registry",
+    "housesigma",
+    "lokki",
+    "mews-com",
+    "mlsgrid",
+    "notarize",
+    "oper-credits",
+    "ordnance-survey",
+    "outdoorsy",
+    "perchwell",
+    "planradar",
+    "purplebricks",
+    "rea-group",
+    "realtor-ca",
+    "redfin",
+    "reefapi",
+    "rentberry",
+    "skyslope",
+    "snappt",
+    "twentyci",
+    "yardi"
+   ],
+   "camelCase": [
+    "aedifion",
+    "alto-vebra",
+    "aptly",
+    "attomdata",
+    "avito",
+    "certifid",
+    "cloudbeds",
+    "domain-group",
+    "facilio",
+    "first-american-financial",
+    "hometrack",
+    "landcor",
+    "landmark-information",
+    "lodgify",
+    "lokki",
+    "luxury-presence",
+    "mews-com",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "pexa",
+    "pricefinder",
+    "propertyware",
+    "rea-group",
+    "redfin",
+    "reefapi",
+    "rentcheck",
+    "rentle",
+    "snappt",
+    "vantaca",
+    "vaultre"
+   ],
+   "PascalCase": [
+    "accruent",
+    "alto-vebra",
+    "bridge-interactive",
+    "certifid",
+    "corelogic",
+    "crea",
+    "domain-group",
+    "eagleview",
+    "fixflo",
+    "flueid",
+    "hometrack",
+    "jones-lang-lasalle",
+    "leaseaccelerator",
+    "lone-wolf",
+    "mlsgrid",
+    "nar",
+    "notarize",
+    "oracle-hospitality",
+    "perchwell",
+    "propertyme",
+    "realestateapi",
+    "realtor-ca",
+    "rics",
+    "vantaca",
+    "yatmo"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "aedifion",
+    "airdna",
+    "alasco",
+    "alterestate",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "argus-enterprise",
+    "attomdata",
+    "avito",
+    "beyond-pricing",
+    "boston-properties",
+    "bridge-interactive",
+    "bungalow",
+    "butterflymx",
+    "cloudbeds",
+    "cloudkitchens",
+    "cobot",
+    "connells",
+    "coworkingview-api",
+    "crea",
+    "delos",
+    "domain-group",
+    "dotloop",
+    "eagleview",
+    "estated",
+    "facilio",
+    "findigs",
+    "first-american-financial",
+    "fixflo",
+    "flatin-pt",
+    "flueid",
+    "fund-that-flip",
+    "fundrise",
+    "goodlord",
+    "guestready",
+    "hm-land-registry",
+    "holidu",
+    "hometrack",
+    "hospitable",
+    "housesigma",
+    "interhyp",
+    "keller-williams",
+    "landcor",
+    "landing",
+    "lev",
+    "lightbox",
+    "lightbox-zoning-api",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "mashvisor",
+    "measurabl",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "navigate",
+    "notarize",
+    "offendersearch-api",
+    "offerpad",
+    "oper-credits",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "perchwell",
+    "pexa",
+    "placer",
+    "planradar",
+    "pricefinder",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "realtor",
+    "redfin",
+    "regrid",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "rentle",
+    "rhino",
+    "rightmove",
+    "sex-offenders-api",
+    "shovels",
+    "signsealship",
+    "skyslope",
+    "snappt",
+    "sprift",
+    "steadily",
+    "street-co",
+    "taylor-morrison-home",
+    "topi",
+    "trellistech",
+    "twentyci",
+    "unlock",
+    "vantaca",
+    "vaultre",
+    "vergesense",
+    "wahi",
+    "walk-score",
+    "wegowise",
+    "yatmo",
+    "zillapi"
+   ],
+   "snake_case": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "aedifion",
+    "alasco",
+    "alterestate",
+    "alto-vebra",
+    "aptly",
+    "avito",
+    "beyond-pricing",
+    "boston-properties",
+    "bridge-interactive",
+    "bungalow",
+    "cloudkitchens",
+    "cobot",
+    "doorloop",
+    "dotloop",
+    "estated",
+    "findigs",
+    "fund-that-flip",
+    "guestready",
+    "hm-land-registry",
+    "hospitable",
+    "housesigma",
+    "keller-williams",
+    "landcor",
+    "landing",
+    "lev",
+    "mashvisor",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "navigate",
+    "notarize",
+    "offerpad",
+    "oper-credits",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "perchwell",
+    "planradar",
+    "pricefinder",
+    "realtor",
+    "redfin",
+    "regrid",
+    "rentcheck",
+    "reonomy",
+    "rhino",
+    "sex-offenders-api",
+    "shovels",
+    "signsealship",
+    "steadily",
+    "taylor-morrison-home",
+    "topi",
+    "twentyci",
+    "unlock",
+    "vaultre",
+    "vergesense",
+    "vts",
+    "wegowise",
+    "zillapi",
+    "zoopla"
+   ],
+   "camelCase": [
+    "accruent",
+    "aedifion",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "argus-enterprise",
+    "attomdata",
+    "avito",
+    "bridge-interactive",
+    "certifid",
+    "cloudbeds",
+    "cloudkitchens",
+    "coworkingview-api",
+    "crea",
+    "delos",
+    "domain-group",
+    "door",
+    "eagleview",
+    "facilio",
+    "first-american-financial",
+    "fixflo",
+    "flueid",
+    "fundrise",
+    "goodlord",
+    "holidu",
+    "hometrack",
+    "innago",
+    "interhyp",
+    "landmark-information",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "measurabl",
+    "notarize",
+    "offendersearch-api",
+    "oper-credits",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "pexa",
+    "placer",
+    "planradar",
+    "pricefinder",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "redfin",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "rentle",
+    "rics",
+    "skyslope",
+    "snappt",
+    "sprift",
+    "trellistech",
+    "vantaca",
+    "vaultre",
+    "wahi",
+    "yatmo",
+    "zoopla"
+   ],
+   "other": [
+    "alasco",
+    "beyond-pricing",
+    "bridge-interactive",
+    "bungalow",
+    "butterflymx",
+    "cobot",
+    "corelogic",
+    "crea",
+    "doorloop",
+    "findigs",
+    "fixflo",
+    "fund-that-flip",
+    "goodlord",
+    "guestready",
+    "hospitable",
+    "keller-williams",
+    "landmark-information",
+    "lev",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "mlsgrid",
+    "notarize",
+    "oper-credits",
+    "outdoorsy",
+    "perchwell",
+    "planradar",
+    "realtor-ca",
+    "rentcheck",
+    "street-co",
+    "vantaca",
+    "vergesense",
+    "vts"
+   ],
+   "PascalCase": [
+    "accruent",
+    "alto-vebra",
+    "attomdata",
+    "corelogic",
+    "crea",
+    "domain-group",
+    "eagleview",
+    "first-american-financial",
+    "fixflo",
+    "innago",
+    "lodgify",
+    "lone-wolf",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "propertyme",
+    "purplebricks",
+    "realtor-ca",
+    "rics",
+    "vantaca"
+   ],
+   "kebab-case": [
+    "alto-vebra",
+    "beyond-pricing",
+    "flueid",
+    "lone-wolf",
+    "oper-credits",
+    "ordnance-survey",
+    "outdoorsy",
+    "zoopla"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "aedifion",
+    "aptly",
+    "argus-enterprise",
+    "attomdata",
+    "avito",
+    "boston-properties",
+    "butterflymx",
+    "coworkingview-api",
+    "domain-group",
+    "eagleview",
+    "facilio",
+    "findigs",
+    "fixflo",
+    "goodlord",
+    "hometrack",
+    "hospitable",
+    "housesigma",
+    "lev",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "mashvisor",
+    "measurabl",
+    "movehome-org",
+    "mri-software",
+    "offendersearch-api",
+    "offerpad",
+    "oper-credits",
+    "perchwell",
+    "pexa",
+    "planradar",
+    "pricefinder",
+    "purplebricks",
+    "rentberry",
+    "rhino",
+    "rightmove",
+    "skyslope",
+    "snappt",
+    "sprift",
+    "topi",
+    "twentyci",
+    "unlock",
+    "vaultre",
+    "vergesense"
+   ],
+   "limit": [
+    "aptly",
+    "avito",
+    "bridge-interactive",
+    "bungalow",
+    "cloudkitchens",
+    "coworkingview-api",
+    "delos",
+    "guestready",
+    "hm-land-registry",
+    "interhyp",
+    "keller-williams",
+    "landcor",
+    "lev",
+    "lokki",
+    "luxury-presence",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "navigate",
+    "notarize",
+    "offendersearch-api",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "pexa",
+    "placer",
+    "pricefinder",
+    "propertyme",
+    "propertyware",
+    "purplebricks",
+    "realtor",
+    "regrid",
+    "rentberry",
+    "rentcast",
+    "rentle",
+    "signsealship",
+    "snappt",
+    "sprift",
+    "steadily",
+    "taylor-morrison-home",
+    "topi",
+    "trellistech",
+    "twentyci",
+    "vergesense",
+    "zillapi"
+   ],
+   "offset": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "aptly",
+    "avito",
+    "boston-properties",
+    "bridge-interactive",
+    "bungalow",
+    "delos",
+    "guestready",
+    "housesigma",
+    "keller-williams",
+    "lev",
+    "luxury-presence",
+    "microburbs",
+    "notarize",
+    "offerpad",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "propertyme",
+    "propertyware",
+    "realtor",
+    "regrid",
+    "rentcast",
+    "snappt",
+    "taylor-morrison-home",
+    "trellistech",
+    "unlock",
+    "zillapi"
+   ],
+   "page_size": [
+    "apaleo",
+    "aptly",
+    "argus-enterprise",
+    "attomdata",
+    "beyond-pricing",
+    "cloudbeds",
+    "coworkingview-api",
+    "domain-group",
+    "door",
+    "doorloop",
+    "facilio",
+    "holidu",
+    "hometrack",
+    "lokki",
+    "measurabl",
+    "oper-credits",
+    "perchwell",
+    "planradar",
+    "purplebricks",
+    "rea-group",
+    "rentcheck",
+    "skyslope",
+    "street-co",
+    "vergesense",
+    "vts"
+   ],
+   "per_page": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "aedifion",
+    "avito",
+    "boston-properties",
+    "fund-that-flip",
+    "hospitable",
+    "housesigma",
+    "movehome-org",
+    "offendersearch-api",
+    "offerpad",
+    "rhino",
+    "twentyci",
+    "unlock"
+   ],
+   "skip": [
+    "aptly",
+    "bridge-interactive",
+    "corelogic",
+    "crea",
+    "landmark-information",
+    "lokki",
+    "lone-wolf",
+    "perchwell",
+    "placer",
+    "realtor-ca"
+   ],
+   "cursor": [
+    "avito",
+    "fund-that-flip",
+    "guestready",
+    "lev",
+    "navigate",
+    "notarize",
+    "purplebricks",
+    "rentcheck",
+    "shovels",
+    "vaultre"
+   ],
+   "count": [
+    "corelogic",
+    "crea",
+    "eagleview",
+    "facilio",
+    "landmark-information",
+    "mlsgrid",
+    "notarize",
+    "ordnance-survey",
+    "realtor-ca"
+   ],
+   "after": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "boston-properties",
+    "housesigma",
+    "interhyp",
+    "offerpad",
+    "unlock",
+    "vaultre"
+   ],
+   "before": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "boston-properties",
+    "housesigma",
+    "interhyp",
+    "offerpad",
+    "rentberry",
+    "unlock"
+   ],
+   "top": [
+    "bridge-interactive",
+    "corelogic",
+    "crea",
+    "landmark-information",
+    "lone-wolf",
+    "mlsgrid",
+    "perchwell",
+    "realtor-ca"
+   ],
+   "size": [
+    "findigs",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "measurabl",
+    "rightmove",
+    "shovels"
+   ],
+   "start": [
+    "aedifion",
+    "alasco",
+    "oracle-hospitality",
+    "outdoorsy",
+    "vaultre",
+    "vergesense"
+   ],
+   "page_token": [
+    "door",
+    "rentle"
+   ],
+   "max_results": [
+    "alto-vebra"
+   ],
+   "starting_after": [
+    "vaultre"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1000satellitescoworking",
+    "91squarefeet",
+    "accruent",
+    "aedifion",
+    "alasco",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "attomdata",
+    "avito",
+    "boston-properties",
+    "bridge-interactive",
+    "bright-mls",
+    "bungalow",
+    "butterflymx",
+    "certifid",
+    "cloudkitchens",
+    "cobot",
+    "coworkingview-api",
+    "domain-group",
+    "facilio",
+    "first-american-financial",
+    "first-street",
+    "fixflo",
+    "flatin-pt",
+    "fund-that-flip",
+    "goodlord",
+    "guestready",
+    "hometrack",
+    "hospitable",
+    "housesigma",
+    "ingest0r-com",
+    "interhyp",
+    "land-insight",
+    "landcor",
+    "landing",
+    "landmark-information",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "mashvisor",
+    "measurabl",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "nar",
+    "notarize",
+    "offendersearch-api",
+    "offerpad",
+    "oper-credits",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "outdoorsy",
+    "ownerrez",
+    "placer",
+    "planradar",
+    "pricefinder",
+    "propertyme",
+    "purplebricks",
+    "rea-group",
+    "redfin",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "rentle",
+    "rhino",
+    "rics",
+    "rightmove",
+    "shovels",
+    "signsealship",
+    "snappt",
+    "sprift",
+    "street-co",
+    "topi",
+    "twentyci",
+    "unlock",
+    "vaultre",
+    "vergesense",
+    "vts",
+    "wegowise",
+    "zillapi",
+    "zoopla"
+   ],
+   "camelCase": [
+    "accruent",
+    "airdna",
+    "alto-vebra",
+    "apaleo",
+    "aptly",
+    "argus-enterprise",
+    "avito",
+    "bilt",
+    "certifid",
+    "cloudkitchens",
+    "cobot",
+    "connells",
+    "delos",
+    "domain-group",
+    "door",
+    "doorloop",
+    "eagleview",
+    "facilio",
+    "first-american-financial",
+    "fixflo",
+    "fund-that-flip",
+    "fundrise",
+    "goodlord",
+    "hm-land-registry",
+    "holidu",
+    "hometrack",
+    "innago",
+    "interhyp",
+    "keller-williams",
+    "landmark-information",
+    "lightbox",
+    "lightbox-zoning-api",
+    "lodgify",
+    "lokki",
+    "lone-wolf",
+    "luxury-presence",
+    "mri-software",
+    "nar",
+    "offendersearch-api",
+    "oracle-hospitality",
+    "ordnance-survey",
+    "pexa",
+    "pricefinder",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "redfin",
+    "rentberry",
+    "rentcheck",
+    "rentle",
+    "rics",
+    "signsealship",
+    "skyslope",
+    "snappt",
+    "sprift",
+    "street-co",
+    "trellistech",
+    "twentyci",
+    "vaultre",
+    "walk-score",
+    "yatmo"
+   ],
+   "snake_case": [
+    "aedifion",
+    "alasco",
+    "alterestate",
+    "avito",
+    "beyond-pricing",
+    "boston-properties",
+    "bridge-interactive",
+    "bungalow",
+    "butterflymx",
+    "dotloop",
+    "findigs",
+    "guestready",
+    "hm-land-registry",
+    "keller-williams",
+    "land-insight",
+    "landcor",
+    "lev",
+    "measurabl",
+    "microburbs",
+    "movehome-org",
+    "mri-software",
+    "navigate",
+    "notarize",
+    "offerpad",
+    "oper-credits",
+    "outdoorsy",
+    "ownerrez",
+    "perchwell",
+    "planradar",
+    "regrid",
+    "rentberry",
+    "reonomy",
+    "rhino",
+    "shovels",
+    "steadily",
+    "street-co",
+    "taylor-morrison-home",
+    "topi",
+    "vergesense",
+    "vts"
+   ],
+   "PascalCase": [
+    "accruent",
+    "crea",
+    "domain-group",
+    "fixflo",
+    "oracle-hospitality",
+    "propertyme",
+    "realtor-ca"
+   ],
+   "other": [
+    "oper-credits"
+   ],
+   "kebab-case": [
+    "ordnance-survey"
+   ]
+  },
+  "property": {
+   "lower": [
+    "91squarefeet",
+    "airdna",
+    "alasco",
+    "alterestate",
+    "alto-vebra",
+    "apaleo",
+    "argus-enterprise",
+    "avito",
+    "beyond-pricing",
+    "bridge-interactive",
+    "bungalow",
+    "butterflymx",
+    "coworkingview-api",
+    "domain-group",
+    "door",
+    "doorloop",
+    "estated",
+    "facilio",
+    "findigs",
+    "fixflo",
+    "guestready",
+    "hospitable",
+    "innago",
+    "keller-williams",
+    "land-insight",
+    "landcor",
+    "landmark-information",
+    "lev",
+    "lodgify",
+    "lone-wolf",
+    "measurabl",
+    "movehome-org",
+    "navigate",
+    "oracle-hospitality",
+    "ownerrez",
+    "pricefinder",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "reefapi",
+    "regrid",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "reonomy",
+    "shovels",
+    "snappt",
+    "sprift",
+    "street-co",
+    "taylor-morrison-home",
+    "trellistech",
+    "vaultre",
+    "vergesense",
+    "vts",
+    "wegowise",
+    "zillapi"
+   ],
+   "camelCase": [
+    "alto-vebra",
+    "apaleo",
+    "argus-enterprise",
+    "avito",
+    "coworkingview-api",
+    "domain-group",
+    "door",
+    "doorloop",
+    "facilio",
+    "innago",
+    "landmark-information",
+    "lone-wolf",
+    "measurabl",
+    "oracle-hospitality",
+    "ownerrez",
+    "pricefinder",
+    "propertyware",
+    "purplebricks",
+    "rea-group",
+    "rentberry",
+    "rentcast",
+    "rentcheck",
+    "snappt",
+    "sprift",
+    "trellistech",
+    "vaultre",
+    "zillapi"
+   ],
+   "snake_case": [
+    "91squarefeet",
+    "airdna",
+    "alterestate",
+    "bungalow",
+    "butterflymx",
+    "estated",
+    "findigs",
+    "guestready",
+    "hospitable",
+    "keller-williams",
+    "land-insight",
+    "lev",
+    "lodgify",
+    "movehome-org",
+    "navigate",
+    "ownerrez",
+    "reefapi",
+    "rentcheck",
+    "reonomy",
+    "sprift",
+    "taylor-morrison-home",
+    "vergesense",
+    "wegowise"
+   ],
+   "PascalCase": [
+    "accruent",
+    "corelogic",
+    "crea",
+    "domain-group",
+    "doorloop",
+    "fixflo",
+    "hometrack",
+    "mlsgrid",
+    "perchwell",
+    "pricefinder",
+    "propertyme",
+    "realtor-ca"
+   ],
+   "other": [
+    "91squarefeet",
+    "bridge-interactive",
+    "crea",
+    "doorloop",
+    "keller-williams",
+    "pricefinder",
+    "realtor-ca"
+   ]
+  }
+ }
+}

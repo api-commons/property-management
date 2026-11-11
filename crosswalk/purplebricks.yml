@@ -1,0 +1,41 @@
+provider: purplebricks
+apis_io: https://apis.io/providers/purplebricks/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - properties
+    - property
+    properties:
+      id:
+      - listingId
+      - id
+      address:
+      - address
+      - street
+      - fullAddress
+      type: propertyType
+      status:
+      - state
+      - status
+      updated_at: updatedDate
+      bathrooms: bathrooms
+      postal_code: postcode
+      bedrooms: bedrooms
+      property_id: propertyId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/bland/property/{propertyId}
+    - openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/creatio/properties/{propertyId}
+    - openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/creatio/users/{userId}/properties
+    - openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/performancereport/internal/properties
+    - openapi/_original/purplebricks-property-v1-openapi.yml#GET /v1/property/{propertyId}
+  listing:
+    path_segment:
+    - listing
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/purplebricks-lettings-v1-openapi.yml#POST /v1/streetwebhooks/listing
+    - openapi/_original/purplebricks-lettings-v1-swagger.json#POST /v1/streetwebhooks/listing

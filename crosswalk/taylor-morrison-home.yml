@@ -1,0 +1,20 @@
+provider: taylor-morrison-home
+apis_io: https://apis.io/providers/taylor-morrison-home/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - communities
+    properties:
+      name: name
+      status:
+      - state
+      - status
+      city: city
+      description: description
+      property_id: community_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/taylor-morrison-home-search-openapi.yml#GET /communities
+    - openapi/_original/taylor-morrison-home-search-openapi.yml#GET /communities/{community_id}

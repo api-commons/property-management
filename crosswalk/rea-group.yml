@@ -1,0 +1,30 @@
+provider: rea-group
+apis_io: https://apis.io/providers/rea-group/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      property_id: propertyId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rea-group-reports-openapi.yml#POST /api/v1/reports/property
+  listing:
+    path_segment:
+    - listings
+    properties:
+      id: listingId
+      address: address
+      status: status
+      price: listingPrice
+      property_id: propertyId
+      property_type: listingType
+      description: description
+      metadata: attributes
+      photos: images
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rea-group-listings-openapi.yml#GET /api/v2/listings/{listingId}
+    - openapi/_original/rea-group-properties-openapi.yml#GET /api/v2/properties/{propertyId}/listings

@@ -1,0 +1,927 @@
+context: property-management
+name: Property Management
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Property Management
+  - PropTech
+  - Rentals
+  - Real Estate
+  - Commercial Real Estate
+  - Multifamily
+  providers_with_harvested_openapi: 143
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  property:
+    reefapi: /reddit/v1/communities are online communities
+    regrid: /schemas/building is a schema definition
+  tenant:
+    shovels: /addresses/{id}/residents is a people-search lookup
+  lease:
+    pricefinder: /radial/rentals are rental comparables
+duplicates:
+  zoopla:
+  - alto-vebra
+  crea:
+  - realtor-ca
+shared_specs: {}
+concepts:
+  property:
+    segments_seen:
+      properties: 27
+      property: 21
+      buildings: 12
+      communities: 2
+      building: 1
+    providers_exposing: 53
+    providers_with_readable_schema: 49
+    operations:
+    - operation: GET collection
+      providers: 43
+      share: 0.811
+      tier: core
+    - operation: GET item
+      providers: 38
+      share: 0.717
+      tier: core
+    - operation: POST collection
+      providers: 21
+      share: 0.396
+      tier: extended
+    - operation: UPDATE item
+      providers: 11
+      share: 0.208
+      tier: extended
+    - operation: DELETE item
+      providers: 9
+      share: 0.17
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.038
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.038
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.019
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 33
+      share: 0.673
+      type: string
+      spellings:
+      - id
+      - ListingKey
+      - ListingId
+      - guid
+      - uuid
+      - Id
+      - listingId
+    - name: address
+      tier: core
+      providers: 32
+      share: 0.653
+      type: object
+      spellings:
+      - address
+      - location
+      - UnparsedAddress
+      - street
+      - street_address
+      - streetAddress
+      - Address
+      - fullAddress
+    - name: name
+      tier: extended
+      providers: 22
+      share: 0.449
+      type: string
+      spellings:
+      - name
+      - title
+    - name: type
+      tier: extended
+      providers: 22
+      share: 0.449
+      type: string
+      spellings:
+      - type
+      - propertyType
+      - PropertyType
+      - PropertySubType
+      - category
+      - property_type
+    - name: status
+      tier: extended
+      providers: 19
+      share: 0.388
+      type: string
+      spellings:
+      - status
+      - state
+      - StandardStatus
+    - name: updated_at
+      tier: extended
+      providers: 16
+      share: 0.327
+      type: string
+      spellings:
+      - updatedAt
+      - ModificationTimestamp
+      - modified
+      - updated_at
+      - modifiedDate
+      - updated
+      - lastModified
+      - updatedDate
+    - name: city
+      tier: extended
+      providers: 12
+      share: 0.245
+      type: string
+      spellings:
+      - city
+      - City
+    - name: description
+      tier: extended
+      providers: 12
+      share: 0.245
+      type: string
+      spellings:
+      - description
+      - PublicRemarks
+    - name: bathrooms
+      tier: extended
+      providers: 11
+      share: 0.224
+      type: integer
+      spellings:
+      - bathrooms
+      - BathroomsTotalInteger
+      - num_bathrooms
+    - name: postal_code
+      tier: extended
+      providers: 11
+      share: 0.224
+      type: string
+      spellings:
+      - zip
+      - PostalCode
+      - postcode
+      - postal_code
+      - zipCode
+      - zip_code
+      - postalCode
+    - name: year_built
+      tier: extended
+      providers: 11
+      share: 0.224
+      type: integer
+      spellings:
+      - yearBuilt
+      - YearBuilt
+      - year_built
+    - name: bedrooms
+      tier: extended
+      providers: 10
+      share: 0.204
+      type: integer
+      spellings:
+      - bedrooms
+      - BedroomsTotal
+      - beds
+    - name: property_id
+      tier: extended
+      providers: 10
+      share: 0.204
+      type: string
+      spellings:
+      - propertyId
+      - PropertyId
+      - building_id
+      - property_id
+      - community_id
+    long_tail_count: 724
+    long_tail_sample:
+    - latitude
+    - longitude
+    - metadata
+    - rooms
+    - square_feet
+    - amenities
+    - created_at
+    - owner_id
+    - country
+    - list_price
+    - relationships
+    - timezone
+    - active
+    - capacity
+    - county
+    - epc
+    - features
+    - images
+    - limit
+    - list_agent_key
+    - list_office_key
+    - media
+    - offset
+    - originating_system_name
+    - parcel_number
+    - price
+    - slug
+    - street_name
+    - street_number
+    - unit_count
+    - unit_number
+    - zoning
+    - address_id
+    - block_id
+    - car_spaces
+    - class
+    - close_price
+    - code
+    - council_tax_band
+    - country_code
+  unit:
+    segments_seen:
+      units: 7
+      spaces: 1
+      apartments: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 8
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 0.889
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.889
+      tier: core
+    - operation: POST collection
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: DELETE item
+      providers: 4
+      share: 0.444
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - id
+    - name: number
+      tier: core
+      providers: 5
+      share: 0.625
+      type: string
+      spellings:
+      - name
+      - unit_number
+    - name: property_id
+      tier: core
+      providers: 5
+      share: 0.625
+      type: integer
+      spellings:
+      - building_id
+      - building
+      - property
+      - buildingID
+    - name: address
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: object
+      spellings:
+      - address
+    - name: bedrooms
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: integer
+      spellings:
+      - bedrooms
+      - beds
+    - name: square_feet
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: number
+      spellings:
+      - area
+      - size
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - status
+      - state
+    long_tail_count: 80
+    long_tail_sample:
+    - active
+    - amenities
+    - bathrooms
+    - created_by
+    - description
+    - floor
+    - metadata
+    - property_type
+    - rooms
+    - type
+    - abbreviation
+    - access_group
+    - address_2
+    - address_same_as_property
+    - area_units
+    - available_date
+    - category
+    - city
+    - common
+    - county
+    - created_at
+    - created_date_time
+    - creation_source
+    - entity_type
+    - floor_area_sq_ft
+    - floor_plan
+    - full_bathrooms
+    - half_bathrooms
+    - id_number
+    - last_completed_inspection
+    - last_modified_by
+    - last_modified_date_time
+    - latchel_property_id
+    - lease_id
+    - listing
+    - maintenance_notice
+    - maintenance_spending_limit_time
+    - management
+    - marketing
+    - model
+  lease:
+    segments_seen:
+      leases: 6
+      tenancies: 3
+      lease: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 9
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.556
+      tier: core
+    - operation: UPDATE item
+      providers: 5
+      share: 0.556
+      tier: core
+    - operation: DELETE item
+      providers: 4
+      share: 0.444
+      tier: extended
+    properties:
+    - name: id
+      tier: core
+      providers: 8
+      share: 0.889
+      type: string
+      spellings:
+      - id
+    - name: start_date
+      tier: core
+      providers: 7
+      share: 0.778
+      type: string
+      spellings:
+      - startDate
+      - start
+      - moveInDate
+      - lease_start
+      - move_in_date
+      - leaseStart
+    - name: end_date
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - endDate
+      - end
+      - moveOutDate
+      - lease_end
+      - move_out_date
+    - name: property_id
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - property
+      - propertyId
+      - buildingID
+      - property_id
+      - building
+    - name: status
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - status
+    - name: rent
+      tier: core
+      providers: 5
+      share: 0.556
+      type: number
+      spellings:
+      - rent
+      - baseRent
+      - rentAmount
+    - name: tenant_ids
+      tier: core
+      providers: 5
+      share: 0.556
+      type: array
+      spellings:
+      - tenants
+      - tenantId
+      - tenant_id
+    - name: deposit
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: number
+      spellings:
+      - securityDeposit
+      - depositAmount
+      - security_deposit
+    - name: metadata
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: object
+      spellings:
+      - attributes
+      - customFields
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - type
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - modifiedDate
+      - updatedAt
+      - modified
+    long_tail_count: 205
+    long_tail_sample:
+    - address
+    - created_at
+    - description
+    - name
+    - relationships
+    - term
+    - access_by
+    - account
+    - active
+    - addendums
+    - address_visibility
+    - annual_rent
+    - applicant_contact_ids
+    - appraisal
+    - appraisal_price_lower
+    - appraisal_price_upper
+    - ar_balance
+    - authority_end
+    - authority_start
+    - available
+    - bath
+    - bed
+    - bond_price
+    - branch
+    - branch_id
+    - brochure_description
+    - car_spaces
+    - carports
+    - certificate_of_title
+    - class
+    - comments
+    - commercial_lease_price
+    - commercial_lease_price_includes_gst
+    - commercial_listing_type
+    - contact_staff
+    - contacts
+    - corelogic_id
+    - council_tax_band
+    - created_by
+    - created_date_time
+  tenant:
+    segments_seen:
+      tenants: 8
+      residents: 1
+    providers_exposing: 8
+    providers_with_readable_schema: 8
+    operations:
+    - operation: GET collection
+      providers: 8
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.75
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.5
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.375
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.375
+      tier: extended
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.875
+      type: string
+      spellings:
+      - id
+      - Id
+    - name: phone
+      tier: core
+      providers: 4
+      share: 0.5
+      type: string
+      spellings:
+      - phones
+      - phoneNumber
+      - Phone
+      - phone_numbers
+      - phone_number
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - type
+    long_tail_count: 85
+    long_tail_sample:
+    - address
+    - created_at
+    - email
+    - first_name
+    - last_name
+    - metadata
+    - name
+    - relationships
+    - updated_at
+    - active_leases
+    - cell_phone
+    - code
+    - company
+    - company_name
+    - contact_email
+    - contact_name
+    - contact_person_text
+    - contact_phone
+    - creation_source
+    - credit_rating
+    - current_lease_end
+    - current_lease_start
+    - current_property_address
+    - current_property_id
+    - current_rent
+    - current_security_deposit
+    - customer_id
+    - date_of_birth
+    - deleted
+    - dependants
+    - description
+    - emergency_contacts
+    - entity_type
+    - full_name
+    - gender
+    - home_phone
+    - industry
+    - job_title
+    - labels
+    - lease_end_date
+  work_order:
+    segments_seen:
+      work-orders: 1
+      workorders: 1
+      work_orders: 1
+      maintenance-requests: 1
+      maintenance: 1
+    providers_exposing: 5
+    providers_with_readable_schema: 5
+    operations:
+    - operation: GET collection
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 5
+      share: 1.0
+      type: string
+      spellings:
+      - id
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.8
+      type: string
+      spellings:
+      - status
+    - name: description
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - description
+      - notes
+    - name: property_id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - propertyId
+      - buildingID
+      - property
+    long_tail_count: 68
+    long_tail_sample:
+    - category
+    - created_by
+    - metadata
+    - priority
+    - requested_by
+    - start_date
+    - summary
+    - updated_at
+    - access_details
+    - address
+    - age
+    - appfolio
+    - approved
+    - approved_date
+    - assigned_vendors
+    - authorize_enter
+    - charge_details
+    - completed_date
+    - contract_number
+    - cost_estimate
+    - created_at
+    - created_by_name
+    - created_date_time
+    - date_to_enter
+    - hour_estimate
+    - hour_to_enter
+    - inserted
+    - inserted_by
+    - inspection
+    - jenark
+    - last_modified_by
+    - last_modified_date_time
+    - last_sync_date
+    - latchel
+    - lease
+    - lease_life_id
+    - maintenance_flags
+    - maintenance_notice
+    - managed_by
+    - minute_to_enter
+  listing:
+    segments_seen:
+      listings: 16
+      listing: 6
+    providers_exposing: 19
+    providers_with_readable_schema: 17
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 0.684
+      tier: core
+    - operation: GET item
+      providers: 11
+      share: 0.579
+      tier: core
+    - operation: POST collection
+      providers: 8
+      share: 0.421
+      tier: extended
+    - operation: UPDATE item
+      providers: 4
+      share: 0.211
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.105
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.053
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.053
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 12
+      share: 0.706
+      type: string
+      spellings:
+      - id
+      - listingId
+      - listing_id
+    - name: address
+      tier: extended
+      providers: 8
+      share: 0.471
+      type: object
+      spellings:
+      - address
+      - location
+      - street
+    - name: status
+      tier: extended
+      providers: 8
+      share: 0.471
+      type: string
+      spellings:
+      - status
+      - listingStatus
+      - state
+      - ListingStatus
+    - name: price
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: number
+      spellings:
+      - price
+      - listingPrice
+      - asking_price
+    - name: property_id
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: string
+      spellings:
+      - propertyId
+      - property_id
+      - property
+    - name: property_type
+      tier: extended
+      providers: 6
+      share: 0.353
+      type: string
+      spellings:
+      - type
+      - propertyType
+      - property_type
+      - listingType
+    - name: description
+      tier: extended
+      providers: 5
+      share: 0.294
+      type: string
+      spellings:
+      - description
+      - note
+    - name: metadata
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: object
+      spellings:
+      - attributes
+      - metadata
+    - name: name
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: string
+      spellings:
+      - title
+      - name
+    - name: photos
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: array
+      spellings:
+      - media
+      - images
+      - photos
+    long_tail_count: 307
+    long_tail_sample:
+    - bathrooms
+    - bedrooms
+    - created_at
+    - headline
+    - updated_at
+    - agencies
+    - agents
+    - auction_date
+    - currency
+    - date_available
+    - energy_efficiency_rating
+    - features
+    - limit
+    - living_area
+    - rental
+    - suburb
+    - version
+    - action
+    - active
+    - address_city
+    - address_parts
+    - address_state
+    - address_street
+    - address_zipcode
+    - adid
+    - advertiser_identifiers
+    - agency_id
+    - agency_name
+    - agency_profile_page_url
+    - agent_id
+    - apm_identifiers
+    - appraisal_id
+    - area
+    - asking_rent_pcm
+    - attachments
+    - auction_date_time
+    - auction_result
+    - auction_time
+    - auction_venue
+    - authority_executed_date

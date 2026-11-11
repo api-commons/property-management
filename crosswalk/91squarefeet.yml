@@ -1,0 +1,20 @@
+provider: 91squarefeet
+apis_io: https://apis.io/providers/91squarefeet/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  property:
+    path_segment:
+    - property
+    properties:
+      id:
+      - id
+      - guid
+      name: title
+      type: type
+      status: status
+      updated_at: modified
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/91squarefeet-content-api-openapi.yml#GET /wp/v2/property
+    - openapi/_original/91squarefeet-content-api-openapi.yml#GET /wp/v2/property/{id}

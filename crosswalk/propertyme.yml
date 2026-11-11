@@ -1,0 +1,14 @@
+provider: propertyme
+apis_io: https://apis.io/providers/propertyme/
+context: property-management
+generated: '2026-11-10'
+concepts:
+  tenant:
+    path_segment:
+    - tenants
+    properties:
+      id: Id
+      phone: Phone
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/propertyme-openapi.json#GET /v1/contacts/tenants
